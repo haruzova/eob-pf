@@ -1,0 +1,47 @@
+site_name: Portfolio Site
+site_url: https://haruzova.github.io/eob-portfolio/
+
+theme: 
+
+  favicon: assets/misc/donspin.gif
+  logo: assets/misc/mkrainbow.gif
+  
+  name: material
+  palette:
+    - scheme: slate
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
+    - scheme: default
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - mkdocs-video
+    - header.autohide
+
+plugins:
+  - search
+  - mkdocs-video
+  - ezlinks:
+      wikilinks: true
+      reference_links: true
+  
+
+extra_css:
+  - stylesheets/extra.css
+
+
+markdown_extensions:
+  - pymdownx.highlight:
+      line_spans: __span

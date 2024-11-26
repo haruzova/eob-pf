@@ -1,0 +1,191 @@
+{
+  "main": {
+    "id": "33e85207482e832c",
+    "type": "split",
+    "children": [
+      {
+        "id": "eec28b7effad26a3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4a90003d217a7aa5",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projects/315-Character-Modelling.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "2a9418684ae4a943",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projects/318-Creating-3D-Digital-Art.md",
+                "mode": "source",
+                "source": true
+              },
+              "pinned": true
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c9838197934d17cd",
+    "type": "split",
+    "children": [
+      {
+        "id": "dcc097ee706189e1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "77e8fd9b9b592271",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "ab7785f976a800a3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a17d2bb9f915992d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "3491eb9c66afc68c",
+    "type": "split",
+    "children": [
+      {
+        "id": "de64570b6bcc6afa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1908022a01c73c0d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Projects/315-Character-Modelling.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e596d3411359f9ce",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Projects/315-Character-Modelling.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "776331a71a637327",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "cf835f993cceb095",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Projects/315-Character-Modelling.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "cf835f993cceb095",
+  "lastOpenFiles": [
+    "Projects/318-Creating-3D-Digital-Art.md",
+    "assets/Devlog/318/Screenshot_8.png",
+    "assets/Devlog/318/Screenshot_9.png",
+    "assets/Devlog/318/Screenshot_19.png",
+    "assets/Devlog/318/Screenshot_21.png",
+    "assets/Devlog/318/Screenshot_20.png",
+    "LV3-Research/323-Creating-Audio-for-Digital-Media.md",
+    "assets/Devlog/318/Screenshot_2024-07-19_143301.png",
+    "assets/Devlog/318/Screenshot_2024-07-16_134810.png",
+    "assets/Devlog/302/20240719_214409_signalsyay.png",
+    "assets/Devlog/318/Screenshot_2024-07-19_143318.png",
+    "assets/Devlog/318/Screenshot_2024-07-19_143307.png",
+    "Projects/315-Character-Modelling.md",
+    "Projects/302-Creating-a-Digital-Game.md",
+    "LV3-Research/315-Character-Modelling.md",
+    "LV2-Units/209-Animation.md",
+    "LV2-Units/202-Digital-Games-Production.md",
+    "index.md",
+    "LV3-Research/319-Creating-3D-Digital-Animation.md",
+    "LV3-Research/316-Character-Rigging.md",
+    "Projects/334-Creating-a-Digital-Image-Portfolio.md",
+    "LV2-Units/205-Meeting-a-Digital-Media-Brief.md",
+    "LV2-Units/207-Making-a-Website.md"
+  ]
+}

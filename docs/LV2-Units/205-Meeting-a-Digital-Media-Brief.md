@@ -53,23 +53,29 @@ Overall, Ōkami is a game with incredible polish, with its gameplay, design, and
 In terms of intended destination and market, I aim to have this game appeal to fans of the 2D puzzle-platformer genre, and those interested in the combination of exploring and puzzle solving in games. As I am a solo developer, I will not consider nor require a budget for this project. As for resources, the game will be made using the Unity game engine, with necessary /assets either sourced from Unity's 2D Game Kit, or being made in GIMP or Piskel.
 ## Fulfilling a Brief
 ### <font color="#7359b3">(I) - Creating a Google Slides presentation about my game that follows a brief provided, and providing some screenshots of the slides.</font>
-![sl1.png](/docs/assets/sl1.png)
-![sl2.png](assets/sl2.png)
-![sl3.png](assets/sl3.png)
-[(PRESENTATION LINK)](https://docs.google.com/presentation/d/1uihzFB6cVMfp2LG9P_wz0HOBIHuOCBZqkd73Se9YEVE/edit?usp=drivesdk)
+![sl1.png](https://drive.google.com/thumbnail?id=1h2qOHzpS8XI9FiBTV1rL6246k4qXWsiJ&sz=s4000)
+![sl2.png](https://drive.google.com/thumbnail?id=16PljPgLTB6jFk2ip5XkyqT67NSDMC1Vv&sz=s4000)
+![sl3.png](https://drive.google.com/thumbnail?id=1NNaxdMFE9taZi9jk8KKZ_YC1xO3Ivvpt&sz=s4000)
+/// caption
+[**(PRESENTATION LINK)**](https://docs.google.com/presentation/d/1uihzFB6cVMfp2LG9P_wz0HOBIHuOCBZqkd73Se9YEVE/edit?usp=drivesdk)
+
+///
+
 ### <font color="#7359b3">(II) - Taking screenshots of my level development process, and of the game being played.</font>
-uhhh video link goes here
-![gs1.png](assets/gs1.png)
-![gs2.png](assets/gs2.png)
-![gs3.png](assets/gs3.png)
-![gs4.png](assets/gs4.png)
-![gs5.png](assets/gs5.png)
-![gs6.png](assets/gs6.png)
+
+![gs1.png](https://drive.google.com/thumbnail?id=1JocjDJjedBScnnTKzTPDCNNHaEcEaCsr&sz=s4000)
+![gs2.png](https://drive.google.com/thumbnail?id=1YPfehOQ0Ay77a3UK-0YyQ_NkDYryd1aW&sz=s4000)
+![gs3.png](https://drive.google.com/thumbnail?id=1T7yvIR8w_g-iznxA-9REWZu2reEdMXJ-&sz=s4000)
+![gs4.png](https://drive.google.com/thumbnail?id=1Mi8e8FXt8ZXRirE6V5tqKJ9la09YBgeN&sz=s4000)
+![gs5.png](https://drive.google.com/thumbnail?id=12FkYAzl1Dipokmq9qVdy-iOmzhJt2vgN&sz=s4000)
+![gs6.png](https://drive.google.com/thumbnail?id=1IZo2rfphbCoHPCE439zPkxRATjm8EWcJ&sz=s4000s)
+
+<iframe src="https://drive.google.com/file/d/1_fIyG0dSENMTj4HsXP8sNGBn6GE38zNE/preview" width="640" height="480" allow="autoplay"></iframe>
 ## Review
 ### <font color="#7359b3">Tutor Feedback</font>
 Maria’s level has been developed very nicely. The scale is a decent size, and they have taken their time in choosing nice décor in specific areas which adds a nice bit of variety visually for the player as they progress. The game includes enemies and some level movement systems, as well obstacles like closed doors where the player must locate a pressure pad in order to progress to the final area. Interesting ways to kill enemies such as moving heavy objects so they fall and kill the enemy have been included, which was a nice touch!
 #### <u>Suggested Improvements</u>
-I feel that Maria could have taken the decoration for her level a step further - giving each area of her level more attention so that the player really feels like they’re moving into something different as they progress. Maria could have added more enemies the further the player progresses through the level, as this would create an increase in difficulty for the player the further they get. If Maria had more time to develop their game, including a second or even 3rd level with a different aesthetic style and level design would have also been good.
+I feel that Maria could have taken the decoration for her level a step further - giving each area of their level more attention so that the player really feels like they’re moving into something different as they progress. Maria could have added more enemies the further the player progresses through the level, as this would create an increase in difficulty for the player the further they get. If Maria had more time to develop their game, including a second or even 3rd level with a different aesthetic style and level design would have also been good.
 ### <font color="#7359b3">Self Evaluation</font>
 *Overall, how did you find making the game? Was it difficult, did you find certain parts frustrating? or did you find it fairly easy to get to grips with? Why?*
 - I found using the 2D Game Kit not overwhelmingly difficult but not easy either; I struggled with learning how to use certain parts effectively, and level design was a challenge when I was still only getting to grips with using the provided tools, leading to a lot of discarded levels and ideas.

@@ -25,46 +25,73 @@ There are generally two different ways to draw an animation - these are straight
 Slow in and slow out as a principle of animation is the tuning of acceleration and deceleration of movement. Most natural movements are never completely linear; they often start slowly, pick up movement midway, then slow to a stop at the end. By replicating this in animation, something that can be achieved through using more frames for the start and stop of a motion and fewer for the middle, an animator can quickly make their movements more realistic and pleasing to the eye. This principle is particularly helpful to remember when creating impactful movements that the viewer can easily track with their eyes, as the slow in aspect can serve as its own kind of anticipation - and using slow in slow out in tandem with anticipation is what prevents motions from being so sudden the viewer can't process it. Additionally, exaggerating your use of this principle can create stylised and striking motions as opposed to keeping a wholly predictable, flat speed, helping keep visual interest.
 ## Creating Animations
 ### <font color="#7359b3">(I) - Making an animation of a bouncing ball using one of the 5 types of animation and employing the ‘Squash and Stretch’ principle.</font>
-![balling](assets/balling.gif)
-
+![balling](https://drive.google.com/thumbnail?id=1FurKEM4PzTkX0rwc4nUReBN8ZkPP7hjq&sz=s4000)
+/// caption
 ***b o i o i o i n g***
+///
 ### <font color="#7359b3">(II) - Using the knowledge acquired from the ball bounce and reference footage to create a walk cycle.</font>
 #### <u>Process</u>
+
+
 1. Basic Movement
+
 2. Structure + Forms
 
-![WALK12](assets/WALK12.gif)
+    ![WALK1](https://drive.google.com/thumbnail?id=1LvzRs6y8ave6L9CV4oe3Nh2OmGcs0z6p&sz=s300)
+    ![WALK2](https://drive.google.com/thumbnail?id=1gOd0HfhZ0-UhqJq9_4kZr45FW7GX0vPo&sz=s300)
 
 3. Final Sketches
+
 4. Cleanup & Linework
 
-![WALK34](assets/WALK34.gif)
-#### <u>Finished Product</u>
-+Colour and textures
-![walkfin](assets/walkfin.gif)
+    ![WALK3](https://drive.google.com/thumbnail?id=1Kw9Td2rWDuyIGQQ9j2HOvs2-aOX5dv_6&sz=s300)
+    ![WALK4](https://drive.google.com/thumbnail?id=1oILzGKd_WXgutzQVnvy7kLMBK44FOUm4&sz=s300)
+
+
+#### <center><u>Finished Product</u></center>
+
+![walkfin](https://drive.google.com/thumbnail?id=1Ef4Ek1VZElwM5ZrUTKKvOZpbRmf-RwvP&sz=s4000)
+///caption
+(added colour and textures)
+///
 
 ### <font color="#7359b3">(III) - Using the knowledge acquired from the walk cycle along with reference footage to create a run cycle.</font>
 #### <u>Process</u>
 1. Basic Movement
 2. Structure + Forms
 
-![RUN12](assets/RUN12.gif)
+    ![RUN12](https://drive.google.com/thumbnail?id=13O1_LhKhmr72iVsnVNx2XV5kyG4HyAcz&sz=s4000)
 
 3. Scale to target resolution
 4. Final shapes and colours
 
-![RUN34](assets/RUN34.gif)
-#### <u>Finished Product</u>
-+Details and shading
-![onebadgloop](assets/onebadgloop.gif)
+    ![RUN34](https://drive.google.com/thumbnail?id=1dT4x7pgoIxrRxyMBaoQPQASa0FdOXnEv&sz=s4000)
+
+#### <center><u>Finished Product</u></center>
+
+![onebadgloop](https://drive.google.com/thumbnail?id=1IJRTfgGVl_wriTFrZtmN52_tIrCxL501&sz=s4000)
+///caption
+(added details and shading)
+///
+
 ## Review
+
 ### <font color="#7359b3">Tutor Feedback</font>
+
 #### <u>Bouncing Ball</u>
+
 Maria has done a good job utilising the squash and stretch principle here, and has also taken time to add colour and shading in greyscale, which adds a subtle hint of depth to the ball as an object.
+
 #### <u>Walking Animation</u>
+
 Maria has gone above and beyond with the walking animation. The frame number looks high, the quality is superb and the finish on the scythe and the overlay of a fabric-like texture really blends the whole thing together nicely. The character looks unique and the walk has style - very impressive.
+
 #### <u>Running Animation</u>
+
 The style has gone back to pixel-art and the impression of a character running has definitely been achieved - the anticipation of each step is there, and the added feature of smoke plumes coming off the character's head is a nice touch.  
+
 Only suggested improvement might be a less prevalent outline on the character as it is quite thick relative to the body, however this could easily just be a stylistic choice.
+
 ### <font color="#7359b3">Self Evaluation</font>
+
 When approaching this task in the future, I think that I would try to refine the final products and my techniques further. For example, while I was able to make use of keyframes, references, arcs, layer folders, and blending modes to an extent, I wasn't fully familiar with them all yet. Given the chance to do it again, I would aim to further capitalise on those techniques, and make the process efficient enough that instead of focusing on learning the basics, I could better spend that time on more advanced ideas like dynamics, composition/staging, stylization, adding appropriate detail, etc.

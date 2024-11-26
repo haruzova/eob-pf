@@ -34,53 +34,54 @@ Hue essentially refers to the name of a colour (eg: red, blue, green). As oppose
 Saturation is what determines how strong a given colour is. This is typically determined using a scale of 0-100, and the higher the saturation, the more intense or 'colourful' a colour will appear. The reverse is also true, in that a saturation value of 0 will result in a colour that is greyscale.
 #### <u>Opacity/Alpha</u>
 Opacity, or alpha, determines how opaque a digitally rendered layer, colour, image etc. is, via a scale of 0.0 to 1.0. A value of 1 will result in an asset being fully opaque, while 0 results in complete transparency; additionally, an image with an alpha value of 0.5 would be semi-transparent, but still visible.
+
 ## Creating Digital Art
+
+
+(https://drive.google.com/thumbnail?id=
+&sz=s4000)
+&sz=s300)
+
 ### <font color="#7359b3">(I) - Re-creating 3 classic video game characters using any pixel art software.</font>
-#### <u>Buddy Simulator 1984</u>
-**ORIGINAL**
+#### <center><u>Buddy Simulator 1984</u></center>
 
-![okbuddy](assets/okbuddy.jpg)
+<center>![okbuddy](https://drive.google.com/thumbnail?id=1LSrVtCeVy4oaJJbKp31binBbTNHJWX7n&sz=s300)
+![plinko](https://drive.google.com/thumbnail?id=1TJUhSqI3dTkh2vqSGq7oW023kYFEmTwq&sz=s300)</center>
 
-**REMAKE**
+<center>*Original (left) and remake (right)*</center>
 
-![plinko](assets/plinko.png)
 
-#### <u>deltarune</u>
-**ORIGINAL**
+#### <center><u>deltarune</u></center>
 
-![krimple](assets/krimple.png)
+<center>![krimple](https://drive.google.com/thumbnail?id=12xTLW3T8xzCX0xwOqP6HDqtdz1At0whN&sz=s300)
+![crimble](https://drive.google.com/thumbnail?id=1oXAFmiYikAj_iXQROUyaJi3lsbNxTB3D&sz=s300)</center>
 
-**REMAKE**
+<center>*Original (left) and remake (right)*
+(its called aura bruh)</center>
 
-![crimble](assets/crimble.png)
+#### <center><u>Pokemon</u></center>
 
-#### <u>Pokemon</u>
-**ORIGINAL**
 
-![LOVETHISANIMAL](assets/LOVETHISANIMAL.png)
+<center>![LOVETHISANIMAL](https://drive.google.com/thumbnail?id=1VtYjdFUeY5kJyrYUcRJkB--hu_9Nh-PU&sz=s300)
+![BIMBINIS](https://drive.google.com/thumbnail?id=1Shqrp_Q620kVYmYjJ2_e-rbbhdWWW302&sz=s300)</center>
 
-**REMAKE**
-
-![BIMBINIS](assets/BIMBINIS.png)
+<center>*Originals (left) and remakes (right)*</center>
 
 ### <font color="#7359b3">(II) - Re-creating 2 images of a video game character using any painting/vector drawing software.</font>
-#### <u>Hollow Knight</u>
-**ORIGINAL**
+#### <center><u>Hollow Knight</u></center>
 
-![ghoit](assets/ghoit.jpg)
+<center>![ghoit](https://drive.google.com/thumbnail?id=1dFBy1h1isrcV9ilZHUM2doh8od7b5iFa&sz=s400)
+![GOHT FIN](https://drive.google.com/thumbnail?id=1UDQFERI9CUcw_JkYdOmXjb1kcyKRwtsG&sz=s400)</center>
 
-**REMAKE**
+<center>*Original (left) and remake (right)*</center>
 
-![GOHT FIN](assets/GOHT_FIN.png)
-#### <u>ULTRAKILL</u>
+#### <center><u>ULTRAKILL</u></center>
 
-**ORIGINAL**
+<center>![straightpeople](https://drive.google.com/thumbnail?id=1e8IEVgKxSJYPPiEj4yziYnh1xUFofvHI&sz=s400)
+![GAYPEOPLE](https://drive.google.com/thumbnail?id=174vA3BvM8lIsLCYcRZ6tiMezVw0CBeXR&sz=s400)</center>
 
-![straightpeople](assets/straightpeople.png)
+<center>*Original (left) and remake (right)*</center>
 
-**REMAKE**
-
-![GAYPEOPLE](assets/GAYPEOPLE.png)
 ## Review
 ### <font color="#7359b3">Tutor Feedback</font>
 Overall I am extremely impressed with the quality of these images! The first 3 pixel art-style recreations use the originals more as references that Maria then expanded on with their own creative ideas. The ‘recreations’ are more like brand new pieces besides the 3rd, which is a faithful recolouring of the original. I feel that these recreations are a very impressive interpretation that improved on the originals. 

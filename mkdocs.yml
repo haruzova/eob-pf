@@ -1,5 +1,5 @@
 site_name: Portfolio Site
-site_url: https://haruzova.github.io/eob-portfolio/
+site_url: https://haruzova.github.io/eob-pf/
 
 theme: 
 
@@ -36,6 +36,7 @@ plugins:
   - ezlinks:
       wikilinks: true
       reference_links: true
+  - glightbox
   
 
 extra_css:
@@ -43,5 +44,8 @@ extra_css:
 
 
 markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
   - pymdownx.highlight:
       line_spans: __span

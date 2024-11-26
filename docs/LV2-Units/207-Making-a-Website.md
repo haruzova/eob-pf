@@ -46,40 +46,56 @@ Snapchat appeals to users who enjoy an ephemeral style of content and casually k
 - Doesn’t incorporate accessibility features, or does so inappropriately (inaccurate image descriptions, etc.)
 ## Creating a Website
 ### <font color="#7359b3">(I) - Making a site map for the pages, sub pages and navigation of my website.</font>
-![webmap](assets/webmap.webp)
 
-low res because WixMoment_bottomtext.jpg and i lost the original but you get my drift
+![webmap](https://drive.google.com/thumbnail?id=1Nfa0yTQEDNvSjDYWKkarEab6JNnUU-g9&sz=s4000)
+/// caption
+low res because Wix squorshed it and then i lost the original but um
+///
+
 ### <font color="#7359b3">(II) - Taking screenshots of different pages on my website, and adding descriptions of the pages and what will be going on them.</font>
 > **Disclaimer - 10/05/24**
 
 > This is the original website I had used at the time of completing Level 2, made using Wix. It was miserable to use and became un-editable during Level 3, so I switched to a completely different way of handling things, and the current site isn't laid out like this anymore.
-#### <u>Homepage</u>
-![s1](assets/s1.webp)
-
+#### <center><u>Homepage</u></center>
+![s1](https://drive.google.com/thumbnail?id=1MRlzhWHCX5Cx4l1oKIXCTGkIxer4JsjH&sz=s4000)
+/// caption
 This is the home page. Its purpose in my website will be to serve as a jumping off point/introduction to the rest of the site; this is partially visible on the page, with links to the two main sections of the site, the gallery and units pages, but I also intend to add things like an introduction and different visual elements.
-#### <u>Units</u>
-![s2](assets/s2.webp)
+///
 
+#### <center><u>Units</u></center>
+![s2](https://drive.google.com/thumbnail?id=1M4rCOH4814Vt9-Hth9_BbASYEcoYeVRu&sz=s4000)
+/// caption
 This is the Units table of contents. Its purpose is to clearly display the different units and allow for fast navigation to specific topics. It has a button for each unit that links to their respective pages. I intend to change the layout of it somewhat, or fuse it with the homepage for simplicity, and add visual elements to better describe and distinguish the units.
-#### <u>Gallery</u>
-![s3](assets/s3.webp)
+///
 
+#### <center><u>Gallery</u></center>
+![s3](https://drive.google.com/thumbnail?id=1HOo7ZnUofzgM45jrujUo2-VXRqpIRsno&sz=s4000)
+/// caption
 This is the gallery page. Like the units page, it contains a table of contents for different pages, this time for other work not related to the units. I intend to add personal projects and work here, as well as change this page so that instead of linking to different pages, it organises the different types of work like the different tasks in the unit pages, as navigable sections.
-#### <u>207 - Making a Website</u>
-![s4](assets/s4.webp)
+///
 
+#### <center><u>207 - Making a Website</u></center>
+![s4](https://drive.google.com/thumbnail?id=1v0q1m9QPStdLsYVCqG0QEfkryc7dtltu&sz=s4000)
+/// caption
 This is the unit page for unit 207. It is part of the portfolio and contains the task prompts and some of the work done for this unit, organised by tasks. I intend to add the rest of this unit’s work as it is completed.
-#### <u>209 - Animation</u>
-![s5](assets/s5.webp)
+///
 
+#### <center><u>209 - Animation</u></center>
+![s5](https://drive.google.com/thumbnail?id=1SJeFrugMF-Gann7CwWYveB2KpE37M-ev&sz=s4000)
+/// caption
 This is the page for unit 209. It is a part of the portfolio and contains the task prompts for the unit and some of the work done such as written work and animations, organised by tasks. I intend to add the rest of this unit’s work as it is completed.
-#### <u>210- Creating Digital Art</u>
-![s6](assets/s6.webp)
+///
 
+#### <center><u>210- Creating Digital Art</u></center>
+![s6](https://drive.google.com/thumbnail?id=18l-t34yWa47hfR00u9XipgNDuIQr95qy&sz=s4000)
+/// caption
 This is the page for unit 210. It is another part of the portfolio and contains the task prompts and most of the work done such as the written work and image recreations, organised by tasks. I intend to add the rest of this unit’s work as it is completed.
+///
+
 ### <font color="#7359b3">(III) - Taking and annotating screenshots of different pages on my website in mobile view.</font>
-![msa1](assets/msa1.png)
-![msa2](assets/msa2.png)
+![msa1](https://drive.google.com/thumbnail?id=11542Vc8tFG1ghgbnxF-Ay3Yr04ab5wns&sz=s4000)
+![msa2](https://drive.google.com/thumbnail?id=1fz_1Wk2fJp879yo2Mc0l_dViINfpGf2s&sz=s4000)
+
 ### <font color="#7359b3">(IV) - Explaining how I decided to design my website and the website’s purpose.</font>
 When designing my website, I decided to go with as simple an idea as possible, using limited colours. This is because the site exists as a portfolio, and I wanted the content showcased on it to stand out and not be distracted from by a lot of visual or mental clutter from flashy visuals or confusing navigation. It’s also due to it being my first attempt at designing a website, so going for complicated things right away could be counter-intuitive and make the site harder to edit for mobile view, additional pages, etc. Some parts of the website I feel are redundant or overly complex still, however, and will simplify in the future to keep consistency. 
 

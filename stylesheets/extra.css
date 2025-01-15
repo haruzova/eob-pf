@@ -1,0 +1,21 @@
+header {
+  color: #413461;
+  background-color: #decef2;
+  border-radius: 0px 0px 0px 0px;
+  border-bottom: 5px double #decef2;
+}
+.md-typeset h1{
+  text-decoration: underline solid #8e6be8;
+  color: #c18bff;
+}
+h2 {
+  color: #413461;
+  font-weight: bold;
+  background-color: #decef2;
+  border-radius: 10px;
+  outline: 5px solid #decef2;
+}
+h3 {
+  text-transform: unset;
+  color: #8e6be8;
+}

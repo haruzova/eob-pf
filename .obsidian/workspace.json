@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Projects/315-Character-Modelling.md",
+                "file": "docs/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "315-Character-Modelling"
+              "title": "index"
             }
           }
         ]
@@ -162,7 +162,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "17f934569935dcb6",
+  "active": "fcea39c3b7e98942",
   "lastOpenFiles": [
     "docs/Projects/302-Creating-a-Digital-Game.md",
     "Screenshot_20230929-162642_Godot.md"

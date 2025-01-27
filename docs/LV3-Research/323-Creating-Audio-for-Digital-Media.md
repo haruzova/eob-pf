@@ -76,7 +76,8 @@ Music Arrangement is part of music creation that happens after composition, wher
 1. Primarily a destructive editor
 2. Somewhat unintuitive UI
 3. Becomes clunkier to use the more advanced a project is
-> [!NOTE]
+> NOTE:
+>
 > Depending on the user's preference, destructive editing may be ideal, so this is subjective as a con.
 
 #### <u>AVID Pro Tools</u>

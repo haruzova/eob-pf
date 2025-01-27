@@ -58,7 +58,7 @@ I think that Dead Cells' target audience would be more aimed towards people inte
 ## Creating a Functional Demo
 ### <font color="#7359b3">(I) - Making 3 of Unity's Create With Code courses, and recording a short playtest of each.</font>
 <u>**Prototype 1**</u>
-<iframe src="https://drive.google.com/file/d/1u2HWeZ3WVzraFUIGqBZ3WD-NWmAlHYnE/preview" width="640" height="480" allow="autoplay"></iframe>
+![type:video](https://drive.google.com/file/d/1u2HWeZ3WVzraFUIGqBZ3WD-NWmAlHYnE/preview)
 
 ### <font color="#7359b3">(II) - Writing a simple left-right player controller script in C# for Unity, and explaining how it works.</font>
 ```playerController

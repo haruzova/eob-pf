@@ -17,8 +17,9 @@ Nick Park is an animator and film producer who is known for his work on works su
 Rebecca Sugar is a writer, animator and songwriter, best known for their work as a storyboarder and writer on Adventure Time, and as the creator of Steven Universe. Most of the works Sugar is involved with animating or storyboarding for, or otherwise contributing to are 2D cartoon-style animations. Being the first nonbinary person to independently create a series on Cartoon Network, and being dedicated to creating family-friendly work featuring queer representation in order to bring positive exposure to young people who might not find it elsewhere, Sugar is a unique figure in animation in several ways.
 ## The 12 Principles
 ### <font color="#7359b3">(I) - Explain how each of the 12 Animation Principles are being applied in this Toy Story animation</font>
-![bzzzzzz](assets/awawawa.gif)
-> [!DISCLAIMER]
+![bzzzzzz](https://drive.google.com/thumbnail?id=1Y9o6op8ExCWoqJMASpKnUIUZ3i98vR-N&sz=s4000)
+> DISCLAIMER
+>
 > The purpose of the 12 Principles of Animation was that they were principles referenced by 2D animators at Disney. They are not really designed to be something the viewer can easily look for; rather being something you think about when creating your own animations (or in the case of appeal, character designs). Even disregarding the fact that some of the 12 Principles simply do not apply to 3D animation, to explain "how each of the principles are being applied" in a single, short clip of an already-finished movie borders on Sisyphean. Instead, I've chosen to focus primarily on those that are applicable and observable.
 
 **Staging** is one of the most noticeable principles at play here. In the first shot where Buzz first jumps, the perspective used makes every object appear to point to the upper middle of the frame, naturally drawing the eye there. Additionally, the blank ceiling makes the movement even clearer and gives him a clear silhouette, which when combined with the **slow in/slow out** that is used to build **anticipation** for his fall (which displays both **timing** and **exaggeration**), makes it appear for a moment as though he is flying. The **appeal** that Disney/Pixar used in their character designs is highlighted here, as the striking plane-like silhouette of Buzz as a character is what helps this scene make the references it does.
@@ -50,8 +51,10 @@ Interpolation is the process of filling in the frames between one key frame and 
 ### <font color="#7359b3">(I) - Explain what Blocking is in terms of creating animations.</font>
 Blocking is somewhat similar to creating keyframes, but happens before creating the final animation, being the part of the 3D animation workflow where all the basic key poses, placements and composition of a scene is laid out. The main differences between blocking and keyframing other than their placement in the animation roadmap are that blocking forgoes using any interpolation, keeping only the key poses and serving as a kind of detailed working storyboard, while also including some extra frames to explain or establish the timing of particular actions or events, which isn't necessary when keyframing since those things should already be established and now just need to be expressed for the final product.
 ## Procedural Animation
-![TRUE_Procedural_Animation_En](assets/TRUE_Procedural_Animation_En.gif)
+![TRUE_Procedural_Animation_En](https://upload.wikimedia.org/wikipedia/commons/0/0d/TRUE_Procedural_Animation_En.gif)
+/// caption
 (oh, [procedural animation wikipedia gif](https://en.m.wikipedia.org/wiki/File:TRUE_Procedural_Animation_En.gif), we're really in it now)
+///
 ### <font color="#7359b3">(I) - Explain what procedural animation is, and why one might use it in a game design project.</font>  
 Procedural animation is a kind of computer animation technique that involves automatically generating the movements required for an animation in real time. Unlike motion capture or keyframed animation, procedural animation uses programming logic to dynamically determine where and how bones should be moving, which is useful in a lot of situations in game design where environmental factors could make premade animations look strange on their own. Since games have a lot of moving parts and animations are used in all sorts of contexts and spaces, procedural animation is a way to eliminate the need for making a ton of slightly-different copies of the same animation for each different circumstance.
 ### <font color="#7359b3">(II) - Give three examples of where procedural animation could be used in a game. </font>

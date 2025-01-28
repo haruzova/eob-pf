@@ -5,7 +5,7 @@
 - [Review](#review)
 ----
 ## Platforms and Audiences
-### <font color="#7359b3">(I) - Researching and defining some key terms used in Games Development</font>
+### (I) - Researching and defining some key terms used in Games Development
 #### <u>Game Engine</u>
 A game engine is a type of software framework designed to be used in video game development. They serve the purpose of laying out the framework for game design and development without needing to build the entire backend from scratch first or painstakingly hard-code every individual part of a game, reducing the labour required and making the process both more efficient and simpler. Game engines offer a number of tools and functions to assist in game development, such as rendering engines and collision detection, alongside providing platform abstraction that allow the same game to be made to run on multiple platforms.
 #### <u>Prefab</u>
@@ -14,7 +14,7 @@ A prefab is something akin to a template for game objects in game development. T
 An asset essentially refers in shorthand to anything that goes into a video game. This can be a texture, object, environment, model, sound, VFX, script, character... /assets are the essential building blocks placed into game engines and used by developers to build into games, and the types of /assets used can therefore vastly change how the final product will look, feel, and play.
 #### <u>Game Design Document</u>
 Game design documents are a kind of design document for game design and development that exist to define and illustrate the core concepts and ideas behind a game project. They often cover as many aspects of a game as possible, including things such as the core gameplay and mechanics, visual style, storylines, what kinds of /assets will be needed, and the development schedule/plans for release. It's important to create a game design document before seriously beginning development on a project, in particular for games made by multiple people, each who may have their own, conflicting creative vision.
-### <font color="#7359b3">(II) - Comparing various popular gaming platforms</font>
+### (II) - Comparing various popular gaming platforms
 #### <u>PS4</u>
 The PS4 is a gaming console developed by Sony. It offered immersive gaming experiences and a huge library of games; the console was extremely popular on release and remains so to this day, being one of the best-selling consoles of all time.
 
@@ -39,7 +39,7 @@ The hardware of the Switch is far from as impressive as the standard modern home
 The game library of the Switch resembles a mix of both the mobile and PS4 libraries, with some mobile games being available on the platform, but with a vast selection of the more content-rich games you'd find on consoles. The Switch features both its own controllers, and a touch screen, making it the most flexible of the three in terms of control variety. The two Joy-cons provided with the console can be used as two separate controllers for multiplayer, attached to the console for handheld play, or placed in a controller grip to use as a single wireless controller. This degree and ease of choice is unique to the Switch, and greatly enhances play by enabling games to use the controllers in interesting ways. It also has some motion controls, which are mostly only capitalised on by Nintendo's own games, but are still a nice feature to have and when used well. Unfortunately, the Joy-cons don't have analog triggers or sticks, limiting the detail of control players can have, and there are issues with joystick drift that have earned them a reputation, however free repairs/replacements are thankfully offered for such cases.
 
 The Nintendo Switch can be seen as a halfway-point between the other two gaming platforms here; a games console that has both the portability and convenience of mobile while keeping a large library of high-quality games like the PS4. While its appeal doesn't quite reach to the hyper-competitive or hyper-casual ends of the spectrum, who may not find value in the hybrid-design feature, it's ideal for anyone in between, even if one already has a home console/mobile device for gaming, and especially so for more social gamers or families due to the ease of local multiplayer.
-### <font color="#7359b3">(III) - Describing the characteristics of four different game genres and giving examples of each</font>
+### (III) - Describing the characteristics of four different game genres and giving examples of each
 #### <u>MMO</u>
 MMO stands for Massive Multiplayer Online, and is a type of game that allows large numbers of players to play together in the same world. The game's genre can vary, but most MMOs will feature player interactions through combat/cooperation/strategy/chat features, provide regular updates with new content, and tend to have an emphasis on being somewhat open-world. Examples of MMOs include: FFXIV, World of Warcraft, Black Desert Online, Wizard101, and Old School Runescape.
 #### <u>FPS</u>
@@ -48,7 +48,7 @@ FPS games, or first-person shooters, are just that-- they feature shooting as th
 Infinite runners, or endless runners, are games that feature core gameplay based around infinitely generating levels that the player is pushed to constantly move forward through without a clear end point. These tend to be high score based and auto scrolling with linear design, often having only a single level that progresses in difficulty or changes appearance over time. Some infinite runners have no real progression besides increasing the player's knowledge/skill, while others take a roguelike-like approach, with score, experience or collected items used for upgrades that help players achieve higher scores. Examples of such games would include: Temple Run, Subway Surfers, Sonic Dash, Crossy Road, and Dinosaur Game.
 #### <u>Open world/Sandbox</u>
 Sandbox/Open world games are both defined by the types of player freedom each genre grants. In sandbox games, the player is free to do whatever they please with the tools and gameplay mechanics given to them; much like an actual sandbox, the game provides tools and the player decides how to use them. Open world, on the other hand, refers to games that give the player freedom to explore and progress in a typically expansive world. Thus, open world sandbox games are those which adhere to both genres simultaneously. This fusion of two genres is common enough that "sandbox" on its own is often already assumed to mean "open world sandbox", though the two are not inherent to each other. Some examples of sandbox and/or open world games are: Terraria, Minecraft, Rust, Garry's Mod, and Stardew Valley.
-### <font color="#7359b3">(IV) - Describing what I think the target audience or demographic is for various games.</font>
+### (IV) - Describing what I think the target audience or demographic is for various games.
 #### <u>Kingdom Hearts III</u>
 The target audience for Kingdom Hearts III most likely includes those who were already fans of the Kingdom Hearts franchise, of Disney characters, and/or of Square Enix games. This would also include people who have nostalgia relating to the other games, along with fans of the Action RPG genre it belongs to and who enjoy hack-and-slash gameplay; this being particularly true for younger people looking for games in the genre, due to its accessible E10+ rating.
 #### <u>Overwatch</u>
@@ -56,11 +56,11 @@ Overwatch's target audience is fairly broad, being rated PEGI 12 and with both c
 #### <u>Dead Cells</u>
 I think that Dead Cells' target audience would be more aimed towards people interested in the challenging skill-based gameplay and gradual progression of roguelike games, and those who enjoy the exploration elements found in Metroidvania games. Being a combination of those two genres, it has a distinct appeal and will be interesting to those looking for unique games, but is still recognisable and enjoyable to the fans of each genre. Additionally, it has appeal to fans of indie games, being known as an example of high-quality indie titles. It has a higher bar for entry, being rated PEGI 16, but despite the darker elements and higher difficulty, still contains humour and rewarding gameplay, which gives an element of accessibility for more casual players who just want to have fun with games.
 ## Creating a Functional Demo
-### <font color="#7359b3">(I) - Making 3 of Unity's Create With Code courses, and recording a short playtest of each.</font>
+### (I) - Making 3 of Unity's Create With Code courses, and recording a short playtest of each.
 <u>**Prototype 1**</u>
 ![type:video](https://drive.google.com/file/d/1u2HWeZ3WVzraFUIGqBZ3WD-NWmAlHYnE/preview)
 
-### <font color="#7359b3">(II) - Writing a simple left-right player controller script in C# for Unity, and explaining how it works.</font>
+### (II) - Writing a simple left-right player controller script in C# for Unity, and explaining how it works.
 ```playerController
 
 public class playerController : MonoBehaviour
@@ -83,7 +83,7 @@ public class playerController : MonoBehaviour
    }
 ```
 ## Review
-### <font color="#7359b3">Self Evaluation</font>
+### Self Evaluation
 #### <u>How easy/hard did you find it to produce the 3 ‘Create with Code’ projects, and why?</u>
 Producing the Create with Code projects provided a challenge, but overall was not too difficult, as the instructions were clear and concise, and there were comments under each step that helped with bug fixing.
 #### <u>Did you find it easy/hard to follow along with writing the code/scripts you needed to make these games work? Why?</u>

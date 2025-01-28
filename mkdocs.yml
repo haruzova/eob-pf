@@ -51,3 +51,4 @@ markdown_extensions:
   - pymdownx.blocks.caption
   - pymdownx.highlight:
       line_spans: __span
+  - tables

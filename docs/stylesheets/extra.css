@@ -1,33 +1,72 @@
 header {
-  color: #413461;
-  background-color: #decef2;
   border-radius: 0px 0px 0px 0px;
   border-bottom: 5px double;
 }
 .md-typeset h1{
-  text-decoration: underline solid #3b2b63;
-  color: #c18bff;
+  text-decoration: underline solid var(--md-hl-color);
+  color: var(--md-hl-color);
   font-weight: 1000;
 }
 .md-typeset h2{
-  text-decoration: underline solid #3b2b63;
-  color: #c18bff;
+  text-decoration: underline solid var(--md-h2-color);
+  color: var(--md-h2-color);
   font-weight: 1000;
 }
-
-h3 {
-  text-transform: unset;
-  color: #8e6be8;
+.md-typeset h3{
+  font-weight: 1000;
+  color: var(--md-h3-color);
+}
+.md-typeset h4{
+  font-weight: bolder;
+  color: var(--md-h4-color)
+}
+.md-typeset h5{
+  font-weight:  500;
+  color: var(--md-h4-color)
+}
+.md-typeset h6{
+  font-weight: 500;
+  color: var(--md-h4-color)
 }
 
-:root {
-  --md-primary-fg-color:        #EE0F0F;
-  --md-primary-fg-color--light: #ECB7B7;
-  --md-primary-fg-color--dark:  #90030C;
+tr {
+  background-color: var(--md-mid-color);
+  font-size: medium;
+}
+
+
+
+[data-md-color-scheme="light"] {
+  --md-default-bg-color:        #d6d1e6;
+  --md-typeset-color:           #241f31;
+  --md-hl-color:                #8b50cf;
+  --md-h2-color:                #9474e7;
+  --md-h3-color:                #9280e2;
+  --md-h4-color:                #8082e2;
+  --md-primary-fg-color:        #a380e2;
+  --md-primary-bg-color:        #d6d1e6;
+  --md-accent-fg-color:         #a380e2;
+  --md-accent-bg-color:         #a380e2;
+  --md-typeset-table-color:   #8082e2;
+  --md-mid-color: #ad8ff827;
 }
 
 [data-md-color-scheme="dark"] {
-  --md-primary-fg-color:        #EE0F0F;
-  --md-primary-fg-color--light: #ECB7B7;
-  --md-primary-fg-color--dark:  #90030C;
+  --md-default-bg-color:        #241f31;
+  --md-typeset-color:           #d6d1e6;
+  --md-hl-color:                #ad78e9;
+  --md-h2-color:                #9474e7;
+  --md-h3-color:                #9280e2;
+  --md-h4-color:                #8082e2;
+  --md-primary-fg-color:        #a380e2;
+  --md-primary-fg-color--light:   #80e28d;
+  --md-primary-fg-color--dark:   #e2d380;
+  --md-primary-bg-color:        #d6d1e6;
+  --md-accent-fg-color:         #a380e2;
+  --md-accent-fg-color--transparent: #80e28d;
+  --md-accent-bg-color:         #a380e2;
+  --md-accent-bg-color--light: #80e28d;
+  --md-default-fg-color: #80e28d;
+  --md-typeset-table-color:   #8082e2;
+  --md-mid-color: #ad8ff827;
 }

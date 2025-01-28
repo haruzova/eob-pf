@@ -1,16 +1,16 @@
 # 318 - Creating 3D Digital Art
-### <font color="#7359b3">Final Product</font>
+### Final Product
 [Gameplay Recording](https://drive.google.com/file/d/14j_uVh6Vw-HYkHUhp80yvc1ZwdMKotzO/view?usp=drivesdk)
 (haven't figured out video embeds with mkdocs yet so just click the link and pretend this image is the thumbnail)
 ![](Screenshot_2024-07-16_134810.png)
-### <font color="#7359b3">Software and tools used</font>
+### Software and tools used
 
 | **Game engine:** | Unreal Engine...5? I think? |
 | ---------------- | --------------------------- |
 | **Planning:**    | MS Paint                    |
 | ...that's it.    | how shrimple!               |
 
-### <font color="#7359b3">Self Evaluation</font>
+### Self Evaluation
 ***What is the project you have been working on this term?***
 
 - 3D Environment in Unreal Engine

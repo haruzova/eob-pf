@@ -1,14 +1,14 @@
 # 302 - Creating a Digital Game
-### <font color="#7359b3">Final Product</font>
+### Final Product
 ![type:video](https://drive.google.com/file/d/199mIUALFtldU87H-SbGBhyG4ghTByWn4/preview)
-### <font color="#7359b3">Software and tools used</font>
+### Software and tools used
 
 | **Game engine:**      | Godot 4.1 - 4.2                          |
 | --------------------- | ---------------------------------------- |
 | **Pixel art assets:** | Aseprite, Libresprite, Clip Studio Paint |
 | **Animated sprites:** | Clip Studio Paint, Libresprite           |
 
-### <font color="#7359b3">Self Evaluation</font>
+### Self Evaluation
 ***What is the project you have been working on this term?***
 
 - 2D Platformer Game in Godot
@@ -30,7 +30,7 @@
 - Making pixel art, tilesets especially, was really hard,because I'm not used to using colour so much, or doing the maths you need to do for tiling assets. Even if it's just basic +, - , x, / stuff... It's hard...
 
 ---- 
-### <font color="#7359b3">Creating pixel item sprites</font>
+### Creating pixel item sprites
 ##### 08/09/23
 ![bubger](https://drive.google.com/thumbnail?id=1gmLmYG4Wr3Vpe-U8KMUUCR_5339Ulme8)
 ![burger](https://drive.google.com/thumbnail?id=1rmMsdnj-EOCmAg_GXu-rm71lpPKMeqbD)
@@ -46,7 +46,7 @@ I made a GOHST in ASEPRITE and CSP
 AND CAKE !!!!!!!! 
 ![cake](https://drive.google.com/thumbnail?id=1CkZB7gw35g9kyCZCTPcqTsZleElxtl3l&sz=s200)
 
-### <font color="#7359b3">Character design and sprites</font>
+### Character design and sprites
 ##### 25/09/23
 ![wip sprite](https://drive.google.com/thumbnail?id=1U-BJeoJN8SiF7Y9bfu-WU8Xi7mJf3_RP&sz=s500)
 ![wipbingusidle.gif](https://drive.google.com/thumbnail?id=1NiRHTydQcPMKNvmGLSnIzzYXQ_8Q08EK&sz=s200)
@@ -58,7 +58,7 @@ Starting to create character sprite sheets for a 2D platformer in clip studio pa
 ![Spritesheet.png](https://drive.google.com/thumbnail?id=1Zemep0yPCRZAdlIlwQNBG4RroyLmPltY&sz=s300)
 
 Continuing to work on sprites and designing the player character (her name is bingus and she is a single celled organism)
-### <font color="#7359b3">Game environment</font> (02/10/23)
+### Game environment (02/10/23)
 ##### 02/10/23
 ![20230929-162642_Godot.png](https://drive.google.com/thumbnail?id=1MW2OOWFx3K63QivBLpPcodsBjw3oRFu9&sz=s4000)
 
@@ -98,7 +98,7 @@ In-game view (ft. some glitching tiles and an old second character sprite I test
 ### Adding hazards and platforms
 ##### ??/??/24
 
-I added a world barrier/kill box so if you fall into the spike pit you **<font color="#ff0000">DIE!!!!!!!!!!!!!!!!!!!!!!!</font>** i lost the picture for th
+I added a world barrier/kill box so if you fall into the spike pit you **<font color="#ff0000">DIE!!!!!!!!!!!!!!!!!!!!!!!** i lost the picture for th</font>
 
 ##### ??/??/24
 

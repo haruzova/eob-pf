@@ -8,18 +8,18 @@
 - [UV & Texturing (Skins)](#uv-texturing-skins)
 ----
 ## 3D Character Artists
-### <font color="#7359b3">(I) - Explain the role of a 3D Character artist.</font>
+### (I) - Explain the role of a 3D Character artist.
 3D character artists' primary job is to create the models for all the characters (players, enemies, NPCs) in games, usually based on concept art or previous designs/older models. They work within the specifications of a brief in order to translate it into a functional and game-ready 3D model.
 
 In order to be a 3D character artist, the most important skills would be proficiency in digital sculpting and modelling, as well as being comfortable with UV mapping and texturing. It's also helpful to have a high level of relevant technical and creative knowledge, such as having a confident understanding of edge loops and mesh topology, as well as general art fundamentals such as anatomy, structure, shapes, and silhouettes.
-### <font color="#7359b3">(II) - In your opinion, why do you think having good character art is important when making a game?</font>
+### (II) - In your opinion, why do you think having good character art is important when making a game?
 My actual opinion is that many video games do not require good character art - or character art at all, and its importance is defined by the needs of the particular project. However, in games heavily featuring/centering around characters, having good character art is indeed important, being useful to ensure each character design has the required appeal, coherence and clarity, and suits the game's theme and style. Character art can also help a lot with consistency, make the design and modelling/spriting process simpler and more scalable, as well as opening the door for more complex or nuanced character designs. If characters are present and important to the game being produced, then it will benefit significantly from having better character art.
 ## References
-### <font color="#7359b3">(I) - What are reference Images & why are they useful for 3D Character Modelling?</font>
+### (I) - What are reference Images & why are they useful for 3D Character Modelling?
 Reference images are images that artists of all kinds use as visual reminders or guidance when creating something; they are used in all kinds of creative work but are especially useful for areas that require design consistency, solid understanding of objects and details, such as 3D character modelling and character design.
 
 Trying to 3D model without references can be difficult and lead to inconsistent or unrealistic results, as reference images provide a way to directly compare your work with whatever object, part, subject or pose you're recreating or using as inspiration. This not only ensures your final result will resemble or evoke what it's supposed to, but frees up mental space and time that would have been wasted trying to figure out the correct structures and designs from memory, allowing that time and space to be spent on learning and applying theory and techniques to make sure the final model is high quality.
-### <font color="#7359b3">(II) - In your opinion, how many features of the following types of reference image should you use when making a 3D Character model for a game you plan on selling?</font>
+### (II) - In your opinion, how many features of the following types of reference image should you use when making a 3D Character model for a game you plan on selling?
 1. **Concept art made in-house by your team**
 2. **Images found online**
 
@@ -27,12 +27,12 @@ Trying to 3D model without references can be difficult and lead to inconsistent 
 
 For a commercial project where you are provided with concept art to use as a reference, you should prioritise the creative vision of said concept art when referencing it. Unless told otherwise, it's best to use as much of the final design/s as possible in your work for accuracy and cohesion's sake. As for images found online, these will also be helpful, but moreso in the sense that you can use these as references to achieve better understanding of the structure and add details that may be missing in any concept art.
 ## Character Turnarounds
-### <font color="#7359b3">(I) - What is a character turnaround & what applications do you imagine would be good for creating one?</font>
+### (I) - What is a character turnaround & what applications do you imagine would be good for creating one?
 A character turnaround is the practice of drawing a character from multiple angles in order to provide a 360-degree view of their design. Most any drawing software is usable for creating a character turnaround, though applications that feature layers and extensive transform and symmetry capabilities will make it a lot easier. Some examples of ideal software would include *Clip Studio Paint*, *Paint Tool Sai*, *Adobe Photoshop*, or *Procreate.
-### <font color="#7359b3">(II) - Why is a character turnaround useful for 3D Character Modelling?</font>
+### (II) - Why is a character turnaround useful for 3D Character Modelling?
 Creating a character turnaround before modelling allows you to know what a character should look like in 3D space, having a relevant reference for everything rather than creating the model from scratch and having to design at the same time as modelling. This makes it much easier to get a consistent and accurate result, and helps ensure your design won't only look good from the front.*
 ## Software And Tools
-### <font color="#7359b3">(I) - List 3 popular 3D modelling applications that can be used for character modelling, and evidence 2 strengths and 2 weaknesses minimum for each.</font>
+### (I) - List 3 popular 3D modelling applications that can be used for character modelling, and evidence 2 strengths and 2 weaknesses minimum for each.
 #### <u>Blender</u>
 **Pros:** 
 1. Free and open source
@@ -65,7 +65,7 @@ Creating a character turnaround before modelling allows you to know what a chara
 2. Steep learning curve
 3. Poorly suited for animation and rigging
 ## Poly Modelling, Sculpting & Re-topology
-### <font color="#7359b3">(I) - Explain what poly modelling, sculpting, and re-topology are, providing possible advantages and disadvantages each may have in regards to character modelling. Identify software or tools that can be used for each.</font>
+### (I) - Explain what poly modelling, sculpting, and re-topology are, providing possible advantages and disadvantages each may have in regards to character modelling. Identify software or tools that can be used for each.
 #### <u>Poly Modelling</u>
 - Software: *Blender, Maya, Modo.*
 
@@ -88,5 +88,5 @@ Re-topology, or retopo for short, is a process that aims to optimise and "clean 
 
 Retopo can be a pretty important step in 3D character modelling; if the initial model has bad topology or was sculpted with a lot of polygons, retopologising can easily be the difference between a model that can be made game-ready without issue, and one that deforms strangely when animated, is unnecessarily hard to texture, or causes performance issues. Taking the time to "remake" a model like this can feel redundant though, and for those who sculpt their models, it means spending time learning two different 3D skills to competence which is unideal and quite slow to start. In poly modelling, it's better to avoid having to retopologise at all, since it is usually possible to create good topology the first time with enough understanding and skill. That said, retopo can save a lot more time and stress, especially in game development where most character models are going to be UV'd, textured, rigged, animated, and real-time rendered; and even if the initial model has great topology, it can speed up the process of making lower poly versions significantly.
 ## UV & Texturing (Skins)
-### <font color="#7359b3">(I) - Briefly explain what UV unwrapping is, and why it is important for when you want to add textures to a 3D model.</font>
+### (I) - Briefly explain what UV unwrapping is, and why it is important for when you want to add textures to a 3D model.
 UV unwrapping is a process that involves unfolding the mesh of a model by cutting it in particular ways in order to flatten it into a 2D shape or "UV map". Creating this UV map is important for a lot of models, doubly so for complex or organically shaped ones, as it lets the software know where each pixel in a 2D texture will go on the 3D model itself.

@@ -5,7 +5,7 @@
 - [Review](#review)
 ----
 ## Key Concepts
-### <font color="#7359b3">(I) - Looking into games I have played and listing different marketing and promotional campaigns.</font>
+### (I) - Looking into games I have played and listing different marketing and promotional campaigns.
 #### <u>Overwatch</u>
 Starting in 2016, Blizzard Entertainment would release a series of animations which showcased the story, characters and world of their upcoming game at the time, Overwatch. These animations teased the lore of the game and got players invested in the featured characters prior to release by displaying their motives and backstory, as well as the high quality of the animations effectively showing the effort and polish being put into the game. This campaign would also continue after release, building and maintaining this interest.
 #### <u>Sky: Children of The Light</u>
@@ -13,13 +13,13 @@ In 2022, Thatgamecompany released a special crossover season for their free-to-p
 #### <u>The Last of Us</u>
 In order to promote the game The Last of Us, Naughty Dog celebrated "The Last of Us Day" (originally known as Outbreak Day) each year on the 26th of September; that being the day the Cordyceps infection first threw the game's world into chaos. By creating an annual event dedicated to the game, they could continue to bring people's attention back to the game in between releases. Making a tradition of dropping trailers, announcements, collectibles, and other standalone promotions for the game/s works to continually get players and fans excited each year, even in times when there's relatively little on offer.
 
-### <font color="#7359b3">(II) - Researching and discussing some processes and tools that could be used to create different marketing and promotional campaigns.</font>
+### (II) - Researching and discussing some processes and tools that could be used to create different marketing and promotional campaigns.
 #### <u>Game Trailer</u>
 In order to create a game trailer, various tools and processes are often used. Video editing software, screen recording software such as OBS, and audio editing software are all common tools involved, with the processes such as editing and recording a trailer being their purpose. Voiceovers, music, 3D animating and the software needed for each are also useful in creating game trailers, being the processes that allow for the creation of cinematic trailers such as the Overwatch animated shorts.
 #### <u>Posters</u>
 Creating promotional posters tends to require fewer tools and processes than trailers, but still requires careful work and planning. Posters are typically created using graphic design software such as Adobe Photoshop or GIMP, and additional tools such as digital drawing tablets are often used too. The processes involved may include making use of typography and art, sourcing different assets to use and then combining them in unique ways, creating thumbnail drafts to see how something looks before creating the whole poster, etc.
 
-### <font color="#7359b3">(III) - Analysing two game trailers for different games, and breaking them down to discuss how each one appeals to their different target audiences.</font>
+### (III) - Analysing two game trailers for different games, and breaking them down to discuss how each one appeals to their different target audiences.
 #### <u>Animal Crossing: New Horizons</u>
 ![type:video](https://www.youtube.com/embed/_3YNL0OWio0)
 
@@ -32,17 +32,17 @@ The gameplay shown in this trailer is deceptively simple, featuring busywork suc
 The game trailer for Doom Eternal establishes one factor of its target audience immediately; that it's rated M, and is suitable only for those 17+. The tension builds with the approach of a threatening dark soundtrack, and flash glimpses of various enemies and action scenes from the game, before exploding into a fast-paced showcase of the intense FPS combat the series is known for. It's made clear, with the heavy metal soundtrack and gratuitously brutal gameplay focused on flashy ultraviolence, that Doom Eternal is appealing to players looking for a power fantasy and an adrenaline rush. The flow of this trailer is as aggressive as it is smooth, mirroring the way gameplay itself feels to play, with descriptions from reviews showing up too to put extra emphasis on that fact and to entice players interested in the kind of dynamic action both the trailer itself and the reviews provide. Despite not appealing to as wide an audience as something with a lighter tone and lower age rating such as Animal Crossing: New Horizons, the Doom Eternal trailer is structured to have the exact same tone and feel as the game - such that it is certain anyone who enjoys the music, pacing or gameplay styles highlighted in the trailer, will enjoy the game for those very same qualities.
 
 ## Creating Promotional Material
-### <font color="#7359b3">(I) - Creating 3 different drafts for a promotional piece for one of the games mentioned above.</font>
+### (I) - Creating 3 different drafts for a promotional piece for one of the games mentioned above.
 #### <u>Draft 1</u>
 ![Draft1](https://drive.google.com/thumbnail?id=1nIFefA43aicBd1H5kELr7qNieHdWougN&sz=s4000)
 #### <u>Draft 2</u>
 ![Draft2](https://drive.google.com/thumbnail?id=1V-QiEEaUfX07muEchvKPMlL-vmaw0PQh&sz=s4000)
 #### <u>Draft 3</u>
 ![Draft3](https://drive.google.com/thumbnail?id=11-hQQVR9gcfzSz_Ws501TUBC_alwgwp4&sz=s4000)
-### <font color="#7359b3">(II) - Selecting one of the above drafts to refine into a final product.</font>
+### (II) - Selecting one of the above drafts to refine into a final product.
 ![DFINISHED](https://drive.google.com/thumbnail?id=1HA6L0f6tAU3EYkDo92fVac4wOaqTC2Rg&sz=s4000)
 ## Review
-### <font color="#7359b3">Self Evaluation</font>
+### Self Evaluation
 *How well do you feel that you did with producing your 3 marketing poster drafts, and are you happy with the final product? Why?*
 - I feel that I was moderately successful in producing the 3 marketing poster drafts for this task. I am overall satisfied with the final product, as despite my lack of experience with design and marketing I was still able to come up with multiple ideas, and communicate and refine them in each piece.
 

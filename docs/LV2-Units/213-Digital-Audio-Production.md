@@ -5,7 +5,7 @@
 - [Review](#review)
 ----
 ## Key Concepts
-### <font color="#7359b3">(I) - Researching and defining some key terms and concepts in audio production.</font>
+### (I) - Researching and defining some key terms and concepts in audio production.
 #### <u>Looping</u>
 Looping in digital audio production refers to when a piece of audio is repeated over and over, on loop. to incorporate looping into audio design is to design around it by making sure a clip or sound's end transitions smoothly to the beginning again, and designing the sound in such a way that it is still pleasant to listen to when repeated.
 #### <u>Arrangement</u>
@@ -16,34 +16,34 @@ Reverb is an effect on audio that occurs when sound bounces around in its enviro
 Royalty-free royalty free audio is a piece of sound or music that can be used without needing to pay royalty fees for each use, typically only requiring an initial licence fee to be used.
 #### <u>Foley</u>
 Foley in sound design is a technique used to recreate either fictional or real-world sounds, in order to then record and use them as part of the audio effects for video games, films, etc. the term is named after Jack Foley, a sound effects artist credited with the development of the technique. Foley is often done using a variety of objects in what's known as a foley room or studio, with artists working to come up with creative ways to get the sounds required.
-### <font color="#7359b3">(II) - Explaining the role of a Foley artist.</font>
+### (II) - Explaining the role of a Foley artist.
 Foley artists are tasked with creating a wide variety of sounds for use in media that requires such sound effects. This tends to involve a lot of creative thinking and practical work, as foley artists have to think outside the box on how to use various objects to achieve different sounds, particularly exaggerated and unnatural ones. For example, a game may need cartoonish impact noises that don't sound like a real impact does, and a foley artist's job would be to find a way to construct that fictional sound themselves, as simply recording an actual impact won't work.
-### <font color="#7359b3">(III) - Explaining three significant purposes of sound in game design, with examples.</font>
+### (III) - Explaining three significant purposes of sound in game design, with examples.
 #### <u>Atmosphere</u>
 Sound is essential to game design in a lot of ways; one of the primary ways it's used to elevate a game's design is by creating atmosphere. The visuals of a game will tell the player what the world looks like, but the sound design will tell them what it feels like. Whatever gaps in immersion are left by the visual components, the audio has room to fill; this is particularly suited for games with a minimalist aesthetic, or those with less stylised visuals such as The Last of Us, where audio is key to the atmosphere of the game. The visual components in TLoU's environments tell us what the world post-outbreak looks like - largely desolate spaces, long abandoned by humanity and being reclaimed by nature - but it takes the OST's subtle use of unconventional acoustic instruments to create a range of tense, haunting, and serene ambience and music, combined with the sound effects grounded in reality, to create the tone of each part of the game. It could easily fall into feeling like a basic depiction of reality devoid of emotion or personality, in the absence of that vital component.
 #### <u>Gameplay Feedback</u>
 Sound is essential to game design in a lot of ways; one of the primary ways it's used to elevate a game's design is by creating atmosphere. The visuals of a game will tell the player what the world looks like, but the sound design will tell them what it feels like. Whatever gaps in immersion are left by the visual components, the audio has room to fill; this is particularly suited for games with a minimalist aesthetic, or those with less stylised visuals such as The Last of Us, where audio is key to the atmosphere of the game. The visual components in TLoU's environments tell us what the world post-outbreak looks like - largely desolate spaces, long abandoned by humanity and being reclaimed by nature - but it takes the OST's subtle use of unconventional acoustic instruments to create a range of tense, haunting, and serene ambience and music, combined with the sound effects grounded in reality, to create the tone of each part of the game. It could easily fall into feeling like a basic depiction of reality devoid of emotion or personality, in the absence of that vital component.
 #### <u>Themes</u>
 Another important way sound is used in game design is to establish or highlight the tone, meaning, and identity of the game's narrative, style, and/or themes. The way a game's audio is created and laid out can be the key difference in communicating a certain theme well, and one common way this is achieved is through the use of motifs carried across through a game. An example of this can once more be found in Hollow Knight; a short, melancholy call-and-response leitmotif is used throughout a large portion of the game's soundtracks, representing the player character. It subtly follows the player, appearing a little in most of the environment OSTs and changing tone depending on the area and situation. Narratively, it works to draw connections between the player character (the Knight) and the world/events of the story, further emphasising those drawn by the writing and environment design in a way that's felt more than it's seen.
-### <font color="#7359b3">(IV) - Researching the video game composers Yoko Shimomura and Koji Kondo, and creating a list of games they have produced music for.</font>
+### (IV) - Researching the video game composers Yoko Shimomura and Koji Kondo, and creating a list of games they have produced music for.
 #### <u>Yoko Shimomura</u>
 Yoko Shimomura is a pianist and composer for video games, best known for her work for the Kingdom Hearts series. She is credited with work on a large number of games, an abbreviated list of which includes: Final Fight, Street Fighter II, Live A Live, Super Mario RPG, Legend of Mana, Kingdom Hearts, Mario & Luigi: Superstar Saga, Kingdom Hearts II and III, Mario & Luigi: Bowser's Inside Story, Xenoblade Chronicles, Final Fantasy XV, Streets of Rage 4, and Mario + Rabbids Sparks of Hope; an exhaustive list can be found [here.](https://en.wikipedia.org/wiki/Yoko_Shimomura#Works)
 #### <u>Koji Kondo</u>
 Koji Kondo is a prominent video game composer, pianist, and sound director at Nintendo, being well known for having composed some of the most iconic video game soundtracks such as Super Mario Bros and The Legend of Zelda. A full list of games he has worked on can be found here, and includes titles such as: Super Mario Bros, The Legend of Zelda, Star Fox, Yoshi's Island, Punch-Out!, Super Mario 64, Star Fox 64, The Legend of Zelda: Majora's Mask, Super Mario Galaxy, The Legend of Zelda: Skyward Sword, Super Mario Odyssey, and Super Smash Bros. Ultimate.
 ## Creating Digital Audio
-### <font color="#7359b3">(I) - Collecting 10 sounds from audio libraries for a horror game.</font>
+### (I) - Collecting 10 sounds from audio libraries for a horror game.
 [Horror Game Audio](https://drive.google.com/drive/folders/13wXeW3ycYZGhYYSFUJhQ9xuO8DLkWuuL?usp=share_link)
-### <font color="#7359b3">(II) - Recording 3 sounds on my phone to put in my game.</font>
+### (II) - Recording 3 sounds on my phone to put in my game.
 [Recorded SFX](https://drive.google.com/drive/folders/1D2K7rpUFT7mTdhO8axTfNBdq0J-asm34)
-### <font color="#7359b3">(III) - Using Beepbox to make 3 custom sound effects for my game.</font>
+### (III) - Using Beepbox to make 3 custom sound effects for my game.
 [Beepbox SFX](https://drive.google.com/drive/folders/1D6bseRWGLVBjNpgE5vtmT26NTb7HgE22)
 ## Review
-### <font color="#7359b3">Tutor Feedback</font>
+### Tutor Feedback
 #### <u>Recorded SFX</u>
 I feel that Maria has recorded some very clean audio FX using methods similar to what a foley artist would use. There is minimal/no background noises and they feel like they would be perfect to bring into an application such as Audacity, which could then subtly alter them using reverb so that they could fit into many good situations in a game or other media product. My only critique would be that it would be nice to hear some alternate versions of these sound effects after having been put through the digital editing process.
 #### <u>Produced Beepbox SFX</u>
 Maria's Beepbox sound effects are really good. They have an endearing and context-appropriate overall sound - and by that I mean they feel that they would work in the context they have been labelled i.e. the ‘get coin’ sound effect feels like it would work in a situation where the player has collected a coin, rather than just being a placeholder. I do not really have any critique for Maria's Beepbox sound effects, as I feel they have managed to complete this task as it was presented very well.
-### <font color="#7359b3">Self Evaluation</font>
+### Self Evaluation
 *How did you find the process of recording your sound effects? Were you happy with the outcome? If you were to do this task again, would you do anything differently, and why?*
 - I found the process of recording sound effects difficult, as I lacked the appropriate equipment, time, skill and environment to produce quality recordings. If I were to do it again I would try to find an environment without as much background noise so that some takes wouldn't end up ruined by sudden noises, make sure I have more time to hopefully achieve better takes, and use some post-processing on the produced clips to improve their clarity and make it so that they would sound more in place in an actual game
 

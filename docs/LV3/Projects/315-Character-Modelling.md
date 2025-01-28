@@ -1,14 +1,14 @@
 # 315 - 3D Character Modelling
-### <font color="#7359b3">Final Product</font>
+### Final Product
 ![](normalcat.png)
-### <font color="#7359b3">Software and tools used</font>
+### Software and tools used
 
 | **Modelling/sculpting:**       | Blender                                               |
 | ------------------------------ | ----------------------------------------------------- |
 | **Final touches & Rendering:** | Nomad Sculpt                                          |
 | **Other:**                     | [This youtube tutorial](https://youtu.be/HEA-XUfawOI) |
 
-### <font color="#7359b3">Self Evaluation</font>
+### Self Evaluation
 ***What is the project you have been working on this term?***
 
 - 3D Model of a cat in Blender

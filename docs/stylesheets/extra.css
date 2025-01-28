@@ -2,20 +2,32 @@ header {
   color: #413461;
   background-color: #decef2;
   border-radius: 0px 0px 0px 0px;
-  border-bottom: 5px double #decef2;
+  border-bottom: 5px double;
 }
 .md-typeset h1{
-  text-decoration: underline solid #8e6be8;
+  text-decoration: underline solid #3b2b63;
   color: #c18bff;
+  font-weight: 1000;
 }
-h2 {
-  color: #413461;
-  font-weight: bold;
-  background-color: #decef2;
-  border-radius: 10px;
-  outline: 5px solid #decef2;
+.md-typeset h2{
+  text-decoration: underline solid #3b2b63;
+  color: #c18bff;
+  font-weight: 1000;
 }
+
 h3 {
   text-transform: unset;
   color: #8e6be8;
+}
+
+:root {
+  --md-primary-fg-color:        #EE0F0F;
+  --md-primary-fg-color--light: #ECB7B7;
+  --md-primary-fg-color--dark:  #90030C;
+}
+
+[data-md-color-scheme="dark"] {
+  --md-primary-fg-color:        #EE0F0F;
+  --md-primary-fg-color--light: #ECB7B7;
+  --md-primary-fg-color--dark:  #90030C;
 }

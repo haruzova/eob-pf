@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/index.md",
+                "file": "docs/LV3/Projects/344-Designing-Digital-Games.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "344-Designing-Digital-Games"
             }
           }
         ]
@@ -93,31 +93,17 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/Projects/315-Character-Modelling.md",
-                "collapseAll": false,
-                "extraContext": false,
+                "file": "docs/LV3/Projects/344-Designing-Digital-Games.md",
+                "collapseAll": true,
+                "extraContext": true,
                 "sortOrder": "alphabetical",
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 315-Character-Modelling"
-            }
-          },
-          {
-            "id": "898eb6ac93a0fd63",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "docs/Projects/315-Character-Modelling.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "Outgoing links from 315-Character-Modelling"
+              "title": "Backlinks for 344-Designing-Digital-Games"
             }
           },
           {
@@ -139,18 +125,63 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/Projects/315-Character-Modelling.md"
+                "file": "docs/LV3/Projects/344-Designing-Digital-Games.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 315-Character-Modelling"
+              "title": "Outline of 344-Designing-Digital-Games"
+            }
+          }
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "69136d1f2dfde1dc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "898eb6ac93a0fd63",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "docs/LV3/Projects/344-Designing-Digital-Games.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 344-Designing-Digital-Games"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dd2d353afbe0842c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2b30ef693b53c724",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "docs/LV3/Projects/344-Designing-Digital-Games.md",
+                "collapseAll": true,
+                "extraContext": true,
+                "sortOrder": "alphabetical",
+                "showSearch": true,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 344-Designing-Digital-Games"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -162,8 +193,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fcea39c3b7e98942",
+  "active": "17f934569935dcb6",
   "lastOpenFiles": [
+    "overrides/partials/header.html",
+    "overrides/partials/header",
+    "overrides/partials",
+    "overrides",
+    "docs/LV3/Projects/302-Creating-a-Digital-Game.md",
+    "docs/LV3/Projects/344-Designing-Digital-Games.md",
+    "docs/LV3/Projects/315-Character-Modelling.md",
+    "docs/LV3/Projects/318-Creating-3D-Digital-Art.md",
+    "docs/LV2-Units/207-Making-a-Website.md",
+    "docs/LV2-Units/209-Animation.md",
+    "docs/LV2-Units/210-Creating-Digital-Art.md",
+    "docs/LV2-Units/217-Marketing-and-Promoting-Digital-Media-Products.md",
+    "docs/LV2-Units/222-Careers-in-Creative-Digital-Media.md",
+    "docs/LV2-Units/205-Meeting-a-Digital-Media-Brief.md",
+    "docs/LV2-Units/202-Digital-Games-Production.md",
+    "docs/index.md",
     "docs/Projects/302-Creating-a-Digital-Game.md",
     "Screenshot_20230929-162642_Godot.md"
   ]

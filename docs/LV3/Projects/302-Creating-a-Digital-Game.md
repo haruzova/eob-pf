@@ -1,8 +1,6 @@
 # 302 - Creating a Digital Game
 ### <font color="#7359b3">Final Product</font>
 ![type:video](https://drive.google.com/file/d/199mIUALFtldU87H-SbGBhyG4ghTByWn4/preview)
-(haven't figured out video embeds with mkdocs yet so just click the link and pretend this image is the thumbnail)
-![](20240503-godot-idk.png)
 ### <font color="#7359b3">Software and tools used</font>
 
 | **Game engine:**      | Godot 4.1 - 4.2                          |

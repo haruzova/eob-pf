@@ -7,15 +7,17 @@ theme:
   logo: https://drive.google.com/thumbnail?id=1OaspU3pMMzDgaLhEGvdD4oiczAvKvFOv
   
   name: material
+
+  font: false
   palette:
-    - scheme: slate
+    - scheme: dark
       primary: deep purple
       accent: purple
       toggle:
         icon: material/weather-night
         name: Switch to light mode
 
-    - scheme: default
+    - scheme: light
       primary: deep purple
       accent: purple
       toggle:

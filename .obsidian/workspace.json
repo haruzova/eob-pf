@@ -196,7 +196,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -208,7 +209,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "af88c71219a83a60",
+  "active": "fcea39c3b7e98942",
   "lastOpenFiles": [
     "docs/LV3/Projects/302-Creating-a-Digital-Game.md",
     "docs/LV2-Units/210-Creating-Digital-Art.md",

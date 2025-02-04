@@ -5,20 +5,20 @@
 - [Review](#review)
 ----
 ## Research and Assessment
-### <font color="#7359b3">(I) - Researching and briefly defining some key terms, with the context of game development.</font>
+### (I) - Researching and briefly defining some key terms, with the context of game development.
 #### <u>Client</u>
 A client is either an organisation or individual who purchases/receives services from a developer.
 #### <u>Brief</u>
 A brief for game development is a document shared with developers that outlines the clients requirements and the core concepts and details of a game project.
 #### <u>NDA</u>
 An NDA, or non-disclosure agreement, is a legal contract that establishes confidentiality relating to parts or all of a product, development process etc.
-### <font color="#7359b3">(II) - Comparing Unity and Unreal engine.</font>
+### (II) - Comparing Unity and Unreal engine.
 - The Unity engine is a cross platform game engine developed by Unity Technologies and released in 2005.
 - Unreal Engine is another game engine, developed by Epic Games and released in 1998.
 - Both engines share some similarities, such as being multi-platform and allowing users to develop games for console, PC, mobile, and VR platforms, but also have their differences.
 - They started in different places, with Unity being initially designed for development on Mac OS X, and Unreal Engine being developed for creating first-person-shooter games using PC.
 - Unity is designed with both 2D and 3D games in mind, while Unreal focuses on 3D games. Unity's primary programming language is C#, whereas Unreal Engine uses C++.
-### <font color="#7359b3">(III) - Writing three short reviews of games that I have played or have otherwise heard of.</font>
+### (III) - Writing three short reviews of games that I have played or have otherwise heard of.
 #### <u>Minecraft</u>
 Minecraft is a game that has undoubtedly had an immense impact on its genre and on gaming as a whole. It's the first name most think of when an open world sandbox is mentioned, and for good reason. First fully released in 2011, and having been developed in Lightweight Java Game Library since 2009, through a combination of its iconic art and graphical style, its simple core game concept that allows for limitless expansion, and regular updates with new features, the game has remained timeless and popular even today. The fact that worlds consist entirely of blocks also lends well to an instantly identifiable style that doesn’t get too far in the way of builders’ visions, and makes a perfect foundation for a sandbox game where building and breaking the environment is involved in most of the gameplay.
 
@@ -49,10 +49,10 @@ Players follow Ōkami Amaterasu, a wolf incarnation of the Shinto sun goddess, a
 Much of Ōkami's gameplay is modelled after The Legend of Zelda, with a combination of puzzle-solving, exploration, platforming, and combat, while adding its own unique twist with the Celestial Brush skill. Once received, this mechanic opens up a realm of possibilities, which only expands further with each brush technique Amaterasu learns over the course of the game. Using Celestial Brush pauses the game, pulling the screen away and framing it as like a canvas, which the player can paint on to activate different abilities, create objects, and solve puzzles. For instance, drawing a circle in the sky when it's dark will summon back the sun and make it day once more, and drawing a sharp line across an object or monster can slice it in half. This feature alone does wonders to make Ōkami's gameplay memorable, with how versatile and easy to understand it is and how well the game's design is made to compliment it; the game doesn't have to prompt players for every use of the brush, because it's always available and easy to experiment with, so players become accustomed to using each technique on their own, creating a natural sense of progression.
 
 Overall, Ōkami is a game with incredible polish, with its gameplay, design, and narrative all being excellent, it's hard to find something to dislike. Depending on the platform being played on and the player's individual tastes, some may find the controls for executing the Celestial Brush techniques quite finicky, especially for those using motion controls. Thankfully, the gameplay doesn't often demand too much precision in that aspect.
-### <font color="#7359b3">(IV) - Answering questions about my own game relating to its intended demographic, budget, and resources.</font>
+### (IV) - Answering questions about my own game relating to its intended demographic, budget, and resources.
 In terms of intended destination and market, I aim to have this game appeal to fans of the 2D puzzle-platformer genre, and those interested in the combination of exploring and puzzle solving in games. As I am a solo developer, I will not consider nor require a budget for this project. As for resources, the game will be made using the Unity game engine, with necessary /assets either sourced from Unity's 2D Game Kit, or being made in GIMP or Piskel.
 ## Fulfilling a Brief
-### <font color="#7359b3">(I) - Creating a Google Slides presentation about my game that follows a brief provided, and providing some screenshots of the slides.</font>
+### (I) - Creating a Google Slides presentation about my game that follows a brief provided, and providing some screenshots of the slides.
 ![sl1.png](https://drive.google.com/thumbnail?id=1h2qOHzpS8XI9FiBTV1rL6246k4qXWsiJ&sz=s4000)
 ![sl2.png](https://drive.google.com/thumbnail?id=16PljPgLTB6jFk2ip5XkyqT67NSDMC1Vv&sz=s4000)
 ![sl3.png](https://drive.google.com/thumbnail?id=1NNaxdMFE9taZi9jk8KKZ_YC1xO3Ivvpt&sz=s4000)
@@ -61,7 +61,7 @@ In terms of intended destination and market, I aim to have this game appeal to f
 
 ///
 
-### <font color="#7359b3">(II) - Taking screenshots of my level development process, and of the game being played.</font>
+### (II) - Taking screenshots of my level development process, and of the game being played.
 
 ![gs1.png](https://drive.google.com/thumbnail?id=1JocjDJjedBScnnTKzTPDCNNHaEcEaCsr&sz=s4000)
 ![gs2.png](https://drive.google.com/thumbnail?id=1YPfehOQ0Ay77a3UK-0YyQ_NkDYryd1aW&sz=s4000)
@@ -72,11 +72,11 @@ In terms of intended destination and market, I aim to have this game appeal to f
 
 <iframe src="https://drive.google.com/file/d/1_fIyG0dSENMTj4HsXP8sNGBn6GE38zNE/preview" width="640" height="480" allow="autoplay"></iframe>
 ## Review
-### <font color="#7359b3">Tutor Feedback</font>
+### Tutor Feedback
 Maria’s level has been developed very nicely. The scale is a decent size, and they have taken their time in choosing nice décor in specific areas which adds a nice bit of variety visually for the player as they progress. The game includes enemies and some level movement systems, as well obstacles like closed doors where the player must locate a pressure pad in order to progress to the final area. Interesting ways to kill enemies such as moving heavy objects so they fall and kill the enemy have been included, which was a nice touch!
 #### <u>Suggested Improvements</u>
 I feel that Maria could have taken the decoration for her level a step further - giving each area of their level more attention so that the player really feels like they’re moving into something different as they progress. Maria could have added more enemies the further the player progresses through the level, as this would create an increase in difficulty for the player the further they get. If Maria had more time to develop their game, including a second or even 3rd level with a different aesthetic style and level design would have also been good.
-### <font color="#7359b3">Self Evaluation</font>
+### Self Evaluation
 *Overall, how did you find making the game? Was it difficult, did you find certain parts frustrating? or did you find it fairly easy to get to grips with? Why?*
 - I found using the 2D Game Kit not overwhelmingly difficult but not easy either; I struggled with learning how to use certain parts effectively, and level design was a challenge when I was still only getting to grips with using the provided tools, leading to a lot of discarded levels and ideas.
 

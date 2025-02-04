@@ -28,23 +28,32 @@ insert video here i l;azyyyyyyyyy
 ### Devlog
 ##### 18/11/24
 Starting work on a farming game with a tutorial. There was a project before this but the tutorial was a full major version behind making it super slow and I didn't like how it worked so I did this one instead. *(maybe add link to the old one idfk)*
+
+Created a game tilemap using the Sproutlands assets and made a test scene to... test it in, and started learning how to use terrains for things like paths and grass, so they can be dynamically added/"drawn" into the scene which will speed up and simplify level creation somewhat.
+
 ![](24-11-18_2%201.png)
-Creating a game tilemap using the Sproutlands assets and making a test scene to... test it in. (no way!)
+/// caption
+Tilemap test scene
+///
 
 ![](2024-11-18%2014-28-30%201.png)
-Learning how to use terrains for things like paths and grass, so they can be dynamically added/"drawn" into the scene which will speed up and simplify level creation somewhat.
+/// caption
+Terrain testing for paths
+///
 
 
 ##### 19/11/24
-Creating a controllable player character with an animation tree for movement, and starting work on a state machine for different actions like tilling land or watering crops.
-Ran into an issue where animations wouldn't play and some of the movement animations were facing the wrong way, fixed it by reordering the keys(????? are they keys?) so they encouraged the correct animation for the direction. TLDR I mixed up the Y axis lol
+Created a controllable player character with animations for directional movement and player actions like tilling land or watering crops.
+Made a state machine and a class for node states, then used that class to create 5 different states for the player: `idle_state` and `walk_state` as the main 2, then `jopping_state` (chopping), `watering_state` and `tilling_state` for each action. I mixed up some animation directions so the player was moonwalking for a bit lol. Currently only walking and idling have transitions into each other as I haven't added tools yet and the idle animation doesn't play the correct directional animation.
 
-![[2024-11-19 11-58-05-1.png]]
+
 ![[2024-11-19 11-58-22.png]]
+/// caption
+Adding animation frames using the Sproutlands assets
+///
 
 
-
-??? example "Player movement code from walk_state.gd"
+??? example "Player movement code from `walk_state`"
         func _on_physics_process(_delta : float) -> void:
             var direction: Vector2 = GameInputEvents.movement_input()
             
@@ -64,19 +73,152 @@ Ran into an issue where animations wouldn't play and some of the movement animat
             player.move_and_slide()
 
 ##### 20/11/24
-Further work on the state machine, now the player can transition to chopping, watering or tilling. I deviated from the tutorial and made it so you can click while moving to stop and transition into using an action, because I prefer that than having to manually stop just to act. Apparently I ran into some bugs but fool that I am I did not even bother to explain what they were so I no longer know what the bugs are. Beautiful <3
+Found the cause of the animation bug. The `idle_state` is supposed to get the player's direction from `walk_state` and act according to that, but I had a line of code that let it set the player's direction during their idle state, which would obviously be none/null as no actions are being pressed in idle, so it always defaulted to the front-facing animation rather than following the player's actual last direction.
+ 
+![](2024-11-20%2011-18-57.png)
+/// caption
+Staring really hard at `idle_state` for 2000000 hours ASMR to figure out what I messed up
+///
+
+In preparation of implementing the different actions, I added a global script `data_types` to hold different kinds of game data (useful for things like weapons/tools) and let the player script use it to set their current tool. There's no way to change tools yet, though.
+
+??? example "Tools framework"
+	In `data_types`:
+	
+			class_name DataTypes
+			
+			enum Tools {
+				None,
+				AxeWood,
+				TillGround,
+				WaterCrops
+			}
+	In `player`:
+	
+			@export var current_tool: DataTypes.Tools = DataTypes.Tools.None
+
+
+Further work on the state machine; now the player can transition to chopping, watering or tilling with  ++"Left Click"++ . I deviated from the tutorial somewhat and added transitions to the `walk_state` so that you can click while moving to stop and transition into using an action, because I prefer that than having to make sure you're idle before acting; it'll be less annoying for when you're running around watering crops etc.
+
+I had to deal with a bug where the actions would never actually transition back so once you jopped you couldn't stop, as well as the animation bug from yesterday. I didn't take proper notes for some reason so I forgot what the problem was with the first one, but I have a suspicion I forgot this bit of code in the action states:
+```
+func _on_next_transitions() -> void:
+	if !animated_sprite_2d.is_playing():
+		transition.emit("Idle")
+```
+
+
+??? example "How the state machine scripts function after being fixed"
+	`walk_state` script takes the direction of the player from their movement and tells it to a variable in the `player` script
+	
+			func _on_physics_process(_delta : float) -> void:
+			
+				var direction: Vector2 = GameInputEvents.movement_input()
+				
+						if direction != Vector2.ZERO:
+							player.player_direction = direction
+	it also checks for when there's no movement input and correctly transitions to `idle_state`
+	
+			func _on_next_transitions() -> void:
+			if !GameInputEvents.is_movement_input():
+				transition.emit("Idle")
+	
+	---
+	
+	`idle_state` script reads the direction variable and plays the corresponding animation
+	
+			func _on_physics_process(_delta : float) -> void:
+				if player.player_direction == Vector2.UP:
+					animated_sprite_2d.play("idle_back")
+				elif player.player_direction == Vector2.DOWN:
+					animated_sprite_2d.play("idle_front")
+				elif player.player_direction == Vector2.LEFT:
+					animated_sprite_2d.play("idle_left")
+				elif player.player_direction == Vector2.RIGHT:
+					animated_sprite_2d.play("idle_right")
+				else:
+					animated_sprite_2d.play("idle_front")
+	and then... you're not gonna believe this. it checks for when there IS movement input and transitions to `walk_state`
+	
+			func _on_next_transitions() -> void:
+				GameInputEvents.movement_input()
+				
+				if GameInputEvents.is_movement_input():
+					transition.emit("Walk")
+	
+	---
+	
+	The `_on_next_transitions` function from the template is also how the various actions are handled currently.
+	
+				if  Input.is_action_just_pressed("hit") && player.current_tool == DataTypes.Tools.AxeWood:
+					transition.emit("Jopping")
+				elif Input.is_action_just_pressed("hit") && player.current_tool == DataTypes.Tools.TillGround:
+					transition.emit("Tilling")
+				elif Input.is_action_just_pressed("hit") && player.current_tool == DataTypes.Tools.WaterCrops:
+					transition.emit("Watering")
 
 ##### 25/11/24
-More tilemap stuff. Creating multiple different houses, each in their own scene and using a house-specific tilemap, before adding them to the game tilemap using scene collections so they can be instantiated and deleted as if they were one tile. I added functional doors using the same method (separate door scene, then instantiating it in the houses' tilemap) and added a script so they automatically open and close in response to the player.
+Back to tilemap stuff. Creating multiple different houses, each as their own scene and using a house-specific tileset, before adding them to the main game tileset using scene collections so they can be instantiated and deleted as if they were one tile. 
+![](2024-11-25%2011-58-53.png) ![](2024-11-25%2012-08-01.png)
+/// caption
+Adding the new house tileset, with layers for the floor, walls and furniture plus collision for objects and walls
+///
 
-##### 26/11/24
-ok i lied im websiteing i think
+![](2024-11-25%2012-14-48.png)![](2024-11-25%2012-18-08.png)
+/// caption
+HELL YEAAAAAAAAAAAA
+///
 
-##### 27/11/24
-still websiteing
+
+
+Additionally created doors using the same method of using a scene collection to place the door scene in the tilemap, because they need a lot more functionality than a regular tile. They use an animated sprite, with only one animation, because for a smooth opening/closing transition even if the player quickly passes by before it fully opens, it'll be better to just reverse the animation rather than start a new one.
+
+To make the doors actually functional, they use a component; reusable scenes that contain a core function (being collected, growing, taking damage etc) and can essentially just be tossed onto a scene to give it that functionality. The component they use is an `interactable_component` that will allow the door to detect when it's being interacted with (when the player approaches).
+
+??? example "Interactable component script (area2d)"
+			class_name InteractableComponent
+			extends Area2D
+			
+			signal interactable_activated
+			signal interactable_deactivated
+			
+			
+			
+			@warning_ignore("unused_parameter")
+			func _on_body_entered(body: Node2D) -> void:
+				interactable_activated.emit()
+			
+			@warning_ignore("unused_parameter")
+			func _on_body_exited(body: Node2D) -> void:
+				interactable_deactivated.emit()
+
+??? example "Door script"
+			extends StaticBody2D
+			@onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
+			@onready var collision_shape_2d: CollisionShape2D = $CollisionShape2D
+			@onready var interactable_component: InteractableComponent = $InteractableComponent
+			
+			func _ready() -> void:
+				interactable_component.interactable_activated.connect(on_interactable_activated)
+				interactable_component.interactable_deactivated.connect(on_interactable_deactivated)
+				collision_shape_2d.set_deferred("disabled", false)
+			
+			func on_interactable_activated() -> void:
+				animated_sprite_2d.play("open_door")
+				collision_shape_2d.set_deferred("disabled", true)
+			
+			
+			func on_interactable_deactivated() -> void:
+				animated_sprite_2d.play("close_door")
+				collision_shape_2d.set_deferred("disabled", false)
+				print("door deactivated")
+
+
 
 ##### 02/12/24
-Adding trees and a chopping function. Trees are using scene collections so they can be placed on the tilemap while being functional. The player's "chopping" state enables a collision shape that deals damage to them on contact, and when its HP hits 0 it disappears and replaces itself with a collectable log. There's no inventory though, so they just kind of pop out of existence.
+Added trees and a chopping function. Trees are made as their own separate scenes, then added to the main game tileset using scene collections. This means they can have their own scripts and functions despite having the ease of editing that comes with being a tile, as well as "counting" as only one tile regardless of their size, so there's a little more freedom of placement.
+
+The way chopping works is that the the player's chopping state, `jopping_state`, now enables and moves a collision shape that deals damage to them on contact, and when its HP hits 0 it disappears and replaces itself with a collectable log. There's no inventory though, so they just kind of pop out of existence.
 
 ##### 03/12/24
 Adding a larger tree with more HP, as well as destructible rocks with similar code that drop stones instead, and adding a shake animation to each of them using shaders. Now when the player hits a tree or rock, they'll shake in response to it. There was a little issue where hitting one of an object would shake all of the others, but that was fixed by ticking "local to scene" on the shaders.

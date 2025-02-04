@@ -3,31 +3,32 @@
 ![type:video](https://drive.google.com/file/d/199mIUALFtldU87H-SbGBhyG4ghTByWn4/preview)
 ### Software and tools used
 
-| **Game engine:**      | Godot 4.1 - 4.2                          |
+|                       | -                                        |
 | --------------------- | ---------------------------------------- |
+| **Game engine:**      | Godot 4.1 - 4.2                          |
 | **Pixel art assets:** | Aseprite, Libresprite, Clip Studio Paint |
 | **Animated sprites:** | Clip Studio Paint, Libresprite           |
 
 ### Self Evaluation
 ***What is the project you have been working on this term?***
 
-- 2D Platformer Game in Godot
+> 2D Platformer Game in Godot
 
 ***Do you think you successfully did this?***
 
-- Yes. Mostly.
+> Yes. Mostly.
 
 ***What parts of your project do you like?***
 
-- I like the little shrimpy clouds in the background and the player character's idle animation because they're cute and I think I did an okay job with them.
+> I like the little shrimpy clouds in the background and the player character's idle animation because they're cute and I think I did an okay job with them.
 
 ***What could you improve on, and what part would you do differently next time?***
 
-- I could have definitely been a lot more organised in how I actually got everything working, as well as not forgetting to add audio... Next time, the first thing I'd do would be to start off using asset packs in order to get the game figured out, and work out what sprites I want to make afterwards. It slowed things down a lot (and demotivated me because UGHHH tile creation)
+> I could have definitely been a lot more organised in how I actually got everything working, as well as not forgetting to add audio... Next time, the first thing I'd do would be to start off using asset packs in order to get the game figured out, and work out what sprites I want to make afterwards. It slowed things down a lot (and demotivated me because UGHHH tile creation)
 
 ***What part of the work did you find the most difficult and why?***
 
-- Making pixel art, tilesets especially, was really hard,because I'm not used to using colour so much, or doing the maths you need to do for tiling assets. Even if it's just basic +, - , x, / stuff... It's hard...
+> Making pixel art, tilesets especially, was really hard,because I'm not used to using colour so much, or doing the maths you need to do for tiling assets. Even if it's just basic +, - , x, / stuff... It's hard...
 
 ---- 
 ### Creating pixel item sprites

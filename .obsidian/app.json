@@ -24,5 +24,6 @@
     "editor:insert-table",
     "command-palette:open",
     "editor:toggle-source"
-  ]
+  ],
+  "useMarkdownLinks": true
 }

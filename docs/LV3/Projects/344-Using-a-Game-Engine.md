@@ -1,29 +1,68 @@
 ### Final Product
 insert video here i l;azyyyyyyyyy
+### Software and assets used
 
-| **Game engine:**               | Godot 4.3            |
-| ------------------------------ | -------------------- |
-| **Sprites, tilemaps & fonts:** | Sproutlands, ZX Palm |
-| **Music:**                     | add                  |
-| **Guide:**                     | link                 |
+| **Game engine:**        | Godot 4.3                                                                                             |
+| ----------------------- | ----------------------------------------------------------------------------------------------------- |
+| **Sprites & tilemaps:** | Sproutlands                                                                                           |
+| **Fonts:**              | Sproutlands, ZX Palm                                                                                  |
+| **Music:**              | later                                                                                                 |
+| **Reference:**          | [Youtube](https://www.youtube.com/watch?v=it0lsREGdmc&lisYoutubet=PLWTXKdBN8RZe3ytf6qdR4g1JRy0j-93v9) |
+
 ### Self Evaluation
 ***What is the project you have been working on this term?***
-- d
+> A game mechanic for a farming game
+
 ***Do you think you successfully did this?***
-- d
+> mayb
+
 ***What parts of your project do you like?***
-- s
+> i dont
+
 ***What could you improve on, and what part would you do differently next time?***
-- s
+> i wouydl go to sleep instead
+
 ***What part of the work did you find the most difficult and why?***
-- s
+> yes
 
 ### Devlog
 ##### 18/11/24
 Starting work on a farming game with a tutorial. There was a project before this but the tutorial was a full major version behind making it super slow and I didn't like how it worked so I did this one instead. *(maybe add link to the old one idfk)*
+![](24-11-18_2%201.png)
+Creating a game tilemap using the Sproutlands assets and making a test scene to... test it in. (no way!)
+
+![](2024-11-18%2014-28-30%201.png)
+Learning how to use terrains for things like paths and grass, so they can be dynamically added/"drawn" into the scene which will speed up and simplify level creation somewhat.
+
+
 ##### 19/11/24
 Creating a controllable player character with an animation tree for movement, and starting work on a state machine for different actions like tilling land or watering crops.
 Ran into an issue where animations wouldn't play and some of the movement animations were facing the wrong way, fixed it by reordering the keys(????? are they keys?) so they encouraged the correct animation for the direction. TLDR I mixed up the Y axis lol
+
+![[2024-11-19 11-58-05-1.png]]
+![[2024-11-19 11-58-22.png]]
+
+
+
+??? example "Player movement code from walk_state.gd"
+        func _on_physics_process(_delta : float) -> void:
+            var direction: Vector2 = GameInputEvents.movement_input()
+            
+            if direction == Vector2.UP:
+                animated_sprite_2d.play("walk_back")
+            elif direction == Vector2.RIGHT:
+                animated_sprite_2d.play("walk_right")
+            elif direction == Vector2.DOWN:
+                animated_sprite_2d.play("walk_front")
+            elif direction == Vector2.LEFT:
+                animated_sprite_2d.play("walk_left")
+            
+            if direction != Vector2.ZERO:
+                player.player_direction = direction
+            
+            player.velocity = direction * speed
+            player.move_and_slide()
+
 ##### 20/11/24
 Further work on the state machine, now the player can transition to chopping, watering or tilling. I deviated from the tutorial and made it so you can click while moving to stop and transition into using an action, because I prefer that than having to manually stop just to act. Apparently I ran into some bugs but fool that I am I did not even bother to explain what they were so I no longer know what the bugs are. Beautiful <3
 
@@ -114,12 +153,25 @@ Found what was causing the issue, it was that the tilled soil layer didn't have 
 Also ignored the tutorial for a bit to make tools de-selectable, I just don't like that once you select one it's all over. And being able to not have tools in your hands means maybe... one day... you can pet the cows and chickens... surely......... I also made the seeds actually do something, so now you only plant crops if you have enough, and each time you plant a crop, the respective seeds go down by 1. That was actually surprisingly hard, there was a bug where if you started the game and tried to plant seeds without ever picking up or losing any it'd freak out because it was drawing from a null value. I fixed it by making the inventory manager "add" 0 to the items on start, so that if they're null they get assigned a value but if you already have some items it won't change that.
 
 ##### 15/01/25
-Starting to add a save system, using P as a shortcut to save and adding some components that will save certain parts of the scene, like the player-modified tiles and objects such as farmland and crops. It's a lot of scripting basically.
+Starting to add a save system, using P as a shortcut to save and adding various components that will allow the game save certain parts of the scene, such as the player-modified tiles and objects such as farmland and crops. It's a lot of scripting basically.
 
-There's also a bug where you can plant multiple crops on one tile, and I tried to fic it but it hasn't worked. that's for later I guess.
+There's also a bug where you can plant multiple crops on one tile, and I tried to fix it but it hasn't worked. that's for later I guess.
 
 ##### 20/01/25
-##### 21/01/25
-##### 22/01/25
-##### 27/01/25
+Apparently I forgot to add collision keeping the player from walking off the island so I did that lol. Making the actual game environment now, in a way that would allow for multiple different "levels" though I don't use it because the only buildings and areas in the game are fine being
+contained within one level. 
 
+The chickens are stupid again. I don't know why.
+Y sorting doesn't work on the level I also dk why
+
+Started making a menu screen, all I got to do was add a button, theming isn't done yet
+
+##### 21/01/25
+Finished the title/pause menu you can bring up using Esc, with options to Start, Save and Quit which all technically work (the functions need bug fixing and pausing doesn't pause yet) we will get back t o that one. The background is basically a level, but frozen using process mode disabled thing yayyyyyyy.
+I didn't decorate the background yet but that's just for aesthetics .
+
+##### 22/01/25
+Decorated the menu background. im sleepy
+
+##### 27/01/25
+Pausing functionality added using get_tree().paused and setting the menu's process mode to always, so the entire game will freeze except for the pause menu. Way easier than pausing just the level and potentially missing things. Saving and loading now properly works on main-game scenes, and I fixed logs being set to add 0 of themselves when collected. The game is basically done as far as the assignment is concerned though I am putting off audio like my life depends on it because my headphones don't reach that far lmaoooo

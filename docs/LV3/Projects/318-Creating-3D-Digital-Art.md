@@ -5,31 +5,32 @@
 ![](Screenshot_2024-07-16_134810.png)
 ### Software and tools used
 
-| **Game engine:** | Unreal Engine...5? I think? |
+|                  | -                           |
 | ---------------- | --------------------------- |
+| **Game engine:** | Unreal Engine...5? I think? |
 | **Planning:**    | MS Paint                    |
 | ...that's it.    | how shrimple!               |
 
 ### Self Evaluation
 ***What is the project you have been working on this term?***
 
-- 3D Environment in Unreal Engine
+> 3D Environment in Unreal Engine
 
 ***Do you think you successfully did this?***
 
-- Yes
+> Yes
 
 ***What parts of your project do you like?***
 
-- I like my little flower patches and the hidden monuments in places. I think it's cute.
+> I like my little flower patches and the hidden monuments in places. I think it's cute.
 
 ***What could you improve on, and what part would you do differently next time?***
 
-- I could have done it a lot faster/more efficiently, and next time I think I would chill out a bit on adding a bunch of tiny details that nobody would ever see.
+> I could have done it a lot faster/more efficiently, and next time I think I would chill out a bit on adding a bunch of tiny details that nobody would ever see.
 
 ***What part of the work did you find the most difficult and why?***
 
-- I found it difficult to open Unreal Engine and navigate the scene, partially because of a weird psychological thing, and partially because I'm really not used to the controls and kept getting dizzy while navigating.
+> I found it difficult to open Unreal Engine and navigate the scene, partially because of a weird psychological thing, and partially because I'm really not used to the controls and kept getting dizzy while navigating.
 
 ----
 ### Planning

@@ -7,6 +7,7 @@
 - [Poly Modelling, Sculpting & Re-topology](#poly-modelling-sculpting-re-topology)
 - [UV & Texturing (Skins)](#uv-texturing-skins)
 ----
+
 ## 3D Character Artists
 ### (I) - Explain the role of a 3D Character artist.
 3D character artists' primary job is to create the models for all the characters (players, enemies, NPCs) in games, usually based on concept art or previous designs/older models. They work within the specifications of a brief in order to translate it into a functional and game-ready 3D model.

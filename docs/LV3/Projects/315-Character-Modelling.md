@@ -3,31 +3,32 @@
 ![](normalcat.png)
 ### Software and tools used
 
-| **Modelling/sculpting:**       | Blender                                               |
-| ------------------------------ | ----------------------------------------------------- |
-| **Final touches & Rendering:** | Nomad Sculpt                                          |
-| **Other:**                     | [This youtube tutorial](https://youtu.be/HEA-XUfawOI) |
+|                                | -                                       |
+| ------------------------------ | --------------------------------------- |
+| **Modelling/sculpting:**       | Blender                                 |
+| **Final touches & Rendering:** | Nomad Sculpt                            |
+| **Reference:**                 | [Youtube](https://youtu.be/HEA-XUfawOI) |
 
 ### Self Evaluation
 ***What is the project you have been working on this term?***
 
-- 3D Model of a cat in Blender
+> 3D Model of a cat in Blender
 
 ***Do you think you successfully did this?***
 
-- Yes
+> Yes
 
 ***What parts of your project do you like?***
 
-- I like his little feetsies and the :3 expression I gave him
+> I like his little feetsies and the :3 expression I gave him
 
 ***What could you improve on, and what part would you do differently next time?***
 
-- I could have done better with remeshing as there ended up being some holes and weird topology until the very end, and if I had the time I might sit down and learn why that happens and how to properly fix or avoid it next time.
+> I could have done better with remeshing as there ended up being some holes and weird topology until the very end, and if I had the time I might sit down and learn why that happens and how to properly fix or avoid it next time.
 
 ***What part of the work did you find the most difficult and why?***
 
-- Working with tiny details like the feet, mouth, and ears was the hardest, because I don't know my way around the brushes well enough to cleanly deform things without messing something else up, and the poly count wasn't high enough to cheese it.
+> Working with tiny details like the feet, mouth, and ears was the hardest, because I don't know my way around the brushes well enough to cleanly deform things without messing something else up, and the poly count wasn't high enough to cheese it.
 
 ---
 ## Practise

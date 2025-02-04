@@ -31,6 +31,8 @@ theme:
     - navigation.top
     - mkdocs-video
     - header.autohide
+    - content.tooltips
+    - content.code.copy
 
 plugins:
   - search
@@ -46,9 +48,19 @@ extra_css:
 
 
 markdown_extensions:
+  - tables
+  - admonition
+  - abbr
   - attr_list
+  - pymdownx.snippets
   - md_in_html
   - pymdownx.blocks.caption
+  - pymdownx.details
   - pymdownx.highlight:
       line_spans: __span
-  - tables
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+

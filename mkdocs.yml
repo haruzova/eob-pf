@@ -33,6 +33,7 @@ theme:
     - header.autohide
     - content.tooltips
     - content.code.copy
+    - content.code.annotate
 
 plugins:
   - search
@@ -52,12 +53,17 @@ markdown_extensions:
   - admonition
   - abbr
   - attr_list
-  - pymdownx.snippets
   - md_in_html
   - pymdownx.blocks.caption
   - pymdownx.details
   - pymdownx.highlight:
+      anchor_linenums: true
       line_spans: __span
+      pygments_lang_class: true
+      line_spans: __span
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
   - pymdownx.critic
   - pymdownx.caret
   - pymdownx.keys

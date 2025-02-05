@@ -1,0 +1,1687 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://haruzova.github.io/eob-pf/LV2-Units/210-Creating-Digital-Art/">
+      
+      
+        <link rel="prev" href="../209-Animation/">
+      
+      
+        <link rel="next" href="../213-Digital-Audio-Production/">
+      
+      
+      <link rel="icon" href="../../assets/misc/donspin.gif">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>210 - Creating Digital Art - Portfolio Site</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="dark" data-md-color-primary="deep-purple" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#210-creating-digital-art" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Portfolio Site" class="md-header__button md-logo" aria-label="Portfolio Site" data-md-component="logo">
+      
+  <img src="https://drive.google.com/thumbnail?id=1OaspU3pMMzDgaLhEGvdD4oiczAvKvFOv" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Portfolio Site
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              210 - Creating Digital Art
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="dark" data-md-color-primary="deep-purple" data-md-color-accent="purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="light" data-md-color-primary="deep-purple" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../202-Digital-Games-Production/" class="md-tabs__link">
+          
+  
+  LV2 Units
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../LV3/Projects/302-Creating-a-Digital-Game/" class="md-tabs__link">
+          
+  
+  LV3
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Portfolio Site" class="md-nav__button md-logo" aria-label="Portfolio Site" data-md-component="logo">
+      
+  <img src="https://drive.google.com/thumbnail?id=1OaspU3pMMzDgaLhEGvdD4oiczAvKvFOv" alt="logo">
+
+    </a>
+    Portfolio Site
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    LV2 Units
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            LV2 Units
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../202-Digital-Games-Production/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    202 - Digital Games Production
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../205-Meeting-a-Digital-Media-Brief/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    205 - Meeting a Digital Media Brief
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../207-Making-a-Website/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    207 - Making a Website
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../209-Animation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    209 - Animation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    210 - Creating Digital Art
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    210 - Creating Digital Art
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navigation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Concepts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Concepts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#i-discussing-some-key-concepts-in-making-digital-art-and-exploring-their-use-in-video-game-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      (I) - Discussing some key concepts in making digital art, and exploring their use in video game creation.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="(I) - Discussing some key concepts in making digital art, and exploring their use in video game creation.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pixel-art" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pixel Art
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concept-art" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concept Art
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#level-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Level Design
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-describing-and-defining-the-different-elements-of-art" class="md-nav__link">
+    <span class="md-ellipsis">
+      (II) - Describing and defining the different elements of art.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="(II) - Describing and defining the different elements of art.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#line" class="md-nav__link">
+    <span class="md-ellipsis">
+      Line
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shape" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shape
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#value" class="md-nav__link">
+    <span class="md-ellipsis">
+      Value
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#form" class="md-nav__link">
+    <span class="md-ellipsis">
+      Form
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#space" class="md-nav__link">
+    <span class="md-ellipsis">
+      Space
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colour" class="md-nav__link">
+    <span class="md-ellipsis">
+      Colour
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#texture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Texture
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iii-exploring-some-terms-relating-to-colour" class="md-nav__link">
+    <span class="md-ellipsis">
+      (III) - Exploring some terms relating to colour.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="(III) - Exploring some terms relating to colour.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hue" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hue
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#saturation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Saturation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opacityalpha" class="md-nav__link">
+    <span class="md-ellipsis">
+      Opacity/Alpha
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-digital-art" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Digital Art
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating Digital Art">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#i-re-creating-3-classic-video-game-characters-using-any-pixel-art-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      (I) - Re-creating 3 classic video game characters using any pixel art software.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="(I) - Re-creating 3 classic video game characters using any pixel art software.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#buddy-simulator-1984" class="md-nav__link">
+    <span class="md-ellipsis">
+      Buddy Simulator 1984
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deltarune" class="md-nav__link">
+    <span class="md-ellipsis">
+      deltarune
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pokemon" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pokemon
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-re-creating-2-images-of-a-video-game-character-using-any-paintingvector-drawing-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      (II) - Re-creating 2 images of a video game character using any painting/vector drawing software.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="(II) - Re-creating 2 images of a video game character using any painting/vector drawing software.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hollow-knight" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hollow Knight
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ultrakill" class="md-nav__link">
+    <span class="md-ellipsis">
+      ULTRAKILL
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#review" class="md-nav__link">
+    <span class="md-ellipsis">
+      Review
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Review">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tutor-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tutor Feedback
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#self-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Self Evaluation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../213-Digital-Audio-Production/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    213 - Digital Audio Production
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../217-Marketing-and-Promoting-Digital-Media-Products/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    217 - Marketing and Promoting Digital Media Products
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../222-Careers-in-Creative-Digital-Media/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    222 - Careers in Creative Digital Media
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    LV3
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            LV3
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Projects
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Projects
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LV3/Projects/302-Creating-a-Digital-Game/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    302 - Creating a Digital Game
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LV3/Projects/315-Character-Modelling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    315 - 3D Character Modelling
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LV3/Projects/318-Creating-3D-Digital-Art/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    318 - Creating 3D Digital Art
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LV3/Projects/344-Using-a-Game-Engine/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    344 - Using a Game Engine
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Research
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Research
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LV3/Research/315-Character-Modelling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    315 - Character Modelling
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LV3/Research/316-Character-Rigging/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    316 - Character Rigging
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LV3/Research/319-Creating-3D-Digital-Animation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    319 - Creating 3D Digital Animation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LV3/Research/323-Creating-Audio-for-Digital-Media/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    323 - Creating Audio for Digital Media
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navigation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Concepts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Concepts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#i-discussing-some-key-concepts-in-making-digital-art-and-exploring-their-use-in-video-game-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      (I) - Discussing some key concepts in making digital art, and exploring their use in video game creation.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="(I) - Discussing some key concepts in making digital art, and exploring their use in video game creation.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pixel-art" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pixel Art
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concept-art" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concept Art
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#level-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Level Design
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-describing-and-defining-the-different-elements-of-art" class="md-nav__link">
+    <span class="md-ellipsis">
+      (II) - Describing and defining the different elements of art.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="(II) - Describing and defining the different elements of art.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#line" class="md-nav__link">
+    <span class="md-ellipsis">
+      Line
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shape" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shape
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#value" class="md-nav__link">
+    <span class="md-ellipsis">
+      Value
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#form" class="md-nav__link">
+    <span class="md-ellipsis">
+      Form
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#space" class="md-nav__link">
+    <span class="md-ellipsis">
+      Space
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colour" class="md-nav__link">
+    <span class="md-ellipsis">
+      Colour
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#texture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Texture
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iii-exploring-some-terms-relating-to-colour" class="md-nav__link">
+    <span class="md-ellipsis">
+      (III) - Exploring some terms relating to colour.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="(III) - Exploring some terms relating to colour.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hue" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hue
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#saturation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Saturation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opacityalpha" class="md-nav__link">
+    <span class="md-ellipsis">
+      Opacity/Alpha
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-digital-art" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Digital Art
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating Digital Art">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#i-re-creating-3-classic-video-game-characters-using-any-pixel-art-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      (I) - Re-creating 3 classic video game characters using any pixel art software.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="(I) - Re-creating 3 classic video game characters using any pixel art software.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#buddy-simulator-1984" class="md-nav__link">
+    <span class="md-ellipsis">
+      Buddy Simulator 1984
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deltarune" class="md-nav__link">
+    <span class="md-ellipsis">
+      deltarune
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pokemon" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pokemon
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-re-creating-2-images-of-a-video-game-character-using-any-paintingvector-drawing-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      (II) - Re-creating 2 images of a video game character using any painting/vector drawing software.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="(II) - Re-creating 2 images of a video game character using any painting/vector drawing software.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hollow-knight" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hollow Knight
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ultrakill" class="md-nav__link">
+    <span class="md-ellipsis">
+      ULTRAKILL
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#review" class="md-nav__link">
+    <span class="md-ellipsis">
+      Review
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Review">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tutor-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tutor Feedback
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#self-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Self Evaluation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<div><h1 id="210-creating-digital-art"><strong>210 - Creating Digital Art</strong></h1>
+<h2 id="navigation">Navigation</h2>
+<ul>
+<li><a href="./#key-concepts">Key Concepts</a></li>
+<li><a href="./#creating-digital-art">Creating Digital Art</a></li>
+<li><a href="./#review">Review</a></li>
+</ul>
+<hr>
+<h2 id="key-concepts">Key Concepts</h2>
+<h3 id="i-discussing-some-key-concepts-in-making-digital-art-and-exploring-their-use-in-video-game-creation">(I) - Discussing some key concepts in making digital art, and exploring their use in video game creation.</h3>
+<h4 id="pixel-art"><u>Pixel Art</u></h4>
+<p>Pixel art is a form of digital art that utilises low resolutions and limited colour palettes in order to create artwork that has a noticeably sharp appearance. One of the major themes and principles found in pixel art is working creatively with limitations, a trait it shares with game design. One will find this type of art most frequently in video games, as it's one of the most accessible and least time-consuming ways to create graphics that look good and have a distinct visual style, without sacrificing a game's performance. Where other types of media may utilise pixel art primarily for the blocky aesthetics or to achieve a retro vibe, game creation tends to call for a large number of moving parts and assets, which all need to fit well with each other and be fairly easy to replace or change, all things that make pixel art an ideal choice. At one point in time, pixel art was even the only feasible way to create graphics for games, due to hardware limitations of the era; and all the reasons it was used back then still have value today, hence pixel art’s maintained popularity in modern game design.</p>
+<h4 id="concept-art"><u>Concept Art</u></h4>
+<p>Conceptual art is a vital part of developing media. The term refers to any type of visual art that has a focus on accurately conveying a concept, style or design draft rather than being simply a one-off piece. It has a place in many types of creative visual media, from filmmaking to comics. Within concept art is usually where you'll see the core design features, atmosphere and style of a game or piece of media take shape. It essentially serves as a visual plan for media; to get the visuals of a character, environment, species etc. at least mostly figured out before jumping straight in and potentially wasting a lot of time and resources to make entire rigged and textured models or sprite sheets for designs that don’t fit into the final product.</p>
+<h4 id="level-design"><u>Level Design</u></h4>
+<p>An often overlooked aspect of art &amp; design, level design is a video game specific term, though it follows and utilises some similar conventions as composition and colour theory does in other mediums. Level design refers to the process of creating areas, or 'levels', in games. This is a strategic kind of design, where one has to make sure someone playing their game is going to understand the level they've been put in. Many different methods are used to construct good levels, like arranging objects in an area to lead the eye and gently inform the player of what a specific location means, using bright colours to signal an exit or important items, or subtly discouraging the player from places they can't enter. This is vital for game design as exploring and interacting with levels is the primary way your players are going to experience your game - particularly in level-centric games like Super Mario or those that heavily feature exploration, the design of levels can make or break a game.</p>
+<h3 id="ii-describing-and-defining-the-different-elements-of-art">(II) - Describing and defining the different elements of art.</h3>
+<h4 id="line"><u>Line</u></h4>
+<p>One-dimensional marks that span a space between two points. This element can be used to indicate direction, composition, or shape, and helps to lead the eye around a piece. A line can be either 'implied' through other elements or a piece's arrangement, or be 'actual', explicit lines like those found in writing or cartoons.</p>
+<h4 id="shape"><u>Shape</u></h4>
+<p>A shape is a two-dimensional object or area in art, typically defined using lines. The simplest way to identify shapes in art is to blur your eyes; areas of the composition with similar colour or value will become more apparent. Unlike form, a shape's only dimensions are height and width. Geometric, outlined shapes are the most obvious example of this element, but shapes can be irregular and can even consist of multiple figures or objects.</p>
+<h4 id="value"><u>Value</u></h4>
+<p>Despite arguably falling under the element of colour, value is also its own element of art, as value is uniquely important in terms of making well defined lines, shapes, space and even texture. Value is what our eyes use the most when it comes to perceiving the world. The eye looks for silhouettes or shapes, and uses value to locate them, before then taking in things like saturation, hue, and smaller details. It's possible to use this, ideally in conjunction with other techniques and elements in order to create a visually striking piece or to help portray a certain mood, such as making a spooky atmosphere by using mostly low values, broken up with a small or distant light source such as a candle.</p>
+<h4 id="form"><u>Form</u></h4>
+<p>Form is a similar element to shape, instead referring to a three-dimensional object or area, with the added dimension of depth. As with shape, form does not have to be regular or organised, and can be highly abstract. Forms are defined by their dimensionality that allows for multiple viewing angles of a piece, along with being visibly distinct aspects of a piece. Once an element exclusive to physical/traditional mediums such as ceramic sculptures, the birth of 3D modelling software has allowed forms to be utilised even through digital art.</p>
+<h4 id="space"><u>Space</u></h4>
+<p>This element refers to the use of area within a work of art, such as the distance between, around, and within objects in a piece which can be used to create a feeling of depth and perspective. There are two types of space in art: positive, and negative. Negative space describes the space between and around the primary subjects in a piece, while positive space refers to the area said subjects take up themselves. Each has a different effect in a piece, and creative use of negative space can lead to much more visually interesting works when done effectively.</p>
+<h4 id="colour"><u>Colour</u></h4>
+<p>Colour is a combination of three properties: hue, saturation (a.k.a. chroma/intensity), and value (a.k.a. luminosity/lightness). Hue is what people primarily think of when describing colours, such as red, blue, green etc. Saturation measures the strength of a colour, with low saturation colours being closer to grey and high saturation ones being very bright. Value describes how dark or light a given colour is, or the perceived lightness of different colours. On a 0-100 scale, for example, a value of 0 would mean the colour indicated is pitch black, while a value of 100 would be the brightest possible. In greyscale, 100 would be pure white.</p>
+<h4 id="texture"><u>Texture</u></h4>
+<p>The surface quality of an artwork, an aspect of art that evokes the sense of touch. This element is often conveyed through a work's actual texture, such as sculpture being made of a smooth or rough substance. However, texture can also be implied through the use of other elements, such as by using wobbly lines to give the impression of a bumpy surface, or using value to create shading that suggests an object is wet. There are a lot of different ways to use texture even within the same medium; a painting could employ rough brushstrokes to make the strokes themselves look textured, or use globs of paint to create abstract, tactile pieces, or even create a work that subverts expectations by making concrete appear to be pillowy soft, and clouds look spiky and hard.</p>
+<h3 id="iii-exploring-some-terms-relating-to-colour">(III) - Exploring some terms relating to colour.</h3>
+<h4 id="hue"><u>Hue</u></h4>
+<p>Hue essentially refers to the name of a colour (eg: red, blue, green). As opposed to referring to how bright/dark, vivid/dull, or opaque/transparent a given colour is, the hue value refers to the actual 'colour' of said colour, or rather what its place on the colour wheel would be. The hue value is usually measured on a scale of 0-360, with each change in value being comparable to moving a degree around a colour wheel; which is also how this value is often visualised in digital colour picker tools.</p>
+<h4 id="saturation"><u>Saturation</u></h4>
+<p>Saturation is what determines how strong a given colour is. This is typically determined using a scale of 0-100, and the higher the saturation, the more intense or 'colourful' a colour will appear. The reverse is also true, in that a saturation value of 0 will result in a colour that is greyscale.</p>
+<h4 id="opacityalpha"><u>Opacity/Alpha</u></h4>
+<p>Opacity, or alpha, determines how opaque a digitally rendered layer, colour, image etc. is, via a scale of 0.0 to 1.0. A value of 1 will result in an asset being fully opaque, while 0 results in complete transparency; additionally, an image with an alpha value of 0.5 would be semi-transparent, but still visible.</p>
+<h2 id="creating-digital-art">Creating Digital Art</h2>
+<p>(https://drive.google.com/thumbnail?id=
+&amp;sz=s4000)
+&amp;sz=s300)</p>
+<h3 id="i-re-creating-3-classic-video-game-characters-using-any-pixel-art-software">(I) - Re-creating 3 classic video game characters using any pixel art software.</h3>
+<h4 id="buddy-simulator-1984"><center><u>Buddy Simulator 1984</u></center></h4>
+<p></p><center><a class="glightbox" href="https://drive.google.com/thumbnail?id=1LSrVtCeVy4oaJJbKp31binBbTNHJWX7n&amp;sz=s300" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="okbuddy" src="https://drive.google.com/thumbnail?id=1LSrVtCeVy4oaJJbKp31binBbTNHJWX7n&amp;sz=s300"></a>
+<a class="glightbox" href="https://drive.google.com/thumbnail?id=1TJUhSqI3dTkh2vqSGq7oW023kYFEmTwq&amp;sz=s300" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="plinko" src="https://drive.google.com/thumbnail?id=1TJUhSqI3dTkh2vqSGq7oW023kYFEmTwq&amp;sz=s300"></a></center>
+<p></p><center><em>Original (left) and remake (right)</em></center>
+<h4 id="deltarune"><center><u>deltarune</u></center></h4>
+<p></p><center><a class="glightbox" href="https://drive.google.com/thumbnail?id=12xTLW3T8xzCX0xwOqP6HDqtdz1At0whN&amp;sz=s300" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="krimple" src="https://drive.google.com/thumbnail?id=12xTLW3T8xzCX0xwOqP6HDqtdz1At0whN&amp;sz=s300"></a>
+<a class="glightbox" href="https://drive.google.com/thumbnail?id=1oXAFmiYikAj_iXQROUyaJi3lsbNxTB3D&amp;sz=s300" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="crimble" src="https://drive.google.com/thumbnail?id=1oXAFmiYikAj_iXQROUyaJi3lsbNxTB3D&amp;sz=s300"></a></center>
+<p></p><center><em>Original (left) and remake (right)</em>
+(its called aura bruh)</center>
+<h4 id="pokemon"><center><u>Pokemon</u></center></h4>
+<p></p><center><a class="glightbox" href="https://drive.google.com/thumbnail?id=1VtYjdFUeY5kJyrYUcRJkB--hu_9Nh-PU&amp;sz=s300" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="LOVETHISANIMAL" src="https://drive.google.com/thumbnail?id=1VtYjdFUeY5kJyrYUcRJkB--hu_9Nh-PU&amp;sz=s300"></a>
+<a class="glightbox" href="https://drive.google.com/thumbnail?id=1Shqrp_Q620kVYmYjJ2_e-rbbhdWWW302&amp;sz=s300" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="BIMBINIS" src="https://drive.google.com/thumbnail?id=1Shqrp_Q620kVYmYjJ2_e-rbbhdWWW302&amp;sz=s300"></a></center>
+<p></p><center><em>Originals (left) and remakes (right)</em></center>
+<h3 id="ii-re-creating-2-images-of-a-video-game-character-using-any-paintingvector-drawing-software">(II) - Re-creating 2 images of a video game character using any painting/vector drawing software.</h3>
+<h4 id="hollow-knight"><center><u>Hollow Knight</u></center></h4>
+<p></p><center><a class="glightbox" href="https://drive.google.com/thumbnail?id=1dFBy1h1isrcV9ilZHUM2doh8od7b5iFa&amp;sz=s400" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ghoit" src="https://drive.google.com/thumbnail?id=1dFBy1h1isrcV9ilZHUM2doh8od7b5iFa&amp;sz=s400"></a>
+<a class="glightbox" href="https://drive.google.com/thumbnail?id=1UDQFERI9CUcw_JkYdOmXjb1kcyKRwtsG&amp;sz=s400" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="GOHT FIN" src="https://drive.google.com/thumbnail?id=1UDQFERI9CUcw_JkYdOmXjb1kcyKRwtsG&amp;sz=s400"></a></center>
+<p></p><center><em>Original (left) and remake (right)</em></center>
+<h4 id="ultrakill"><center><u>ULTRAKILL</u></center></h4>
+<p></p><center><a class="glightbox" href="https://drive.google.com/thumbnail?id=1e8IEVgKxSJYPPiEj4yziYnh1xUFofvHI&amp;sz=s400" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="straightpeople" src="https://drive.google.com/thumbnail?id=1e8IEVgKxSJYPPiEj4yziYnh1xUFofvHI&amp;sz=s400"></a>
+<a class="glightbox" href="https://drive.google.com/thumbnail?id=174vA3BvM8lIsLCYcRZ6tiMezVw0CBeXR&amp;sz=s400" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="GAYPEOPLE" src="https://drive.google.com/thumbnail?id=174vA3BvM8lIsLCYcRZ6tiMezVw0CBeXR&amp;sz=s400"></a></center>
+<p></p><center><em>Original (left) and remake (right)</em></center>
+<h2 id="review">Review</h2>
+<h3 id="tutor-feedback">Tutor Feedback</h3>
+<p>Overall I am extremely impressed with the quality of these images! The first 3 pixel art-style recreations use the originals more as references that Maria then expanded on with their own creative ideas. The ‘recreations’ are more like brand new pieces besides the 3rd, which is a faithful recolouring of the original. I feel that these recreations are a very impressive interpretation that improved on the originals. </p>
+<p>The 2 full-resolution images Maria recreated are also extremely well done. Maria has re-built the images from the ground up using their tablet, and has spent a lot of time playing with the proportions and colour-elements with the end results also seeming to be an improvement on the originals - in my opinion.</p>
+<p>My only critique from seeing these images on this assignment sheet would be that it would be a good idea for Maria to provide some links under their full-resolution image recreations so that the viewer can view these images in their native, full resolution! Otherwise I have no real criticisms regarding the images themselves.</p>
+<h3 id="self-evaluation">Self Evaluation</h3>
+<p>I feel that I was able to both understand and execute the tasks provided, and was successful in recreating the images chosen for it. I was able to expand on the images used in different ways, with the final products still recognisable as being based on the original/being the same character, but with different ideas added in as well. Different unique aspects of the original images, like the painted art styles of the two full-res images and the CRT-screen look of the first pixel art image, were recreated using the different tools I had available, which worked effectively to keep the final products faithful to the originals. </p>
+<p>At time of evaluation, I didn't add any links to view the full-resolution images uncompressed, which I agree ought to be changed in order to accurately display them without crunching down the details. If I were to do this task again, I would try to be more creative with some of the pixel art images, and try to make use of lower resolutions as it's a technique I'm not as familiar with, which could help in recreating the same vibe as the original pieces. On the other hand, I might also opt for time-saving techniques for painting the full-resolution pieces, because it took a long time to finish some parts of those. Though I might have done some things slightly differently, overall I'm very happy with the outcome of this exercise.</p></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "mkdocs-video", "header.autohide", "content.tooltips", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

@@ -1,0 +1,1656 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://haruzova.github.io/eob-pf/LV2-Units/209-Animation/">
+      
+      
+        <link rel="prev" href="../207-Making-a-Website/">
+      
+      
+        <link rel="next" href="../210-Creating-Digital-Art/">
+      
+      
+      <link rel="icon" href="../../assets/misc/donspin.gif">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>209 - Animation - Portfolio Site</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="dark" data-md-color-primary="deep-purple" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#209-animation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Portfolio Site" class="md-header__button md-logo" aria-label="Portfolio Site" data-md-component="logo">
+      
+  <img src="https://drive.google.com/thumbnail?id=1OaspU3pMMzDgaLhEGvdD4oiczAvKvFOv" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Portfolio Site
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              209 - Animation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="dark" data-md-color-primary="deep-purple" data-md-color-accent="purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="light" data-md-color-primary="deep-purple" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../202-Digital-Games-Production/" class="md-tabs__link">
+          
+  
+  LV2 Units
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../LV3/Projects/302-Creating-a-Digital-Game/" class="md-tabs__link">
+          
+  
+  LV3
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Portfolio Site" class="md-nav__button md-logo" aria-label="Portfolio Site" data-md-component="logo">
+      
+  <img src="https://drive.google.com/thumbnail?id=1OaspU3pMMzDgaLhEGvdD4oiczAvKvFOv" alt="logo">
+
+    </a>
+    Portfolio Site
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    LV2 Units
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            LV2 Units
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../202-Digital-Games-Production/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    202 - Digital Games Production
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../205-Meeting-a-Digital-Media-Brief/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    205 - Meeting a Digital Media Brief
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../207-Making-a-Website/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    207 - Making a Website
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    209 - Animation
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    209 - Animation
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navigation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Concepts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Concepts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#i-writing-a-short-definition-of-the-5-types-of-animation" class="md-nav__link">
+    <span class="md-ellipsis">
+      (I) - Writing a short definition of the 5 types of animation.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="(I) - Writing a short definition of the 5 types of animation.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#traditional-animationcel-animation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Traditional Animation/Cel Animation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2dvector-based-animation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2D/Vector Based Animation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3d-computer-animation" class="md-nav__link">
+    <span class="md-ellipsis">
+      3D Computer Animation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#motion-graphics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Motion Graphics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stop-motion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stop Motion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-selecting-3-of-the-12-principles-of-animation-to-describe-and-explain" class="md-nav__link">
+    <span class="md-ellipsis">
+      (II) - Selecting 3 of the 12 Principles of Animation to describe and explain.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="(II) - Selecting 3 of the 12 Principles of Animation to describe and explain.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#squash-and-stretch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Squash and Stretch
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#straight-aheadpose-to-pose-action" class="md-nav__link">
+    <span class="md-ellipsis">
+      Straight Ahead/Pose to Pose Action
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slow-inslow-out" class="md-nav__link">
+    <span class="md-ellipsis">
+      Slow In/Slow Out
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-animations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Animations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating Animations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#i-making-an-animation-of-a-bouncing-ball-using-one-of-the-5-types-of-animation-and-employing-the-squash-and-stretch-principle" class="md-nav__link">
+    <span class="md-ellipsis">
+      (I) - Making an animation of a bouncing ball using one of the 5 types of animation and employing the ‘Squash and Stretch’ principle.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-using-the-knowledge-acquired-from-the-ball-bounce-and-reference-footage-to-create-a-walk-cycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      (II) - Using the knowledge acquired from the ball bounce and reference footage to create a walk cycle.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="(II) - Using the knowledge acquired from the ball bounce and reference footage to create a walk cycle.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finished-product" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finished Product
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iii-using-the-knowledge-acquired-from-the-walk-cycle-along-with-reference-footage-to-create-a-run-cycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      (III) - Using the knowledge acquired from the walk cycle along with reference footage to create a run cycle.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="(III) - Using the knowledge acquired from the walk cycle along with reference footage to create a run cycle.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#process_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finished-product_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finished Product
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#review" class="md-nav__link">
+    <span class="md-ellipsis">
+      Review
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Review">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tutor-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tutor Feedback
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tutor Feedback">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bouncing-ball" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bouncing Ball
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#walking-animation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Walking Animation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-animation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Running Animation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#self-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Self Evaluation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../210-Creating-Digital-Art/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    210 - Creating Digital Art
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../213-Digital-Audio-Production/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    213 - Digital Audio Production
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../217-Marketing-and-Promoting-Digital-Media-Products/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    217 - Marketing and Promoting Digital Media Products
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../222-Careers-in-Creative-Digital-Media/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    222 - Careers in Creative Digital Media
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    LV3
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            LV3
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Projects
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Projects
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LV3/Projects/302-Creating-a-Digital-Game/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    302 - Creating a Digital Game
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LV3/Projects/315-Character-Modelling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    315 - 3D Character Modelling
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LV3/Projects/318-Creating-3D-Digital-Art/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    318 - Creating 3D Digital Art
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LV3/Projects/344-Using-a-Game-Engine/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    344 - Using a Game Engine
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Research
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Research
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LV3/Research/315-Character-Modelling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    315 - Character Modelling
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LV3/Research/316-Character-Rigging/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    316 - Character Rigging
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LV3/Research/319-Creating-3D-Digital-Animation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    319 - Creating 3D Digital Animation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LV3/Research/323-Creating-Audio-for-Digital-Media/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    323 - Creating Audio for Digital Media
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navigation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Concepts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Concepts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#i-writing-a-short-definition-of-the-5-types-of-animation" class="md-nav__link">
+    <span class="md-ellipsis">
+      (I) - Writing a short definition of the 5 types of animation.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="(I) - Writing a short definition of the 5 types of animation.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#traditional-animationcel-animation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Traditional Animation/Cel Animation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2dvector-based-animation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2D/Vector Based Animation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3d-computer-animation" class="md-nav__link">
+    <span class="md-ellipsis">
+      3D Computer Animation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#motion-graphics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Motion Graphics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stop-motion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stop Motion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-selecting-3-of-the-12-principles-of-animation-to-describe-and-explain" class="md-nav__link">
+    <span class="md-ellipsis">
+      (II) - Selecting 3 of the 12 Principles of Animation to describe and explain.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="(II) - Selecting 3 of the 12 Principles of Animation to describe and explain.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#squash-and-stretch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Squash and Stretch
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#straight-aheadpose-to-pose-action" class="md-nav__link">
+    <span class="md-ellipsis">
+      Straight Ahead/Pose to Pose Action
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slow-inslow-out" class="md-nav__link">
+    <span class="md-ellipsis">
+      Slow In/Slow Out
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-animations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Animations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating Animations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#i-making-an-animation-of-a-bouncing-ball-using-one-of-the-5-types-of-animation-and-employing-the-squash-and-stretch-principle" class="md-nav__link">
+    <span class="md-ellipsis">
+      (I) - Making an animation of a bouncing ball using one of the 5 types of animation and employing the ‘Squash and Stretch’ principle.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-using-the-knowledge-acquired-from-the-ball-bounce-and-reference-footage-to-create-a-walk-cycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      (II) - Using the knowledge acquired from the ball bounce and reference footage to create a walk cycle.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="(II) - Using the knowledge acquired from the ball bounce and reference footage to create a walk cycle.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finished-product" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finished Product
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iii-using-the-knowledge-acquired-from-the-walk-cycle-along-with-reference-footage-to-create-a-run-cycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      (III) - Using the knowledge acquired from the walk cycle along with reference footage to create a run cycle.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="(III) - Using the knowledge acquired from the walk cycle along with reference footage to create a run cycle.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#process_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finished-product_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finished Product
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#review" class="md-nav__link">
+    <span class="md-ellipsis">
+      Review
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Review">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tutor-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tutor Feedback
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tutor Feedback">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bouncing-ball" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bouncing Ball
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#walking-animation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Walking Animation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-animation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Running Animation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#self-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Self Evaluation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<div><h1 id="209-animation"><strong>209 - Animation</strong></h1>
+<h2 id="navigation">Navigation</h2>
+<ul>
+<li><a href="./#key-concepts">Key Concepts</a></li>
+<li><a href="./#creating-animations">Creating Animations</a></li>
+<li><a href="./#review">Review</a></li>
+</ul>
+<hr>
+<h2 id="key-concepts">Key Concepts</h2>
+<h3 id="i-writing-a-short-definition-of-the-5-types-of-animation">(I) - Writing a short definition of the 5 types of animation.</h3>
+<h4 id="traditional-animationcel-animation"><u>Traditional Animation/Cel Animation</u></h4>
+<p>Also known as cel animation, traditional animation is one of the oldest types of animation; it originally involved hand drawing frames on paper before transferring them to clear sheets of plastic called 'cels' to be coloured and made into the final product. In the modern day, however, it's also possible to use the same methods using computers and software instead of paper and cels, and this has become the standard for most cel animation in the industry.</p>
+<h4 id="2dvector-based-animation"><u>2D/Vector Based Animation</u></h4>
+<p>2D animation, also known as vector-based animation, is substantially more accessible than types such as traditional or stop-motion. This style involves using animation software to create rigs for characters or objects, then move parts of that character around using them. Rigs are also often still used in combination with hand drawn frames and /assets, but with vector-based animation, it's not a necessity. A key difference between digital cel animation and 2D animation is the use of vectors- allowing for easy resizing and transformation of elements without causing blur, something that isn't possible with the raster graphics usually present in cel animation.</p>
+<h4 id="3d-computer-animation"><u>3D Computer Animation</u></h4>
+<p>3D animation, or computer animation, involves the use of digital 3D models as opposed to drawings or 2D /assets. Rigs are created for these models, then different parts of the model are altered and repositioned to make up the different frames of an animation; this can be done via manually moving the model for each keyframe, or using motion-capture technology and refining the movements afterwards. The versatility and relative accessibility of 3D animation makes it a go-to option for creative projects on a budget, or large-scale efforts like VR, or 3D video games, where other options may be too time-consuming, technically difficult, or expensive.</p>
+<h4 id="motion-graphics"><u>Motion Graphics</u></h4>
+<p>Motion graphics are notably different from the other animation types, in that the others are more like mediums, and are most often used to help illustrate or create narrative media; motion graphics instead are defined as making use of animation to move graphic design elements such as text, logos, or objects. In fact, any other type of animation can be used to create motion graphics; it's not a medium or a method, but more like a genre in which the primary focus is on animated graphic design rather than characters. Motion graphics are most often found in places such as website development, advertisements, and film credits.</p>
+<h4 id="stop-motion"><u>Stop Motion</u></h4>
+<p>Stop motion animation is a form of animation that uses physical objects, incrementally moving them and capturing photographs of each stage, to create the appearance of movement when played in quick succession. Any object can be used in stop motion, or even live actors, but some popular methods are the use of plasticine figures, puppets, or dolls as they can better be used for more complex designs and movements. A lot of planning is involved in this animation type compared to others, as it's harder to go back and fix past frames individually, and in big scenes with a lot of moving parts, multiple people would have to work on different parts of a scene. Early stop motion even used film, which gave animators no way to check previous frames, though with modern technology this is now possible.</p>
+<h3 id="ii-selecting-3-of-the-12-principles-of-animation-to-describe-and-explain">(II) - Selecting 3 of the 12 Principles of Animation to describe and explain.</h3>
+<h4 id="squash-and-stretch"><u>Squash and Stretch</u></h4>
+<p>Squash and stretch is a technique in which an animator intentionally distorts the shape of an object, via compressing or extending some or all of said object, in order to to achieve a sense of weight, speed or flexibility in an animation. It is an essential part of creating natural and expressive movement. As an example, when animating a person jumping, a good use of squash and stretch would exaggerate the movement by 'squashing' the character horizontally during the build up to and recovery from the jump. This would make for a more 'bouncy' feeling in the jump, as opposed to stiff and robotic movement. Squash and stretch itself can fall somewhat into the principle of exaggeration, since most uses of it couldn't happen in real life, but it's applied anyway in order to avoid the stiffness that can come with life-accurate movement, and provide clarity to actions, movement and emotions.</p>
+<h4 id="straight-aheadpose-to-pose-action"><u>Straight Ahead/Pose to Pose Action</u></h4>
+<p>There are generally two different ways to draw an animation - these are straight ahead action and pose to pose. The former refers to animating frame by frame, one step at a time in a mainly chronological manner. Pose to pose instead refers to animating using different key frames, then going back and drawing in-betweens. It's common to use both in tandem when animating, since each has their own benefits and downfalls and the preferable option for all the different parts of an animation is rarely just one. Straight ahead animation is best used to achieve fluid and natural movement, being especially useful for fast-paced scenes such as moments of action or frantic movement; though there is more risk of losing track of consistency like proportions and timing, so isn't as popularly used in longer or more complicated scenes. Forgoing doing everything chronologically, pose to pose benefits from it's use of planning out scenes beforehand to be a lot more consistent and easier to fix movement afterwards, seeing plenty of use in complex and drawn out scenes where composition really matters. However, it's not often desirable for those loose and spontaneous actions.</p>
+<h4 id="slow-inslow-out"><u>Slow In/Slow Out</u></h4>
+<p>Slow in and slow out as a principle of animation is the tuning of acceleration and deceleration of movement. Most natural movements are never completely linear; they often start slowly, pick up movement midway, then slow to a stop at the end. By replicating this in animation, something that can be achieved through using more frames for the start and stop of a motion and fewer for the middle, an animator can quickly make their movements more realistic and pleasing to the eye. This principle is particularly helpful to remember when creating impactful movements that the viewer can easily track with their eyes, as the slow in aspect can serve as its own kind of anticipation - and using slow in slow out in tandem with anticipation is what prevents motions from being so sudden the viewer can't process it. Additionally, exaggerating your use of this principle can create stylised and striking motions as opposed to keeping a wholly predictable, flat speed, helping keep visual interest.</p>
+<h2 id="creating-animations">Creating Animations</h2>
+<h3 id="i-making-an-animation-of-a-bouncing-ball-using-one-of-the-5-types-of-animation-and-employing-the-squash-and-stretch-principle">(I) - Making an animation of a bouncing ball using one of the 5 types of animation and employing the ‘Squash and Stretch’ principle.</h3>
+<figure>
+<p><a class="glightbox" href="https://drive.google.com/thumbnail?id=1FurKEM4PzTkX0rwc4nUReBN8ZkPP7hjq&amp;sz=s4000" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="balling" src="https://drive.google.com/thumbnail?id=1FurKEM4PzTkX0rwc4nUReBN8ZkPP7hjq&amp;sz=s4000"></a></p>
+<figcaption>
+<p><strong><em>b o i o i o i n g</em></strong></p>
+</figcaption>
+</figure>
+<h3 id="ii-using-the-knowledge-acquired-from-the-ball-bounce-and-reference-footage-to-create-a-walk-cycle">(II) - Using the knowledge acquired from the ball bounce and reference footage to create a walk cycle.</h3>
+<h4 id="process"><u>Process</u></h4>
+<ol>
+<li>
+<p>Basic Movement</p>
+</li>
+<li>
+<p>Structure + Forms</p>
+<p><a class="glightbox" href="https://drive.google.com/thumbnail?id=1LvzRs6y8ave6L9CV4oe3Nh2OmGcs0z6p&amp;sz=s300" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="WALK1" src="https://drive.google.com/thumbnail?id=1LvzRs6y8ave6L9CV4oe3Nh2OmGcs0z6p&amp;sz=s300"></a>
+<a class="glightbox" href="https://drive.google.com/thumbnail?id=1gOd0HfhZ0-UhqJq9_4kZr45FW7GX0vPo&amp;sz=s300" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="WALK2" src="https://drive.google.com/thumbnail?id=1gOd0HfhZ0-UhqJq9_4kZr45FW7GX0vPo&amp;sz=s300"></a></p>
+</li>
+<li>
+<p>Final Sketches</p>
+</li>
+<li>
+<p>Cleanup &amp; Linework</p>
+<p><a class="glightbox" href="https://drive.google.com/thumbnail?id=1Kw9Td2rWDuyIGQQ9j2HOvs2-aOX5dv_6&amp;sz=s300" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="WALK3" src="https://drive.google.com/thumbnail?id=1Kw9Td2rWDuyIGQQ9j2HOvs2-aOX5dv_6&amp;sz=s300"></a>
+<a class="glightbox" href="https://drive.google.com/thumbnail?id=1oILzGKd_WXgutzQVnvy7kLMBK44FOUm4&amp;sz=s300" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="WALK4" src="https://drive.google.com/thumbnail?id=1oILzGKd_WXgutzQVnvy7kLMBK44FOUm4&amp;sz=s300"></a></p>
+</li>
+</ol>
+<h4 id="finished-product"><center><u>Finished Product</u></center></h4>
+<figure>
+<p><a class="glightbox" href="https://drive.google.com/thumbnail?id=1Ef4Ek1VZElwM5ZrUTKKvOZpbRmf-RwvP&amp;sz=s4000" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="walkfin" src="https://drive.google.com/thumbnail?id=1Ef4Ek1VZElwM5ZrUTKKvOZpbRmf-RwvP&amp;sz=s4000"></a></p>
+<figcaption>
+<p>(added colour and textures)</p>
+</figcaption>
+</figure>
+<h3 id="iii-using-the-knowledge-acquired-from-the-walk-cycle-along-with-reference-footage-to-create-a-run-cycle">(III) - Using the knowledge acquired from the walk cycle along with reference footage to create a run cycle.</h3>
+<h4 id="process_1"><u>Process</u></h4>
+<ol>
+<li>Basic Movement</li>
+<li>
+<p>Structure + Forms</p>
+<p><a class="glightbox" href="https://drive.google.com/thumbnail?id=13O1_LhKhmr72iVsnVNx2XV5kyG4HyAcz&amp;sz=s4000" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="RUN12" src="https://drive.google.com/thumbnail?id=13O1_LhKhmr72iVsnVNx2XV5kyG4HyAcz&amp;sz=s4000"></a></p>
+</li>
+<li>
+<p>Scale to target resolution</p>
+</li>
+<li>
+<p>Final shapes and colours</p>
+<p><a class="glightbox" href="https://drive.google.com/thumbnail?id=1dT4x7pgoIxrRxyMBaoQPQASa0FdOXnEv&amp;sz=s4000" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="RUN34" src="https://drive.google.com/thumbnail?id=1dT4x7pgoIxrRxyMBaoQPQASa0FdOXnEv&amp;sz=s4000"></a></p>
+</li>
+</ol>
+<h4 id="finished-product_1"><center><u>Finished Product</u></center></h4>
+<figure>
+<p><a class="glightbox" href="https://drive.google.com/thumbnail?id=1IJRTfgGVl_wriTFrZtmN52_tIrCxL501&amp;sz=s4000" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="onebadgloop" src="https://drive.google.com/thumbnail?id=1IJRTfgGVl_wriTFrZtmN52_tIrCxL501&amp;sz=s4000"></a></p>
+<figcaption>
+<p>(added details and shading)</p>
+</figcaption>
+</figure>
+<h2 id="review">Review</h2>
+<h3 id="tutor-feedback">Tutor Feedback</h3>
+<h4 id="bouncing-ball"><u>Bouncing Ball</u></h4>
+<p>Maria has done a good job utilising the squash and stretch principle here, and has also taken time to add colour and shading in greyscale, which adds a subtle hint of depth to the ball as an object.</p>
+<h4 id="walking-animation"><u>Walking Animation</u></h4>
+<p>Maria has gone above and beyond with the walking animation. The frame number looks high, the quality is superb and the finish on the scythe and the overlay of a fabric-like texture really blends the whole thing together nicely. The character looks unique and the walk has style - very impressive.</p>
+<h4 id="running-animation"><u>Running Animation</u></h4>
+<p>The style has gone back to pixel-art and the impression of a character running has definitely been achieved - the anticipation of each step is there, and the added feature of smoke plumes coming off the character's head is a nice touch.  </p>
+<p>Only suggested improvement might be a less prevalent outline on the character as it is quite thick relative to the body, however this could easily just be a stylistic choice.</p>
+<h3 id="self-evaluation">Self Evaluation</h3>
+<p>When approaching this task in the future, I think that I would try to refine the final products and my techniques further. For example, while I was able to make use of keyframes, references, arcs, layer folders, and blending modes to an extent, I wasn't fully familiar with them all yet. Given the chance to do it again, I would aim to further capitalise on those techniques, and make the process efficient enough that instead of focusing on learning the basics, I could better spend that time on more advanced ideas like dynamics, composition/staging, stylization, adding appropriate detail, etc.</p></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "mkdocs-video", "header.autohide", "content.tooltips", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

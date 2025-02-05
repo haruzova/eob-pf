@@ -39,7 +39,7 @@ tr {
 }
 
 a {
-  font-weight: 1000;
+  font-weight: 700;
   color: var(--md-typeset-a-color);
 }
 
@@ -72,30 +72,45 @@ a:hover {
 }
 
 
+
 [data-md-color-scheme="light"] {
-  --md-hl-color:                #8b50cf;
+  --md-hl-color:                #a472dd;
   --md-h2-color:                #8567d1;
   --md-h3-color:                #7d68db;
   --md-h4-color:                #8082e2;
   --md-mid-color:             #ad8ff827;
 
-  --md-typeset-a-color:         #9f7cf3;
+  --md-typeset-a-color:         #785ab1;
   --md-a-line-color:         #a07cf386;
-  --md-a-visited-color: #6b6dc5;
+  --md-a-visited-color: #5c5db6;
   --md-a-visited-line-color: #6b6dc586;
 
   --md-default-bg-color:        #d6d1e6;
   --md-typeset-color:           #493480;
 
   --md-default-fg-color--light:  #8082e2;
-  --md-default-fg-color--lighter:  #aea0ff;
+  --md-default-fg-color--lighter:  #a599e6;
   --md-default-fg-color--lightest: #cfbbffd2;
 
-  --md-primary-fg-color:        #a380e2;
+  --md-primary-fg-color:        #a28acf;
   --md-primary-bg-color:        #d6d1e6;
   --md-accent-fg-color:         #a380e2;
   --md-accent-bg-color:         #a380e2;
   --md-default-fg-color:        #8a68e6c2;
+
+
+  --md-code-hl-number-color:           hsla(0, 67%, 50%, 1);
+  --md-code-hl-special-color:          hsla(340, 83%, 47%, 1);
+  --md-code-hl-function-color:         hsla(291, 45%, 50%, 1);
+  --md-code-hl-constant-color:         hsla(250, 63%, 60%, 1);
+  --md-code-hl-keyword-color:          hsla(219, 54%, 51%, 1);
+  --md-code-hl-string-color:           hsla(150, 63%, 30%, 1);
+  --md-code-hl-name-color:             var(--md-code-fg-color);
+  --md-code-hl-operator-color:         var(--md-default-fg-color--light);
+  --md-code-hl-punctuation-color:      var(--md-default-fg-color--light);
+  --md-code-hl-comment-color:          var(--md-default-fg-color--light);
+  --md-code-hl-generic-color:          var(--md-default-fg-color--light);
+  --md-code-hl-variable-color:         var(--md-default-fg-color--light);
 
   --md-typeset-table-color:     #8082e2;
 
@@ -117,9 +132,9 @@ a:hover {
   --md-h4-color:                #8082e2;
   --md-mid-color:             #ad8ff827;
 
-  --md-typeset-a-color:         #bc8be9;
+  --md-typeset-a-color:         #c599ee;
   --md-a-line-color:         #bc8be986;
-  --md-a-visited-color: #8082e2;
+  --md-a-visited-color: #7071db;
   --md-a-visited-line-color: #8082e286;
 
   --md-default-bg-color:        #241f31;
@@ -127,10 +142,10 @@ a:hover {
 
   --md-default-fg-color--light:  #9580e2;
   --md-default-fg-color--lighter:  #aea0ff;
-  --md-default-fg-color--lightest: #cfbbffd2;
+  --md-default-fg-color--lightest: #402c66;
   
-  --md-primary-fg-color:        #a380e2;
-  --md-primary-bg-color:        #d6d1e6;
+  --md-primary-fg-color:        #402c66;
+  --md-primary-bg-color:        #9d8ad8;
   --md-accent-fg-color:         #a380e2;
   --md-accent-bg-color:         #a380e2;
   --md-default-fg-color:        #dbafffb7;
@@ -139,9 +154,20 @@ a:hover {
 
   --md-primary-fg-color--light:        #ff0000;
   --md-primary-fg-color--dark:       #fffb00;
-  --md-primary-bg-color--light: #00ff55;
- 
+  --md-primary-bg-color--light: #d6d1e6;
 
+  --md-code-hl-number-color:           hsla(0, 67%, 50%, 1);
+  --md-code-hl-special-color:          hsla(340, 83%, 47%, 1);
+  --md-code-hl-function-color:         hsla(291, 45%, 50%, 1);
+  --md-code-hl-constant-color:         hsla(250, 63%, 60%, 1);
+  --md-code-hl-keyword-color:          hsla(219, 54%, 51%, 1);
+  --md-code-hl-string-color:           hsla(150, 63%, 30%, 1);
+  --md-code-hl-name-color:             var(--md-code-fg-color);
+  --md-code-hl-operator-color:         var(--md-default-fg-color--light);
+  --md-code-hl-punctuation-color:      var(--md-default-fg-color--light);
+  --md-code-hl-comment-color:          var(--md-default-fg-color--light);
+  --md-code-hl-generic-color:          var(--md-default-fg-color--light);
+  --md-code-hl-variable-color:         var(--md-default-fg-color--light);
 
   --md-typeset-table-color:     #8082e2;
 

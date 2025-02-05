@@ -784,7 +784,7 @@
         
   
   <span class="md-ellipsis">
-    344 Using a Game Engine
+    344 - Using a Game Engine
   </span>
   
 
@@ -1054,32 +1054,6 @@
 <li><strong><a href="LV2-Units/222-Careers-in-Creative-Digital-Media/">222 - Careers in Creative Digital Media</a></strong></li>
 </ul>
 <hr>
-<p><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-alt">Alt</kbd><span>+</span><kbd class="key-delete">Del</kbd></span></p>
-<details class="walk_state">
-<summary>Walk_state</summary>
-<div class="highlight"><pre><span></span><code>func _on_physics_process(_delta : float) -&gt; void:
-    var direction: Vector2 = GameInputEvents.movement_input()
-
-    if direction == Vector2.UP:
-        animated_sprite_2d.play("walk_back")
-    elif direction == Vector2.RIGHT:
-        animated_sprite_2d.play("walk_right")
-    elif direction == Vector2.DOWN:
-        animated_sprite_2d.play("walk_front")
-    elif direction == Vector2.LEFT:
-        animated_sprite_2d.play("walk_left")
-
-    if direction != Vector2.ZERO:
-        player.player_direction = direction
-
-    player.velocity = direction * speed
-    player.move_and_slide()
-</code></pre></div>
-</details>
-<blockquote>
-<p>[!NOTE] Title
-Contents</p>
-</blockquote>
 <h2 id="level-3">Level 3</h2>
 <h3 id="research"><strong>Research</strong></h3>
 <ul>
@@ -1097,6 +1071,7 @@ Contents</p>
 <li><strong><a href="LV3/Projects/302-Creating-a-Digital-Game/">302 - Creating a Digital Game</a></strong></li>
 <li><strong><a href="LV3/Research/316-Character-Rigging/">316 - Character Rigging</a></strong></li>
 <li><strong><a href="LV3/Research/319-Creating-3D-Digital-Animation/">319 - Creating 3D Digital Animation</a></strong></li>
+<li><strong><a href="LV3/Research/319-Creating-3D-Digital-Animation/">344 - Creating 3D Digital Animation</a></strong></li>
 </ul></div>
 
 
@@ -1150,7 +1125,7 @@ Contents</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "mkdocs-video", "header.autohide", "content.tooltips", "content.code.copy"], "search": "assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "mkdocs-video", "header.autohide", "content.tooltips", "content.code.copy", "content.code.annotate"], "search": "assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="assets/javascripts/bundle.88dd0f4e.min.js"></script>

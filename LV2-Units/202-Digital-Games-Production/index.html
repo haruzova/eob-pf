@@ -1034,7 +1034,7 @@
         
   
   <span class="md-ellipsis">
-    344 Using a Game Engine
+    344 - Using a Game Engine
   </span>
   
 
@@ -1587,26 +1587,25 @@
 <p><u><strong>Prototype 1</strong></u>
 <div class="video-container"><iframe src="https://drive.google.com/file/d/1u2HWeZ3WVzraFUIGqBZ3WD-NWmAlHYnE/preview" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div></p>
 <h3 id="ii-writing-a-simple-left-right-player-controller-script-in-c-for-unity-and-explaining-how-it-works">(II) - Writing a simple left-right player controller script in C# for Unity, and explaining how it works.</h3>
-<pre><code class="language-playerController">
-public class playerController : MonoBehaviour
-{
-   // Holds player speed and current input
-   public float horizontalInput;
-   public float speed = 10.0f;
-
-   // Start is called before the first frame update
-   void Start()
-   {
-   }
-
-   // Update is called once per frame
-   void Update()
-   {
-   // Moves the player based on horizontal input
-   horizontalInput = Input.GetAxis("Horizontal");
-   transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
-   }
-</code></pre>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>public class playerController : MonoBehaviour
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>{
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>   // Holds player speed and current input
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>   public float horizontalInput;
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>   public float speed = 10.0f;
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>   // Start is called before the first frame update
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>   void Start()
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>   {
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>   }
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>   // Update is called once per frame
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>   void Update()
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>   {
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>   // Moves the player based on horizontal input
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>   horizontalInput = Input.GetAxis("Horizontal");
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>   transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>   }
+</span></code></pre></div>
 <h2 id="review">Review</h2>
 <h3 id="self-evaluation">Self Evaluation</h3>
 <h4 id="how-easyhard-did-you-find-it-to-produce-the-3-create-with-code-projects-and-why"><u>How easy/hard did you find it to produce the 3 ‘Create with Code’ projects, and why?</u></h4>
@@ -1667,7 +1666,7 @@ public class playerController : MonoBehaviour
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "mkdocs-video", "header.autohide", "content.tooltips", "content.code.copy"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "mkdocs-video", "header.autohide", "content.tooltips", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>

@@ -27,4 +27,4 @@
 - **[302 - Creating a Digital Game](Projects/302-Creating-a-Digital-Game.md)**
 - **[316 - Character Rigging](Projects/316-Character-Rigging.md)**
 - **[319 - Creating 3D Digital Animation](Projects/319-Creating-3D-Digital-Animation.md)**
-- **[344 - Creating 3D Digital Animation](Projects/319-Creating-3D-Digital-Animation.md)**
+- **[344 - Using a Game Engine](Projects/344-Using-a-Game-Engine.md)**

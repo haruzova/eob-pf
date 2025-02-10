@@ -291,7 +291,7 @@ The log is simple, it has a `collectable_component` with a shape that looks out 
 
 
 ##### 03/12/24
-Added a larger tree with somemore HP, as well as a rock that uses all the same components but drop stones instead.
+Added a larger tree with some more HP, as well as a rock that uses all the same components but drop stones instead.
 (rock and tree pic. the destructible object brothers)
 
 
@@ -320,43 +320,431 @@ void vertex() {
 ### NPCs and Pathfinding
 
 ##### 04/12/24
-Adding Y-sorting to the world and tilemaps. I lost the screenshots but it's just a bunch of walking behind/in front of trees anyway. Starting work on chicken NPCs with their own animations, navigation and state machine. They're a bit stupid now, running into walls, endlessly walking (transition into idle state isn't working yet), bumping into each other, etc and all of them start walking at the same time on start so they look goofy. 
+Adding Y-sorting to the world and tilemaps. It's just a bunch of ticking Y sort boxes lmao. 
+(show tree)
+
+Starting work on chicken NPCs with their own animations and state machine similar to the player, with a NavigationAgent2D node that will be used for pathfinding. A NavigationRegion2D in the scene they're in, and on the same navigation layer as them, determines where the chickens are able to path to (defined by a NavigationPolygon), and their state machine should make them cycle between walking around their NavigationPolygon and idling.
+
+Unfortunately, the chickens are currently a bit stupid. They're running into walls, endlessly walking (transition into idle state isn't working yet), bumping into each other, etc and all of them start walking at the same time on game start so they look goofy. 
 
 
 ##### 09/12/24
-Fixed the chickens. They now walk around obstacles, avoid each other, properly cycle between walking and idling and aren't all in sync anymore so it looks more natural. Using the same framework I added cow NPCs that use a different navigation layer, as well as a terrain for fences that the navigation shapes automatically exclude so nobody tries to path into a fence or anything.
+Fixed the chickens. They now walk around obstacles, properly avoid each other, as their path postprocessing mode is now set to Edgecentered, and the script has been checked over so now they properly cycle between walking and idling, and tweaked so they aren't all in sync anymore so it looks more natural. Using the same framework as the chickens, I added cow NPCs that use a different navigation layer, as well as a terrain for fences that the navigation shapes automatically exclude so nobody tries to path into a fence or anything. This was achieved by adding the fences' tilemap layer to a global group, and setting the NavigationPolygon base (which both NPCs use) to look for tiles in that group and remove their area from the polygon so I don't have to manually do so with every little change in fence layout.
 
-### Game UI and Inventory
+??? example "Final NPC state machine & Navigation"
+	``` gdscript title="chicken.gd"
+	extends NonPlayableCharacter
+	# randomises each chicken's number of walk cycles before they start idling
+	func _ready() -> void:
+		walk_cycles = randi_range(min_walk_cycle, max_walk_cycle)
+	```
+
+	``` gdscript title="npc_states/idle_state.gd"
+	extends NodeState
+
+	@export var character: CharacterBody2D
+	@export var animated_sprite_2d: AnimatedSprite2D
+	@export var idle_state_time_interval: float = 1
+
+	@onready var idle_state_timer: Timer = Timer.new()
+
+	var idle_state_timeout: bool = false
+
+	# randomises the time each chicken will spend in their idle state and connects the relevant signals
+	func _ready() -> void:
+		idle_state_timer.wait_time = idle_state_time_interval + randf_range(1, 4)
+		idle_state_timer.timeout.connect(on_idle_state_timeout)
+		add_child(idle_state_timer)
+
+	func _on_process(_delta : float) -> void:
+		pass
+
+
+	func _on_physics_process(_delta : float) -> void:
+		pass
+
+	# transitions to walking if the timer has ended
+	func _on_next_transitions() -> void:
+		if idle_state_timeout:
+			transition.emit("Walk")
+
+
+	func _on_enter() -> void:
+		animated_sprite_2d.play("Idle")
+		
+		idle_state_timeout = false
+		idle_state_timer.start()
+
+	func _on_exit() -> void:
+		animated_sprite_2d.stop()
+		idle_state_timer.stop()
+
+	# changes a variable when the idle timer is finished
+	func on_idle_state_timeout() -> void:
+		idle_state_timeout = true
+	```
+
+	``` gdscript title="npc_states/walk_state.gd"
+	extends NodeState
+
+	@export var character: NonPlayableCharacter
+	@export var animated_sprite_2d: AnimatedSprite2D
+	@export var navigation_agent_2d: NavigationAgent2D
+	@export var min_speed: float = 10.0
+	@export var max_speed: float = 20.0
+
+	var speed: float
+
+	# sets up any signal-function connections and moves to character setup
+	func _ready() -> void:
+		navigation_agent_2d.velocity_computed.connect(on_safe_velocity_computed)
+		
+		call_deferred("character_setup")
+
+	func character_setup() -> void:
+		await get_tree().physics_frame
+		
+		set_movement_target()
+
+	# sets the movement target to a reasonable location and sets the character's speed to be slightly randomised
+	func set_movement_target() -> void:
+		var target_position: Vector2 = NavigationServer2D.map_get_random_point(navigation_agent_2d.get_navigation_map(), navigation_agent_2d.navigation_layers, false)
+		navigation_agent_2d.target_position = target_position
+		speed = randf_range(min_speed, max_speed)
+			
+
+	func _on_process(_delta : float) -> void:
+		pass
+
+	# counts when the character finishes a walk cycle and sets a new movement target
+	func _on_physics_process(_delta : float) -> void:
+		if navigation_agent_2d.is_navigation_finished():
+			character.current_walk_cycle += 1
+			set_movement_target()
+			return
+
+		#flips the character sprite based on where they're heading relative to their location
+		var target_position: Vector2 = navigation_agent_2d.get_next_path_position()
+		var target_direction: Vector2 = character.global_position.direction_to(target_position)
+		animated_sprite_2d.flip_h = target_direction.x < 0
+		
+		# handles character movement
+		var velocity: Vector2 = target_direction * speed
+		
+		if navigation_agent_2d.avoidance_enabled:
+			navigation_agent_2d.velocity = velocity
+		else:
+			character.velocity = target_direction * speed
+			character.move_and_slide()
+		
+
+	func on_safe_velocity_computed(safe_velocity: Vector2) -> void:
+		character.velocity = safe_velocity
+		character.move_and_slide()
+
+	# transitions to idle when the number of walk cycles is reached
+	func _on_next_transitions() -> void:
+		if character.current_walk_cycle == character.walk_cycles:
+			character.velocity = Vector2.ZERO
+			transition.emit("Idle")
+			
+
+	# resets the current walk cycles to 0 when re-entering the state
+	func _on_enter() -> void:
+		animated_sprite_2d.play("Walk")
+		character.current_walk_cycle = 0
+
+
+	func _on_exit() -> void:
+		animated_sprite_2d.stop()
+	```
+
+
+
+### UI for Game Mechanics
 
 ##### 10/12/24
-Finished the pathfinding for cows, now moving on to the game UI. Added a toolbar that lets the player change tools, and an inventory bar that displays all the items and their count. The UI elements are styled by a game theme, with different custom "types" for the various types of elements, so all the tool buttons can be edited at once or have specific overrides.
+Tweaked the cows a little to make them a little less active than chickens, now moving on to the game UI. Added a toolbar that lets the player change tools, and an inventory bar that displays all the items and their count. The UI elements are styled by a game theme, with different custom "types" for the various types of elements, so all the tool buttons can be edited at once or have specific overrides.
 
 Also added new collectibles like milk, eggs, wheat, tomatoes, and seeds using the same collectable component I made the rocks and logs from :)
+(show collectables)
 
 #####  11/12/24
-Finishing the inventory panel by adding custom fonts and item counters (also adding counters for seeds in the toolbar because it makes sense), then finally making collectables do something with the use of a global script that manages the inventory and modifying the collectable component so it adds items.
+Finishing the inventory panel by adding custom fonts and item counters (also adding counters for seeds in the toolbar because it makes sense), then finally making collectables do something with the use of a global script that manages the inventory and modifying the collectable component so it adds items. I'll go over the scripts later, as they get a small rework pretty soon.
 
-Adding a time mechanism along with new panels showing the current day and time, with some speed options so you can speed up the day. There was an issue where the time didn't update because I forgot to actually use the recalculate_time() function so it... never recalculated the time. (Sapient lifeform btw)
- 
+Adding a time mechanism along with new panels showing the current day and time, with some speed options so you can speed up the day. There was an issue where the time didn't update because I forgot to actually use the recalculate_time() function so it... never recalculated the time. Mindblowing.
+
+??? example "Time & Date scripts"
+	``` gdscript title="day_and_night_cycle_manager.gd"
+	extends Node
+
+	# maths. if i explain this further i think i might throw up sorry
+	const MINUTES_PER_DAY: int = 24 * 60
+	const MINUTES_PER_HOUR: int = 60
+	const GAME_MINUTE_DURATION: float = TAU / MINUTES_PER_DAY
+
+	var game_speed: float = 5.0
+
+	var initial_day: int = 1
+	var initial_hour: int = 12
+	var initial_minute: int = 30
+
+	var time: float = 0.0
+	var current_minute: int = -1
+	var current_day: int = 0
+
+	signal game_time(time:float)
+	signal time_tick(day: int, hour: int, minute: int)
+	signal time_tick_day(day: int)
+
+	func _ready() -> void:
+		set_initial_time()
+		
+
+	func _process(delta: float) -> void:
+		time += delta * game_speed * GAME_MINUTE_DURATION
+		game_time.emit(time)
+		
+		recalculate_time()
+
+	func set_initial_time() -> void:
+		var initial_total_minutes = initial_day * MINUTES_PER_DAY + (initial_hour * MINUTES_PER_HOUR) + initial_minute
+		
+		time = initial_total_minutes * GAME_MINUTE_DURATION
+
+	func recalculate_time() -> void:
+		var total_minutes: int = int(time / GAME_MINUTE_DURATION)
+		var day: int = int(total_minutes / MINUTES_PER_DAY)
+		var current_day_minutes: int = total_minutes % MINUTES_PER_DAY
+		var hour: int = int(current_day_minutes / MINUTES_PER_HOUR)
+		var minute: int = int(current_day_minutes % MINUTES_PER_HOUR)
+		
+		if current_minute != minute: 
+			current_minute = minute
+			time_tick.emit(day, hour, minute)
+		
+		if current_day != day:
+			current_day = day
+			time_tick_day.emit(day)
+	```
+	``` gdscript title="day_night_panel.gd"
+		extends Control
+
+		@onready var day_label: Label = $DayPanel/MarginContainer/DayLabel
+		@onready var time_label: Label = $TimePanel/MarginContainer/TimeLabel
+
+		@export var normal_speed: int = 2
+		@export var fast_speed: int = 10
+		@export var light_speed: int = 300
+
+		func _ready() -> void:
+			DayAndNightCycleManager.time_tick.connect(on_time_tick)
+			DayAndNightCycleManager.game_speed = normal_speed
+
+		func on_time_tick(day: int, hour: int, minute: int) -> void:
+			day_label.text = "Day " + str(day)
+			time_label.text = "%02d:%02d" % [hour, minute]
+
+
+		func _on_normal_spd_button_pressed() -> void:
+			DayAndNightCycleManager.game_speed = normal_speed
+
+
+		func _on_fast_spd_button_pressed() -> void:
+			DayAndNightCycleManager.game_speed = fast_speed
+
+
+		func _on_light_spd_button_pressed() -> void:
+			DayAndNightCycleManager.game_speed = light_speed
+	```
+
+
+### Adding Farming to the Farming Sim
+
 #####  16/12/24
 Completed the day-night cycle with a component to control the initial day and time that also adds a filter to the game screen with a custom gradient that changes over the course of a day, so as the day progresses the game appears to have a sunset, sunrise and night-time.
 
-Added some crops and gave them various particle effects for when they're freshly watered, wet, and mature. They use the hurt component from the trees and rocks to determine when they're being watered, and a new growth component controls their growth (WOAH NO WAY).
+Added some corn crops and gave them various particle effects for when they're actively being watered, wet, and mature. They use the same hurt component from the trees and rocks (listening for the watering can this time) to determine when they're being watered, and a new growth component controls their growth (WOAH NO WAY).
 
-They're a bit buggy, and I don't like how the tutorial handles crops. As it stands, when they're watered once they don't ever have to be watered again, but the wet particles disappear after a while so you can't tell which crops are watered. They will "harvest" themselves automatically after a day, which leaves the player with not much to actually... do, and gives the impression the goods are just sitting on the ground being nibbled on by bugs all night. Additionally, the final harvested stage, despite looking like an item, actually isn't one and is uncollectable. They also look kinda boring when they just pop into the next growth stage, and the way the growth cycle is done means that even with a growth length of 5 days for the 5 visible stages, the sprites don't update predictably, so two crops that look the same may be harvested on different days. There's a lot to fix, but I'll just move on for now...
+They're a bit buggy at present, and I don't particularly like how the tutorial handles crops. As it stands, when they're watered once they don't ever have to be watered again, but the wet particles disappear after a while so you can't tell which crops are watered. They will "harvest" themselves automatically after a day, which leaves the player with not much to actually do, and gives the impression the goods are just sitting on the ground being nibbled on by bugs all night. Additionally, the final harvested stage, despite looking like an item, actually isn't one and is uncollectable. They also look kinda boring when they just pop into the next growth stage, and the way the growth cycle is done means that even with a growth length of 5 days for the 5 visible stages, the sprites don't update predictably, so two crops that look the same may be harvested on different days. There's a lot to fix, but I'll just move on for now...
 
 #####  18/12/24
-Finished the crops part of the tutorial, adding some tomatoes, then moving back to Y-sorting for a bit to add different origin points for the various tiles and objects like crops, so they sort from a point that looks believable for their sprite.
+Finished the crops part of the tutorial, adding some tomatoes that work the same as the corn, then moving back to Y-sorting for a bit to add different origin points for the various tiles and objects like crops, so they sort from a point that looks believable for their sprite.
 
 Added a new terrain for tilled dirt and started work on a script and component that will let the player add farmland by using the hoe on nearby grass tiles.
 
 #####  06/01/25
-Fixed an issue where tomatoes specifically would be Eternally Wet because it looked weird (even if I dislike not knowing which crops are watered...), turns out I forgot to connect a signal so they ignored the day ticking over. Also made it so that when a plant grows it emits the "maturity" particles for a short while so it's less boring. There's no internet right now, so I have to get silly with it. Tomorrow I will add subway surfers and family guy funny moments to the UI o7
+Fixed a visual issue where tomatoes specifically would be Eternally Wet because it looked weird (even if I dislike not knowing which crops are watered...), turns out I forgot to connect a signal so they ignored the day ticking over. Also made it so that when a plant grows it emits the "maturity" particles for a short while so it's less boring. There's no internet right now, so I have to get silly with it. Tomorrow I will add subway surfers and family guy funny moments to the UI o7
+
+(show particles)
 
 ##### 07/01/25
-Crops growth rework. They now need to be watered every day, only progressing one stage a day, and once they're mature they stop growing and wait for the player. Added a new component specifically for harvesting crops (the hurt component is already being used for watering, so its collision shape will only listen for the watering can, and I'd rather use a different signal for harvesting for simplicity), so now the player can use the hoe to harvest crops. Added a damage component and a new harvesting function, so that prior to maturity the player can dig up crops and get their seeds back, with some digging dirt particles to go with it.
+JUMPSCARE!!! It's a crops rework because I can't take it anymore. Crops now need to be watered every day, progressing one stage a day with each stage being directly correlated with a new sprite, and once they're mature they stop growing and wait to be harvested. On that note, I also added a new component specifically for harvesting crops (the hurt component is already being used for watering, and I'd rather not mess with the existing function too much and hurt my brain, so a new component it is), so now the player can use the hoe to harvest crops when they're mature. Added a damage component and a new harvesting function as well, so that prior to crop maturity, the player can dig up crops and get their seeds back, with some cute lil digging dirt particles to go with it.
 
-``` harvesting-function
+??? example "Growth cycle component and harvest component"
+	``` gdscript title="harvest_component.gd"
+	class_name HarvestComponent
+	extends Area2D
+
+	@export var tool : DataTypes.Tools = DataTypes.Tools.None
+
+	signal harvest
+
+	func _on_area_entered(area: Area2D) -> void:
+		var hit_component = area as HitComponent
+		
+		if tool == hit_component.current_tool:
+			harvest.emit(hit_component.hit_damage)
+	```
+
+	``` gdscript title="growth_cycle_component.gd"
+	class_name GrowthCycleComponent
+	extends Node
+
+	@export var current_growth_state: DataTypes.GrowthStates = DataTypes.GrowthStates.Sprout
+	@export_range(1,365) var days_until_harvest: int = 7
+
+	signal crop_maturity
+	signal crop_harvesting
+
+	var is_watered: bool
+	var growth_days: int = 1
+
+	func _ready() -> void:
+		DayAndNightCycleManager.time_tick_day.connect(on_time_tick_day)
+
+	func on_time_tick_day(day: int) -> void:
+		if is_watered and current_growth_state != DataTypes.GrowthStates.Mature:
+			growth_days += 1
+			current_growth_state = growth_days
+			print("Current growth state: ", DataTypes.GrowthStates.keys()[current_growth_state])
+		
+		#if current_growth_state == DataTypes.GrowthStates.Mature:
+			#growth_days += 1
+
+
+
+	func growth_states(growth_days: int):
+		if current_growth_state == DataTypes.GrowthStates.Mature:
+			return
+		
+		current_growth_state = growth_days
+		print("Current growth state: ", DataTypes.GrowthStates.keys()[current_growth_state])
+		
+		if current_growth_state == DataTypes.GrowthStates.Mature:
+			crop_maturity.emit()
+
+	func get_current_growth_state() -> DataTypes.GrowthStates:
+		return current_growth_state
+	```
+
+
+
+
+??? example "Actual crop script. It's in a separate admonition for a reason."
+	``` gdscript title="corn.gd"
+	extends Node2D
+
+	var harvest_scene = preload("res://scenes/objects/plants/corn_harvest.tscn")
+	var seeds_scene = preload("res://scenes/objects/plants/corn_seeds.tscn")
+
+	@onready var sprite_2d: Sprite2D = $Sprite2D
+	@onready var watering_particles: GPUParticles2D = $WateringParticles
+	@onready var wet_particles: GPUParticles2D = $WetParticles
+	@onready var growing_particles: GPUParticles2D = $GrowingParticles
+	@onready var growth_cycle_component: GrowthCycleComponent = $GrowthCycleComponent
+	@onready var hurt_component: HurtComponent = $HurtComponent
+	@onready var harvest_component: HarvestComponent = $HarvestComponent
+	@onready var damage_component: DamageComponent = $DamageComponent
+	@onready var digging_particles: GPUParticles2D = $DiggingParticles
+	@export var cell: Vector2
+
+	var growth_state: DataTypes.GrowthStates = DataTypes.GrowthStates.Seed
+
+	var collectable_name: String = "cornseeds"
+
+	func _ready() -> void:
+		watering_particles.emitting = false
+		growing_particles.emitting = false
+		wet_particles.emitting = false
+		
+		hurt_component.hurt.connect(on_hurt)
+		harvest_component.harvest.connect(on_harvest)
+		growth_cycle_component.crop_maturity.connect(on_crop_maturity)
+		growth_cycle_component.crop_harvesting.connect(on_crop_harvesting)
+		DayAndNightCycleManager.time_tick_day.connect(on_time_tick_day)
+		damage_component.max_damage_reached.connect(on_max_damage_reached)
+
+
+	func _process(delta: float) -> void:
+		growth_state = growth_cycle_component.get_current_growth_state()
+		sprite_2d.frame = growth_state
+		
+		if growth_state == DataTypes.GrowthStates.Mature:
+			growing_particles.emitting = true
+
+	func on_harvest(hit_damage: int) -> void:
+		if growth_state == DataTypes.GrowthStates.Mature:
+			on_crop_harvesting()
+		else:
+			damage_component.apply_damage(hit_damage)
+			await get_tree().create_timer(0.4).timeout
+			digging_particles.emitting = true
+
+	func on_max_damage_reached() -> void:
+		await get_tree().create_timer(0.4).timeout
+		call_deferred("add_seeds_scene")
+		print("max damage reached")
+		queue_free()
+
+	func add_seeds_scene() -> void:
+		var seeds_instance = seeds_scene.instantiate() as Node2D
+		seeds_instance.global_position = global_position
+		get_parent().add_child(seeds_instance)
+
+	func add_harvest_scene() -> void:
+		var harvest_instance = harvest_scene.instantiate() as Node2D
+		harvest_instance.global_position = global_position
+		get_parent().add_child(harvest_instance)
+
+	func on_hurt(hit_damage: int) -> void:
+		if !growth_cycle_component.is_watered and growth_state != DataTypes.GrowthStates.Mature:
+			growth_cycle_component.is_watered = true
+			watering_particles.emitting = true
+			await get_tree().create_timer(5.0).timeout
+			watering_particles.emitting = false
+			wet_particles.emitting = true
+			await get_tree().create_timer(20.0).timeout
+			wet_particles.emitting = false
+
+	func on_time_tick_day(day: int) -> void:
+		wet_particles.emitting = false
+		if growth_cycle_component.is_watered:
+			growing_particles.emitting = true
+			await get_tree().create_timer(1.5).timeout
+			growing_particles.emitting = false
+			growth_cycle_component.is_watered = false
+
+	func on_crop_maturity() -> void:
+		growing_particles.emitting = true
+
+
+	func on_crop_harvesting() -> void:
+		InventoryManager.add_collectable(collectable_name, 2)
+		call_deferred("add_harvest_scene")
+		queue_free()
+		await get_tree().create_timer(1.5)
+		growing_particles.emitting = false
+	```
+
+
+
+
+
+
+
+
+``` gdscript title="corn.gd"
 func on_harvest(hit_damage: int) -> void:
 	if growth_state == DataTypes.GrowthStates.Mature:
 		on_crop_harvesting()
@@ -368,7 +756,7 @@ func on_harvest(hit_damage: int) -> void:
 
 Adding a seeds counter to the toolbar, and making it so that when a crop is harvested the player gets some seeds back automatically, so you don't slowly run out of seeds. Also tweaking the inventory manager global and collectable component so that items can give multiple of themselves, meaning a mature crop now gives you back 2 seeds instead of 1.
 
-08/01/25
+### 08/01/25
 Due to the way the inputs were handled in the tutorial script, clicking on any UI element would trigger an action (chopping, tilling etc), and I don't like that. If you're holding the hoe in front of a crop and go to switch to the watering can, the player will damage the crop beforehand (they have 2 HP and each hit only deals 1 damage, but still) which is annoying. To fix this I moved the clicking actions into \_unhandled\_input(), giving them a low priority. Now, because the UI handles the inputs first when you click on it, the game world underneath it pretends not to see it and everyone lives happily ever after. There was a bit of a problem where the player would "double act", due to how I implemented the ability to transition into actions while walking (both scripts would detect the input as both scripts had the action transitions in them, and I just moved them out of the state-specific functions), and I fixed it by just adding a variable to idle_state and walk_state that changed to true/false depending on whether the player is actually in their respective states, then tossing it onto the conditions for each action so that only one of the two main states can transition to an action at any time. That sounds convoluted but look it's literally just...
 
 ```walk_state

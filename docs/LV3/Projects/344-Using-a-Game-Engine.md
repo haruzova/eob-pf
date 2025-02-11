@@ -1,7 +1,7 @@
 # 344 - Using a Game Engine
 ## Final Product
 insert video here i l;azyyyyyyyyy
-## Software and assets used
+## Software & assets used
 
 | **Game engine:**        | Godot 4.3                                                                                             |
 | ----------------------- | ----------------------------------------------------------------------------------------------------- |
@@ -27,7 +27,7 @@ insert video here i l;azyyyyyyyyy
 > yes
 
 ## Devlog
-### Test scene & Tilemap
+### Test scenes & Tilemap
 ##### 18/11/24
 Starting work on a farming game with a tutorial. There was a project before this but the tutorial was a full major version behind making development super slow (also I didn't like how the mechanics worked) so I did this one instead. *(maybe add link to the old one idfk)*
 
@@ -280,11 +280,9 @@ The log is simple, it has a `collectable_component` with a shape that looks out 
 	extends Area2D
 
 	@export var collectable_name: String
-	@export var collectable_count: int
 
 	func _on_body_entered(body: Node2D) -> void:
 		if body is Player:
-			InventoryManager.add_collectable(collectable_name, collectable_count)
 			print("Collected:", collectable_name)
 			get_parent().queue_free()
 	```
@@ -317,7 +315,7 @@ void vertex() {
 }
 ```
 
-### NPCs and Pathfinding
+### NPCs & Pathfinding
 
 ##### 04/12/24
 Adding Y-sorting to the world and tilemaps. It's just a bunch of ticking Y sort boxes lmao. 
@@ -579,7 +577,9 @@ Fixed a visual issue where tomatoes specifically would be Eternally Wet because 
 (show particles)
 
 ##### 07/01/25
-JUMPSCARE!!! It's a crops rework because I can't take it anymore. Crops now need to be watered every day, progressing one stage a day with each stage being directly correlated with a new sprite, and once they're mature they stop growing and wait to be harvested. On that note, I also added a new component specifically for harvesting crops (the hurt component is already being used for watering, and I'd rather not mess with the existing function too much and hurt my brain, so a new component it is), so now the player can use the hoe to harvest crops when they're mature. Added a damage component and a new harvesting function as well, so that prior to crop maturity, the player can dig up crops and get their seeds back, with some cute lil digging dirt particles to go with it.
+JUMPSCARE!!! It's a crops rework because I can't take it anymore. Crops now need to be watered every day, progressing one stage a day with each stage being directly correlated with a new sprite, and once they're mature they stop growing and wait to be harvested. On that note, I also added a new component specifically for harvesting crops (the hurt component is already being used for watering, and I'd rather not mess with the existing function too much and hurt my brain, so a new component it is), so now the player can use the hoe to harvest crops when they're mature. Added a damage component and a new harvesting function as well, so that prior to crop maturity, the player can dig up crops and have them drop a collectable that returns the seeds used, with some cute lil digging dirt particles to go with it.
+
+(show particles)
 
 ??? example "Growth cycle component and harvest component"
 	``` gdscript title="harvest_component.gd"
@@ -730,36 +730,67 @@ JUMPSCARE!!! It's a crops rework because I can't take it anymore. Crops now need
 
 
 	func on_crop_harvesting() -> void:
-		InventoryManager.add_collectable(collectable_name, 2)
+		InventoryManager.add_collectable(collectable_name)
 		call_deferred("add_harvest_scene")
 		queue_free()
 		await get_tree().create_timer(1.5)
 		growing_particles.emitting = false
 	```
 
+Added a seeds counter to the toolbar for each "seeds" tool, and making it so that when a crop is harvested the player gets some seeds back as well, so you don't slowly run out of seeds. Also tweaking the inventory manager global and collectable component so that items can give multiple of themselves, meaning a mature crop now gives you back 2 seeds instead of 1.
 
+??? example "Changes to collectable items"
 
+	The inventory manager global just looks for a second argument with the number of items being added or removed. Pretty shrimple
 
+	``` gdscript title="inventory_manager.gd"
+	func add_collectable(collectable_name: String, collectable_count: int) -> void:
+		inventory.get_or_add(collectable_name)
+		
+		if inventory[collectable_name] == null:
+			inventory[collectable_name] = collectable_count
+		else:
+			inventory[collectable_name] += collectable_count
+		
+		inventory_changed.emit()
+	func remove_collectable(collectable_name: String, collectable_count: int) -> void:
+		if inventory[collectable_name] == null:
+			inventory[collectable_name] = 0
+			return
+		else:
+			if inventory[collectable_name] > 0:
+				inventory[collectable_name] -= 1
+		
+		inventory_changed.emit()
+	```
+	Wherever an item needs to be added or removed from the player inventory, now it's possible (and necessary) to specify the count. The collectable component has this as an export variable so it can be easily changed for each item, but the crops just give you 2 seeds back when harvested because that's all they need to do.
 
+	``` gdscript title="collectable_component.gd"
+	class_name CollectableComponent
+	extends Area2D
 
+	@export var collectable_name: String
+	@export var collectable_count: int
 
+	func _on_body_entered(body: Node2D) -> void:
+		if body is Player:
+			InventoryManager.add_collectable(collectable_name, collectable_count)
+			print("Collected:", collectable_name)
+			get_parent().queue_free()
+	```
 
-``` gdscript title="corn.gd"
-func on_harvest(hit_damage: int) -> void:
-	if growth_state == DataTypes.GrowthStates.Mature:
-		on_crop_harvesting()
-	else:
-		damage_component.apply_damage(hit_damage)
-		await get_tree().create_timer(0.4).timeout
-		digging_particles.emitting = true
-```
+	``` gdscript title="corn.gd"
+		func on_crop_harvesting() -> void:
+			InventoryManager.add_collectable(collectable_name, 2)
+	```
 
-Adding a seeds counter to the toolbar, and making it so that when a crop is harvested the player gets some seeds back automatically, so you don't slowly run out of seeds. Also tweaking the inventory manager global and collectable component so that items can give multiple of themselves, meaning a mature crop now gives you back 2 seeds instead of 1.
+#### 08/01/25
 
-### 08/01/25
-Due to the way the inputs were handled in the tutorial script, clicking on any UI element would trigger an action (chopping, tilling etc), and I don't like that. If you're holding the hoe in front of a crop and go to switch to the watering can, the player will damage the crop beforehand (they have 2 HP and each hit only deals 1 damage, but still) which is annoying. To fix this I moved the clicking actions into \_unhandled\_input(), giving them a low priority. Now, because the UI handles the inputs first when you click on it, the game world underneath it pretends not to see it and everyone lives happily ever after. There was a bit of a problem where the player would "double act", due to how I implemented the ability to transition into actions while walking (both scripts would detect the input as both scripts had the action transitions in them, and I just moved them out of the state-specific functions), and I fixed it by just adding a variable to idle_state and walk_state that changed to true/false depending on whether the player is actually in their respective states, then tossing it onto the conditions for each action so that only one of the two main states can transition to an action at any time. That sounds convoluted but look it's literally just...
+Some more QoL stuff. Due to the way the inputs were handled in the tutorial, clicking on any UI element would trigger an action (chopping, tilling etc) before, and I don't like that. For instance, if you're holding the hoe in front of a crop and go to switch to the watering can, the player will damage the crop first, which is annoying. To fix this I moved the clicking actions into `_unhandled_input()`, giving them a lower priority than before. Now, because the UI handles the inputs first when you click on it, it doesn't count ad an unhandled input so the player won't start jopping instead of. 
 
-```walk_state
+There was a bit of a problem where the player would "double act", due to how I implemented the ability to transition into actions while walking (both scripts would detect the input as both scripts had the action transitions in them, and I've just moved them out of their state-specific functions so they're catching the input twice), and I used a quick fix of just adding a variable to each script that changed to true/false depending on whether their respective states are active, then tossing it onto the conditions for each action so that only one of the two main states can transition to an action at any time. That sounds convoluted but look it's literally just...
+
+``` gdscript title="walk_state.gd"
 var state: bool
 
 func _unhandled_input(event: InputEvent) -> void:
@@ -771,37 +802,306 @@ func _unhandled_input(event: InputEvent) -> void:
 		transition.emit("Watering")
 ```
 
-Continued work on the tilling script but I didn't get far lol
+####  13/01/25
+Continued work on the tilling/placing crops mechanic, finishing the scripts for the field cursor component and crops cursor component; they are *meant* to place down tiles, but it's not actually placing them for some reason.
 
-#####  13/01/25
-(missing documentation, screenshots are from the final thing sowwy)
-Also continued work on tilling, finishing the scripts for the field cursor component and crops cursor component; they are *meant* to let you place tilled dirt and crops, but it's not actually placing them for some reason.
+####  14/01/25
+Found what was causing the issue, it was that the tilled soil layer didn't have a tileset assigned to it... Better that than a complicated bug I guess. Added some more tiles to the tilled soil terrain and fixed the bitmasks a bit, since it turns out the way they set it in the tutorial doesn't allow for certain shapes like a T shape... and I messed up the bitmask before. But now it's cool :) You can also un-till soil by pressing right click, and crops are only able to be planted on tilled ground so you gotta make little fields first to get planting.
 
-#####  14/01/25
-Found what was causing the issue, it was that the tilled soil layer didn't have a tileset set... Better that than a complicated bug I guess. Added some more tiles and fixed the bitmask for the tilled soil, since it turns out the way they set it in the tutorial doesn't allow for certain shapes like a T shape... and I messed up the bitmask before. But now it's cool :) You can also un-till soil by pressing right click, and crops are only able to be planted on tilled ground so you gotta make little fields.
+I also made the seeds actually do something! So now you only plant crops if you have enough, and each time you plant a crop, the respective seeds go down by 1. That was actually surprisingly hard, there was a bug where if you started the game and tried to plant seeds without ever picking up or losing any it'd freak out because it was drawing from a null value. I fixed it by making the inventory manager "add" 0 to the items on start, so that if they're null they get assigned a value but if you already have some items it won't change that.
 
-Also ignored the tutorial for a bit to make tools de-selectable, I just don't like that once you select one it's all over. And being able to not have tools in your hands means maybe... one day... you can pet the cows and chickens... surely......... I also made the seeds actually do something, so now you only plant crops if you have enough, and each time you plant a crop, the respective seeds go down by 1. That was actually surprisingly hard, there was a bug where if you started the game and tried to plant seeds without ever picking up or losing any it'd freak out because it was drawing from a null value. I fixed it by making the inventory manager "add" 0 to the items on start, so that if they're null they get assigned a value but if you already have some items it won't change that.
+??? example "Planting/tilling mechanics"
+	``` gdscript title="field_cursor_component.gd"
+	func _unhandled_input(event: InputEvent) -> void:
+		if event.is_action_pressed("hit"):
+			if ToolManager.selected_tool == DataTypes.Tools.TillGround:
+				get_cell_under_mouse()
+				add_tilled_soil_cell()
+
+
+		elif event.is_action_pressed("release_tool"):
+			if ToolManager.selected_tool == DataTypes.Tools.TillGround:
+				get_cell_under_mouse()
+				remove_tilled_soil_cell()
+
+	func get_cell_under_mouse() -> void:
+		mouse_position = grass_tilemap_layer.get_local_mouse_position()
+		cell_position = grass_tilemap_layer.local_to_map(mouse_position)
+		cell_source_id = grass_tilemap_layer.get_cell_source_id(cell_position)
+		local_cell_position = grass_tilemap_layer.map_to_local(cell_position)
+		distance = player.global_position.distance_to(local_cell_position)
+		
+		print("Mouse position: ", mouse_position, " Cell position: ", cell_position, " Cell source id: ", cell_source_id)
+		#print("Distance: ", distance)
+
+	func add_tilled_soil_cell() -> void:
+		if distance < 20.0 && cell_source_id != -1:
+			tilled_soil_tilemap_layer.set_cells_terrain_connect([cell_position], terrain_set, terrain, true)
+			#print("balls")
+
+	func remove_tilled_soil_cell() -> void:
+		if distance < 20.0 && cell_source_id != -1:
+			tilled_soil_tilemap_layer.set_cells_terrain_connect([cell_position], 0, -1, true)
+	```
+
+	The crops script is much the same, with the main difference being the conditions for planting crops VS tilling land and the fact that it adds the crop scenes as instances rather than just adding tiles to the tilemap.
+
+	``` gdscript title="crops_cursor_component.gd"
+	func add_crop() -> void:
+		var all_child_nodes = get_parent().find_child("CropFields").get_children()
+		var is_cell_occupied: bool = false
+		
+		for node: Node2D in all_child_nodes:
+			if node.cell == local_cell_position:
+				is_cell_occupied = true
+		
+		if distance < 20.0 && is_cell_occupied != true && cell_source_id != -1:
+			print("attempting to plant on: ", cell_source_id)
+			if ToolManager.selected_tool == DataTypes.Tools.PlantCorn &&  InventoryManager.inventory.cornseeds > 0:
+				var corn_instance = corn_plant_scene.instantiate() as Node2D
+				corn_instance.global_position = local_cell_position
+				get_parent().find_child("CropFields").add_child(corn_instance)
+				InventoryManager.remove_collectable("cornseeds", 1)
+				print("Planted corn")
+			
+			elif ToolManager.selected_tool == DataTypes.Tools.PlantTomato && InventoryManager.inventory.tomatoseeds > 0:
+				var tomato_instance = tomato_plant_scene.instantiate() as Node2D
+				tomato_instance.global_position = local_cell_position
+				get_parent().find_child("CropFields").add_child(tomato_instance)
+				InventoryManager.remove_collectable("tomatoseeds", 1)
+				print("Planted tomatoes")
+	```
+
+	Oh and here's the bugfix, shrimple huh?
+	
+	``` gdscript title="inventory_manager.gd"
+	func _ready() -> void:
+			add_collectable("tomatoseeds", 0)
+			add_collectable("cornseeds", 0)
+			inventory_changed.emit()
+	```
+
+
+Went back to ignoring the tutorial for a bit to make tools de-selectable, I just don't like that once you select a tool you must bear that cross forever. And being able to not have tools in your hands means maybe... one day... I can make it so you get to pet the cows and chickens... surely.........
+
+??? example "Dumb tool fix yaaaaaay"
+
+	Each of the tool buttons now work as a toggle rather than an "on pressed" action. This bit is just for the axe, but it's the same for all of them.
+
+	``` gdscript title="tools_panel.gd" hl_lines="5"
+	func _on_tool_axe_toggled(toggled_on: bool) -> void:
+		ToolManager.select_tool(DataTypes.Tools.AxeWood)
+		if toggled_on == false:
+			print("deselected axe")
+			deselect_tool()
+	```
+
+	Toggling a tool button off will release every button from focus and set the current tool to none!
+
+	``` gdscript title="tools_panel.gd"
+	func deselect_tool() -> void:
+	#func _unhandled_input(event: InputEvent) -> void:
+		#if event.is_action_pressed("release_tool"):
+		ToolManager.select_tool(DataTypes.Tools.None)
+		tool_axe.release_focus()
+		tool_hoe.release_focus()
+		tool_water.release_focus()
+		tool_corn.release_focus()
+		tool_tomato.release_focus()
+	```
+
+### Saving & Loading
 
 ##### 15/01/25
-Starting to add a save system, using P as a shortcut to save and adding various components that will allow the game save certain parts of the scene, such as the player-modified tiles and objects such as farmland and crops. It's a lot of scripting basically.
+Starting to add a save system, using P as a shortcut to save and adding various components that will allow the game save certain parts of the scene, such as the player-modified tiles and objects such as farmland and crops. It's a lot of scripting basically...................................................................................
 
-There's also a bug where you can plant multiple crops on one tile, and I tried to fix it but it hasn't worked. that's for later I guess.
+There's also a bug where you can plant multiple crops on one tile, and I tried to fix it but it hasn't worked. THERE IS NO BUG. LOOK AWAY I STILL HAVETN FIXED I-
 
 ##### 20/01/25
-Apparently I forgot to add collision keeping the player from walking off the island so I did that lol. Making the actual game environment now, in a way that would allow for multiple different "levels" though I don't use it because the only buildings and areas in the game are fine being
-contained within one level. 
+Apparently I forgot to add collision keeping the player from walking off the island this whole time, so I did that lol. Started making the actual main level; it's implemented in a way that would allow for easy swapping of levels, though that functionality won't be used since the game only needs one environment.
 
 The chickens are stupid again. I don't know why.
-Y sorting doesn't work on the level I also dk why
+Y sorting doesn't work when using the main game screen, and I also can't figure out where the culprit is.
 
-Started making a menu screen, all I got to do was add a button, theming isn't done yet
+Started making a menu screen, except all I got to do was add 1 (one) unstyled button. We'll get there chat
 
 ##### 21/01/25
-Finished the title/pause menu you can bring up using Esc, with options to Start, Save and Quit which all technically work (the functions need bug fixing and pausing doesn't pause yet) we will get back t o that one. The background is basically a level, but frozen using process mode disabled thing yayyyyyyy.
-I didn't decorate the background yet but that's just for aesthetics .
+Finished the title/pause menu, which you can bring up using ++esc++ . It has options to Start, Save and Quit which all technically work, save for some bugs relating to saving and loading. The background of the menu is just another game scene, but frozen by setting the process mode to disabled so it's just a static background. It's not decorated yet, but that'll come later.
 
 ##### 22/01/25
-Decorated the menu background. im sleepy
+It's later. I decorated the menu background so it looks cute now! Yay!
+
+(show bg)
 
 ##### 27/01/25
-Pausing functionality added using get_tree().paused and setting the menu's process mode to always, so the entire game will freeze except for the pause menu. Way easier than pausing just the level and potentially missing things. Saving and loading now properly works on main-game scenes, and I fixed logs being set to add 0 of themselves when collected. The game is basically done as far as the assignment is concerned though I am putting off audio like my life depends on it because my headphones don't reach that far lmaoooo
+Added pausing functionality using get_tree().paused and setting the menu's process mode to always, so the entire game will freeze on pause except for the pause menu itself since the buttons still need to work, which is way easier than pausing things individually and potentially missing stuff. 
+
+??? example "Pause menu functionality"
+
+	``` gdscript title="game_manager.gd (global)" hl_lines="4 5 8 10"
+	# Pulls up the menu when ++esc++ is pressed
+
+	func _unhandled_input(event: InputEvent) -> void:
+		if event.is_action_pressed("game_menu"):
+			show_game_menu_screen()
+
+	func show_game_menu_screen() -> void:
+		var game_menu_screen_instance = game_menu_screen.instantiate()
+		get_tree().root.add_child(game_menu_screen_instance)
+		get_tree().paused = true
+	```
+
+	``` gdscript title="game_menu_screen.gd" hl_lines="3"
+	# Sets the menu screen to always be processed, so it still functions while the game is paused
+	func _ready():
+		process_mode = Node.PROCESS_MODE_ALWAYS
+
+	# These 3 functions all just connect their respective buttons to the scripts that handle their functions
+	func _on_start_game_button_pressed() -> void:
+		GameManager.start_game()
+		queue_free()
+		get_tree().paused = false
+
+	func _on_save_game_button_pressed() -> void:
+		SaveGameManager.save_game()
+
+	func _on_quit_game_button_pressed() -> void:
+		GameManager.exit_game()
+	```
+
+maaaaaaybe go over the functions and the saving mechanics idkkkk im lazyyyyyyy
+
+Saving and loading now properly works on main-game scenes, and I fixed logs accidentally being set to add 0 of themselves when collected. The game is basically done as far as the assignment is concerned, though I am putting off audio like my life depends on it because my headphones are too short :(
+
+??? example "Saving & loading functionality
+
+	``` gdscript title="game_manager.gd (global)"
+	# Sets up the game and tells the other globals to load the base scene + any saved parts
+	# Also sets a variable that allows the player to save now that there's a game to save
+	func start_game() -> void:
+		SceneManager.load_main_scene_container()
+		SceneManager.load_level("Level1")
+		SaveGameManager.load_game()
+		SaveGameManager.allow_save_game = true
+
+	# Quits the game (NO WAY!)
+	func exit_game() -> void:
+		get_tree().quit()
+	```
+
+	``` gdscript title="save_game_manager.gd (global)"
+	extends Node
+
+	var allow_save_game: bool
+
+	# Lets the player save with just the key shortcut
+	func _unhandled_input(event: InputEvent) -> void:
+		if event.is_action_pressed("save_game"):
+			save_game()
+
+	# Tells the save level data component in the scene to... save the level data. Mindblowing
+	func save_game() -> void:
+		var save_level_data_component: SaveLevelDataComponent = get_tree().get_first_node_in_group("save_level_data_component")
+		
+		if save_level_data_component != null:
+			save_level_data_component.save_game()
+
+	# Tells the same component to load the data, only if there is any data to load
+	func load_game() -> void:
+		await get_tree().process_frame
+		var save_level_data_component: SaveLevelDataComponent = get_tree().get_first_node_in_group("save_level_data_component")
+		
+		if save_level_data_component != null:
+			save_level_data_component.load_game()
+	```
+
+
+??? example "Saving/loading components. Again, they're in a separate admonition for a reason. (Mucho texto)"
+	``` gdscript title="save_data_component.gd"
+	class_name SaveDataComponent
+	extends Node
+
+	@onready var parent_node: Node2D = get_parent() as Node2D
+
+	@export var save_data_resource: Resource
+
+	func _ready() -> void:
+		add_to_group("save_data_component")
+
+
+	func _save_data() -> Resource:
+		if parent_node == null:
+			return null
+		
+		if save_data_resource == null:
+			push_error("save_data_resource:", save_data_resource, parent_node.name)
+			return null
+		
+		save_data_resource._save_data(parent_node)
+		
+		return save_data_resource
+	```
+
+	``` gdscript title="save_level_data_component.gd"
+	class_name SaveLevelDataComponent
+	extends Node
+
+	var level_scene_name: String
+	var save_game_data_path: String = "user://game_data/"
+	var save_file_name: String = "save_%s_game_data.tres"
+	var game_data_resource: SaveGameDataResource
+
+
+	func _ready() -> void:
+		add_to_group("save_level_data_component")
+		level_scene_name = get_parent().name
+
+
+	func save_node_data() -> void:
+		var nodes = get_tree().get_nodes_in_group("save_data_component")
+		
+		game_data_resource = SaveGameDataResource.new()
+		
+		if nodes != null:
+			for node: SaveDataComponent in nodes:
+				if node is SaveDataComponent:
+					var save_data_resource: NodeDataResource = node._save_data()
+					var save_final_resource = save_data_resource.duplicate()
+					game_data_resource.save_data_nodes.append(save_final_resource)
+
+
+	func save_game() -> void:
+		if !DirAccess.dir_exists_absolute(save_game_data_path):
+			DirAccess.make_dir_absolute(save_game_data_path)
+		
+		var level_save_file_name: String = save_file_name % level_scene_name
+		
+		save_node_data()
+		
+		var result: int = ResourceSaver.save(game_data_resource, save_game_data_path + level_save_file_name)
+		print("save result:", result)
+
+
+	func load_game() -> void:
+		var level_save_file_name: String = save_file_name % level_scene_name
+		var save_game_path: String = save_game_data_path + level_save_file_name
+		
+		if !FileAccess.file_exists(save_game_path):
+			return
+		
+		game_data_resource = ResourceLoader.load(save_game_path)
+		
+		if game_data_resource == null:
+			return
+		
+		var root_node: Window = get_tree().root
+		
+		for resource in game_data_resource.save_data_nodes:
+			if resource is Resource:
+				if resource is NodeDataResource:
+					resource._load_data(root_node)
+	```
+
+	
+
+

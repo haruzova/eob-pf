@@ -1,6 +1,6 @@
 # Home
 ---
-## **Level 2**
+## Level 2
 ### **Units**
 - **[202 - Digital Games Production](LV2-Units/202-Digital-Games-Production.md)**
 - **[205 - Meeting a Digital Media Brief](LV2-Units/205-Meeting-a-Digital-Media-Brief.md)**
@@ -25,6 +25,6 @@
 
 ### **Devlog/Projects**
 - **[302 - Creating a Digital Game](Projects/302-Creating-a-Digital-Game.md)**
-- **[316 - Character Rigging](Projects/316-Character-Rigging.md)**
-- **[319 - Creating 3D Digital Animation](Projects/319-Creating-3D-Digital-Animation.md)**
+- **[315 - Character Modelling](Projects/315-Character-Modelling.md)**
+- **[318-Creating-3D-Digital-Art](Projects/318-Creating-3D-Digital-Art.md)**
 - **[344 - Using a Game Engine](Projects/344-Using-a-Game-Engine.md)**

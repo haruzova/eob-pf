@@ -1,6 +1,6 @@
 # 344 - Using a Game Engine
 ## Final Product
-insert video here i l;azyyyyyyyyy
+![type:video](https://drive.google.com/file/d/1CHvWJf9wxp5L5flG-RdlsD7bMdtc-yGf/preview)
 ## Software & assets used
 
 | **Game engine:**        | Godot 4.3                                                                                             |
@@ -12,19 +12,19 @@ insert video here i l;azyyyyyyyyy
 
 ## Self Evaluation
 ***What is the project you have been working on this term?***
-> A game mechanic for a farming game
+> Creating a game mechanic for a farming game.
 
 ***Do you think you successfully did this?***
-> mayb
+> I don't know my head hurts
 
 ***What parts of your project do you like?***
-> i dont
+> Her beautiful smile
 
 ***What could you improve on, and what part would you do differently next time?***
-> i wouydl go to sleep instead
+> I would make the best game in the world ever evre erveer evrer ever ever ever EVER
 
 ***What part of the work did you find the most difficult and why?***
-> yes
+> I don't remember (truth)
 
 ## Devlog
 ### Test scenes & Tilemap
@@ -33,12 +33,12 @@ Starting work on a farming game with a tutorial. There was a project before this
 
 Created a game tilemap using the Sproutlands assets and made a test scene to... test it in, and started learning how to use terrains for things like paths and grass, so they can be dynamically added/"drawn" into the scene which will speed up and simplify level creation somewhat.
 
-![](24-11-18_2%201.png)
+![](https://drive.google.com/thumbnail?id=1bVD0oc5EqaHO0BNeRb_R3EkCkbmY_7ZK&sz=s4000)
 /// caption
 Tilemap test scene
 ///
 
-![](2024-11-18%2014-28-30%201.png)
+![](https://drive.google.com/thumbnail?id=1dAxDKQovlPeLOop76BL5DRZCoK0hwUzL&sz=s4000)
 /// caption
 Terrain testing for paths
 ///
@@ -47,7 +47,7 @@ Terrain testing for paths
 ##### 19/11/24
 Created a player scene, and added animations for walking, idling, chopping, tilling and watering in 4 directions as well as some collision.
 
-![[2024-11-19 11-58-22.png]]
+![](https://drive.google.com/thumbnail?id=1TwTseucj6G6mMkeNhEHJpOjOV_vzVIIG&sz=s4000)
 /// caption
 Adding animation frames using the Sproutlands assets
 ///
@@ -55,31 +55,31 @@ Adding animation frames using the Sproutlands assets
 
 Made a state machine and a class for node states, then used that class to create 5 different states for the player for each action. Currently only walking and idling have transitions into each other, as I haven't added tools yet, and the idle animation keeps defaulting to the front facing one regardless of which way the player should be facing which is weird.
 
-	``` gdscript title="walk_state.gd"
-	func _on_physics_process(_delta : float) -> void:
-		var direction: Vector2 = GameInputEvents.movement_input()
+``` gdscript title="walk_state.gd"
+func _on_physics_process(_delta : float) -> void:
+	var direction: Vector2 = GameInputEvents.movement_input()
 
-		if direction == Vector2.UP:
-			animated_sprite_2d.play("walk_back")
-		elif direction == Vector2.RIGHT:
-			animated_sprite_2d.play("walk_right")
-		elif direction == Vector2.DOWN:
-			animated_sprite_2d.play("walk_front")
-		elif direction == Vector2.LEFT:
-			animated_sprite_2d.play("walk_left")
-				
-		if direction != Vector2.ZERO:
-			player.player_direction = direction
-			player.velocity = direction * speed
-		player.move_and_slide()
-	``` 
+	if direction == Vector2.UP:
+		animated_sprite_2d.play("walk_back")
+	elif direction == Vector2.RIGHT:
+		animated_sprite_2d.play("walk_right")
+	elif direction == Vector2.DOWN:
+		animated_sprite_2d.play("walk_front")
+	elif direction == Vector2.LEFT:
+		animated_sprite_2d.play("walk_left")
+			
+	if direction != Vector2.ZERO:
+		player.player_direction = direction
+		player.velocity = direction * speed
+	player.move_and_slide()
+``` 
 
 ##### 20/11/24
-Found the cause of the animation bug! The `idle_state` is supposed to get the player's direction from `walk_state` and act according to that, but I had a line of code that let it set the player's direction during their idle state, which would obviously be none/null as no actions are being pressed in idle, so it always defaulted to the front-facing animation rather than following the player's actual last direction.
+Found the cause of the animation bug! The `idle_state` is supposed to get the player's direction from `walk_state` and act according to that, but I had a line of code that made it set the player's direction during their idle state to match the current movement input, which would obviously be none/null as no actions are being pressed in idle, so it always defaulted to the front-facing animation rather than following the player's actual last direction.
  
-![](2024-11-20%2011-18-57.png)
+![](https://drive.google.com/thumbnail?id=1CrowXFbg4PYs_oMf6sLh8VK7n3GYW5Wa&sz=s4000)
 /// caption
-Staring really hard at `idle_state` for 2000000 hours ASMR to figure out what I messed up (literally one line of code)
+Staring really hard at `idle_state` for 2000000 hours to figure out what I messed up (ASMR) 
 ///
 
 In preparation of implementing the different actions, I added a global script `data_types` to hold different kinds of game data (useful for things like weapons/tools) and let the player script use it to set their current tool. There's no way to change tools yet, though.
@@ -111,6 +111,7 @@ func _on_next_transitions() -> void:
 		transition.emit("Idle")
 ```
 
+![](https://drive.google.com/thumbnail?id=1_O2XWQcHR3tk8JTuPZD9A3zU2NpEAZJz&sz=s4000)
 
 ??? example "How the state machine scripts function after being fixed"
 	``` gdscript title="walk_state.gd" hl_lines="4 7 11 12"
@@ -159,22 +160,21 @@ func _on_next_transitions() -> void:
 		elif Input.is_action_just_pressed("hit") && player.current_tool == DataTypes.Tools.WaterCrops:
 			transition.emit("Watering")
 	```
+	
 
-SHOW walking and jopping gif/video
 
 
-```
-```
+ 
 ### Houses & Destructible Objects
 ##### 25/11/24
 Back to tilemap stuff. Creating multiple different houses, each as their own scene and using a house-specific tileset, before adding them to the main game tileset using scene collections so they can be instantiated and deleted as if they were one tile. 
-![](2024-11-25%2011-58-53.png) 
-![](2024-11-25%2012-08-01.png)
+![](https://drive.google.com/thumbnail?id=1a1CbH7GK-NY303pN0hntPtlluQ9Xgi6f&sz=s4000) 
+![](https://drive.google.com/thumbnail?id=1nQr2RCerztyuMW__LrD0VR4OHaP2A6AO&sz=s4000)
 /// caption
 Adding the new house tileset, with layers for the floor, walls and furniture plus collision for objects and walls
 ///
 
-![](2024-11-25%2012-14-48.png)![](2024-11-25%2012-18-08.png)
+![](https://drive.google.com/thumbnail?id=1Soja3q8RcjP63-q1Vjh1hCMXh2UQCiqf&sz=s4000)![](https://drive.google.com/thumbnail?id=1AXPkYU4TuQC8F4XTTFFpqld17ac2COhy&sz=s4000)
 /// caption
 HELL YEAAAAAAAAAAAA
 ///
@@ -183,6 +183,13 @@ HELL YEAAAAAAAAAAAA
 Created doors using the same method of making a separate scene and then adding it to the tileset with scene collections, because they'll need a lot more functionality than a regular tile. They use an animated sprite, with only one animation, because for a smooth opening/closing transition even if the player quickly passes by before it fully opens, it's better to just reverse the animation rather than play a new one.
 
 To make the doors actually functional, they use a component; essentially reusable scenes with scripts that contain a basic function (being collected, growing, taking damage etc) and can more or less just be tossed onto a scene to give it that functionality, then specialised and extended as needed. The component the doors use is an `interactable_component` that will allow the door to detect when it's being interacted with; in this case, when the player approaches.
+
+![](https://drive.google.com/thumbnail?id=1nNgjARQw1wc6mQShbGRm6ibrsa7xuar8&sz=s4000)
+/// caption
+Door scene. Teal box is for detecting the player, pink is for wall collision, and the blue one (hidden under the teal one) is enabled and disabled to let the player in or out.
+///
+
+![](https://drive.google.com/thumbnail?id=1il99rECwUD4LCTK-IrKlMwqW3cmPHN8K&sz=s4000)
 
 ??? example "Door scripts"
 	``` gdscript title="interactable_component.gd"
@@ -223,30 +230,26 @@ To make the doors actually functional, they use a component; essentially reusabl
 		print("door deactivated")
 	```
 
-(SHOW add gif/video of going to tha door xd)
 
-```
-```
+ 
 ##### 02/12/24
 Added some small trees. Since they need to be chopped down and drop items, they're being added to the tileset using scene collections as well. Created a few new components; `hit_component` and `hurt_component` for the player and environment/object hitboxes respectively, `damage_component` for taking/inflicting damage and `collectable_component` for collectable items. The trees each have their own HP, and the player's actions will now move a hitbox in front of them which can deal damage to objects whose type matches the player's current tool, disappearing at 0 and dropping an item that can be picked up. There is no inventory system yet though, so they just kinda disappear.
-![](2025-02-24%2012-07-34.png)
+
+add log pic
+
+The `hit_component` in the player scene is given its area by a small collision shape just for tools that is disabled by default, and each of the action states have been modified slightly to enable this hitbox and move it to the direction of the player. The component script gets the player's current tool, and how much damage they're supposed to deal, each as variables.
+
+![](https://drive.google.com/thumbnail?id=1ltQWiIiBw7PSknLWCRIrCwcRykSnTzHa&sz=s4000)
+
+
+The trees likewise have their `hurt_component` with its own collision shape and a specified tool to look out for; when the `hit_component` enters the `hurt_component` with the matching tool selected, it emits a signal containing how much damage the player deals. This signal gets picked up by the `damage_component` on the trees which handles their HP, and the component decreases their current HP accordingly. Once their HP hits 0, `damage_component` emits a different signal, and the `tree` script receives that signal and places a log scene before politely disappearing.
+
+![](https://drive.google.com/thumbnail?id=1omakKfplls6v4KoK1Veyp1DslNhKyaRG&sz=s4000)
 /// caption
 Tree! (purple box is for the hurt components, blue is for basic  collision)
 ///
 
-
-The `hit_component` in the player scene is given its area by a small collision shape just for tools that is disabled by default, and each of the action states have been modified slightly to enable this hitbox and move it to the direction of the player. The component script gets the player's current tool, and how much damage they're supposed to deal, each as variables.
-
-(show player doing the hit component thing gif  idk)
-
-
-The trees likewise have their `hurt_component` with its own collision shape and a specified tool to look out for; when the `hit_component` enters the `hurt_component` with the matching tool selected, it emits a signal containing how much damage the player deals. This signal gets picked up by the `damage_component` on the trees which handles their HP, and the component decreases their current HP accordingly. Once their HP hits 0, `damage_component` emits a different signal, and the `tree` script recieves that signal and places a log scene before politely disappearing.
-
-(tree jopping down show)
-
 The log is simple, it has a `collectable_component` with a shape that looks out for the player, and once the player's main hitbox enters that shape, the component kicks the log out of the scene.
-
-(log magic show)
 
 
 ??? example "Component scripts"
@@ -301,17 +304,18 @@ The log is simple, it has a `collectable_component` with a shape that looks out 
 			get_parent().queue_free()
 	```
 
-```
-```
+ 
 ##### 03/12/24
 Added a larger tree with some more HP, as well as a rock that uses all the same components but drop stones instead.
-(rock and tree pic. the destructible object brothers)
-![](2025-02-24%2012-07-17.png)![](2025-02-24%2012-07-22.png)
+![](https://drive.google.com/thumbnail?id=18w4_IIhEizySahol2f_w1jjpARRxsMsn&sz=s200) ![](https://drive.google.com/thumbnail?id=1qud4O9Ml2FVN0mHC6ObeGmkfg-vsxmkQ&sz=s200)
+/// caption
+the destructible object brothers
+///
 
 
 Added an animation to all three destructible objects using shaders. Now when the player hits a tree or rock, they'll shake in response to it. There was a little issue where hitting one of an object would shake all of the others, but just ticking the "local to scene" box on the shaders solves that.
 
-(wiggle show)
+![](https://drive.google.com/thumbnail?id=1xa1bjXwRBLl7AU_Ey6qVV-66Qj2Xx-qp&sz=s4000)
 
 
 ``` gdscript title="shake.gdshader"
@@ -341,7 +345,7 @@ Starting work on chicken NPCs with their own animations and state machine simila
 
 Unfortunately, the chickens are currently a bit stupid. They're running into walls, endlessly walking (transition into idle state isn't working yet), bumping into each other, etc and all of them start walking at the same time on game start so they look goofy. 
 
-![](2024-12-09%2013-18-29.png)
+![](https://drive.google.com/thumbnail?id=1i93vnLBxN65g04oQWFl4yD-cg38IUVMU&sz=s4000)
 /// caption
 chimken
 ///
@@ -477,7 +481,7 @@ Fixed the chickens. They now walk around obstacles, properly avoid each other, a
 		animated_sprite_2d.stop()
 	```
 
-![](2024-12-09%2014-21-52.png)
+![](https://drive.google.com/thumbnail?id=1MILDF-gyXvvLqTZi_sIRjZhFIU6Jhfji&sz=s4000)
 /// caption
 Chickens navigation, note how the shape automatically avoids fence tiles and the chicken paths filter through the only exit to get out, rather than just walking into the fences.
 ///
@@ -488,12 +492,12 @@ Chickens navigation, note how the shape automatically avoids fence tiles and the
 Tweaked the cows a little to make them a little less active than chickens, now moving on to the game UI. Added a toolbar that lets the player equip the different tools, and an inventory bar that displays all the items and their count. The UI elements are styled by a game theme, with different custom "types" for the various types of elements, so all the tool buttons can be edited at once or have specific overrides.
 
 Also added new collectibles like milk, eggs, wheat, tomatoes, and seeds using the same collectable component I made the rocks and logs from :)
-![](2025-02-24%2012-38-51.png)
+![](https://drive.google.com/thumbnail?id=15XK9KSBh2L_a_eiiunr4ivHg5pClyyQq&sz=s4000)
 /// caption
 Themed inventory/tool bars
 ///
 
-![](2025-02-24%2012-37-45.png)
+![](https://drive.google.com/thumbnail?id=1iKMa8AdiWGfcbtE8wRAOEQz6FBrlWR3e&sz=s4000)
 /// caption
 Collectable items currently in the game
 ///
@@ -501,10 +505,8 @@ Collectable items currently in the game
 #####  11/12/24
 Finishing the inventory panel by adding custom fonts and item counters, then finally making collectables do something with the use of a global script that manages the inventory and modifying the collectable component so it adds items. I'll go over the scripts later, as they get a small rework pretty soon.
 
-show item collect
-
 Adding a time mechanism along with new panels showing the current day and time, with some speed options so you can speed up the day. There was an issue where the time didn't update because I forgot to actually use the recalculate_time() function so it... never recalculated the time. Mindblowing.
-![](2024-12-11%2014-26-03.png)
+![](https://drive.google.com/thumbnail?id=1ZxpYGwOGj-OcCIoefqAYxdQrVQn-Q0lX&sz=s4000)
 /// caption
 Day/time UI
 ///
@@ -593,25 +595,31 @@ Day/time UI
 			DayAndNightCycleManager.game_speed = light_speed
 	```
 
-```
-```
+ 
 ### Adding Farming to the Farming Sim
 
 #####  16/12/24
+![](https://drive.google.com/thumbnail?id=1A2m_e0o9qdQZwXZtt2kT1toNakuqsl0k&sz=s4000)
+
 Completed the day-night cycle with a component to control the initial day and time that also adds a filter to the game screen with a custom gradient that changes over the course of a day, so as the day progresses the game appears to have a sunset, sunrise and night-time.
 
-show time progressing
+show time progressing video
 
 Added some corn crops and gave them various particle effects for when they're actively being watered, wet, and mature. They use the same hurt component from the trees and rocks (listening for the watering can this time) to determine when they're being watered, and a new growth component controls their growth (WOAH NO WAY).
 
-show particles
+![](https://drive.google.com/thumbnail?id=1Un0pvOcuGWD4PZXDtHZEikoEFBH_WXW4&sz=s4000)![](https://drive.google.com/thumbnail?id=1ne40QqzswvnXyISCloVU6XQlLMKhPazn&sz=s4000)![](https://drive.google.com/thumbnail?id=1wFmgGH3zccRMm1V4nidLPW81Z19tvX0F&sz=s4000)
+/// caption
+Particle effects for freshly watered, watered and growing crops.
+///
+
+
 
 They're a bit buggy at present, and I don't particularly like how the tutorial handles crops. As it stands, when they're watered once they don't ever have to be watered again, but the wet particles disappear after a while so you can't tell which crops are watered. They will "harvest" themselves automatically after a day, which leaves the player with not much to actually do, and gives the impression the goods are just sitting on the ground being nibbled on by bugs all night. 
 
 Additionally, the final harvested stage, despite looking like the item, actually isn't one and is uncollectable. They also look kinda boring when they just pop into the next growth stage, and the way the growth cycle is done means that even with a growth length of 5 days for the 5 visible stages, the sprites don't update predictably, so two crops that look the same may be harvested on different days. There's a lot to fix, but I'll just move on for now.
 
 #####  18/12/24
-![](2024-12-18%2014-24-30.png)
+![](https://drive.google.com/thumbnail?id=1G2XKibDUwmF2twZgEnfXn8tQaCTUDx3D&sz=s4000)
 
 Finished the crops part of the tutorial, adding some tomatoes that work the same as the corn, then moving back to Y-sorting for a bit to add different origin points for the various tiles and objects like crops, so they sort from a point that looks believable for their sprite.
 
@@ -625,9 +633,7 @@ Fixed a visual issue where tomatoes specifically would be Eternally Wet because 
 ##### 07/01/25
 JUMPSCARE!!! It's a crops rework because I can't take it anymore. Crops now need to be watered every day, progressing one stage a day with each stage being directly correlated with a new sprite, and once they're mature they stop growing and wait to be harvested. On that note, I also added a new component specifically for harvesting crops (the hurt component is already being used for watering, and I'd rather not mess with the existing function too much and hurt my brain, so a new component it is), so now the player can use the hoe to harvest crops when they're mature. Added a damage component and a new harvesting function as well, so that prior to crop maturity, the player can dig up crops and have them drop a collectable that returns the seeds used, with some cute lil digging dirt particles to go with it.
 
-(show crops growing)
-
-(show digging)
+![](https://drive.google.com/thumbnail?id=1EbfjDVebSS0IcgkWQYwz4FSRyJnpByN1&sz=s4000) ![](https://drive.google.com/thumbnail?id=1jk-XvYqRtJW2QxLql0eHDhYsroXihtAL&sz=s4000)
 
 ??? example "Growth cycle component and harvest component"
 	``` gdscript title="harvest_component.gd"
@@ -961,8 +967,7 @@ Went back to ignoring the tutorial for a bit to make tools de-selectable, I just
 		tool_tomato.release_focus()
 	```
 
-```
-```
+ 
 
 ### Saving & Loading
 
@@ -984,7 +989,7 @@ Finished the title/pause menu, which you can bring up using ++esc++ . It has opt
 
 ##### 22/01/25
 It's later. I decorated the menu background so it looks cute now! Yay!
-![](2025-02-24%2013-09-37.png)
+![](https://drive.google.com/thumbnail?id=1gUptbcAcMup_EhMJlq2hV8PkEGFBc4SI&sz=s4000)
 
 ##### 27/01/25
 Added pausing functionality using get_tree().paused and setting the menu's process mode to always, so the entire game will freeze on pause except for the pause menu itself since the buttons still need to work, which is way easier than pausing things individually and potentially missing stuff. 

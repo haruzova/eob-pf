@@ -25,5 +25,6 @@
     "command-palette:open",
     "editor:toggle-source"
   ],
-  "useMarkdownLinks": true
+  "useMarkdownLinks": true,
+  "promptDelete": false
 }

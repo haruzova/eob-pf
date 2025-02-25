@@ -13,10 +13,10 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "docs/assets/Devlog/344/Watering.gif"
+                "file": "docs/assets/Devlog/315/sword2.png"
               },
               "icon": "lucide-image",
-              "title": "Watering"
+              "title": "sword2"
             }
           },
           {
@@ -25,12 +25,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/LV3/Projects/344-Using-a-Game-Engine.md",
+                "file": "docs/LV3/Projects/315-Character-Modelling.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "344-Using-a-Game-Engine"
+              "title": "315-Character-Modelling"
             }
           },
           {
@@ -45,20 +45,6 @@
               },
               "icon": "lucide-file",
               "title": "index"
-            }
-          },
-          {
-            "id": "51f77f7a4d00aeba",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/LV3/Projects/318-Creating-3D-Digital-Art.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "318-Creating-3D-Digital-Art"
             }
           }
         ],
@@ -136,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/LV3/Projects/344-Using-a-Game-Engine.md",
+                "file": "docs/LV3/Projects/315-Character-Modelling.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -146,7 +132,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 344-Using-a-Game-Engine"
+              "title": "Backlinks for 315-Character-Modelling"
             }
           },
           {
@@ -168,13 +154,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/LV3/Projects/344-Using-a-Game-Engine.md",
+                "file": "docs/LV3/Projects/315-Character-Modelling.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 344-Using-a-Game-Engine"
+              "title": "Outline of 315-Character-Modelling"
             }
           },
           {
@@ -183,16 +169,15 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/LV3/Projects/344-Using-a-Game-Engine.md",
+                "file": "docs/LV3/Projects/315-Character-Modelling.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 344-Using-a-Game-Engine"
+              "title": "Outgoing links from 315-Character-Modelling"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       },
       {
         "id": "dd2d353afbe0842c",
@@ -205,7 +190,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/LV3/Projects/344-Using-a-Game-Engine.md",
+                "file": "docs/LV3/Projects/315-Character-Modelling.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -215,7 +200,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 344-Using-a-Game-Engine"
+              "title": "Backlinks for 315-Character-Modelling"
             }
           }
         ]
@@ -236,6 +221,22 @@
   },
   "active": "7c319eb73dc7e8ea",
   "lastOpenFiles": [
+    "docs/assets/Devlog/315/sword2.png",
+    "docs/assets/Devlog/315/sword1.png",
+    "docs/assets/Devlog/315/Screenshot-2024-07-02-143338.png",
+    "docs/assets/Devlog/315/Screenshot-2024-07-02-141924.png",
+    "docs/assets/Devlog/315/Screenshot-2024-07-02-141907.png",
+    "docs/assets/Devlog/315/Screenshot-2024-07-02-134049.png",
+    "docs/assets/Devlog/315/Screenshot-2024-07-02-133141.png",
+    "docs/assets/Devlog/315/Screenshot-2024-07-02-132243.png",
+    "docs/assets/Devlog/315/Screenshot-2024-07-02-131317.png",
+    "docs/assets/Devlog/315/Screenshot-2024-07-02-131041.png",
+    "docs/assets/Devlog/315/Screenshot-2024-07-02-120541.png",
+    "docs/index.md",
+    "docs/LV3/Projects/315-Character-Modelling.md",
+    "docs/LV3/Projects/344-Using-a-Game-Engine.md",
+    "docs/assets/Devlog/318/unused",
+    "docs/LV3/Projects/318-Creating-3D-Digital-Art.md",
     "site/assets/javascripts/glightbox.min.js",
     "site/assets/stylesheets/glightbox.min.css",
     "site/search/search_index.json",
@@ -245,23 +246,7 @@
     "site/LV3/Research/319-Creating-3D-Digital-Animation/index.html",
     "site/LV3/Research/319-Creating-3D-Digital-Animation",
     "site/LV3/Research/316-Character-Rigging/index.html",
-    "site/LV3/Research/316-Character-Rigging",
-    "site/LV3/Research/315-Character-Modelling/index.html",
-    "site/assets/Devlog/344/2025-02-25 13-02-55.png",
-    "site/assets/Devlog/302/shrimpcoin.png",
-    "site/assets/Devlog/302/pillartiles.png",
-    "site/assets/Devlog/302/pillars.png",
-    "site/assets/Devlog/302/oldBG376.png",
-    "site/assets/Devlog/302/jellyplatpurple.png",
-    "site/assets/Devlog/302/idlelightweb.gif",
-    "site/assets/Devlog/302/gohtkorewip.webp",
-    "site/assets/Devlog/302/goht.png",
-    "site/assets/Devlog/302/gdd.png",
-    "docs/index.md",
-    "docs/LV3/Projects/318-Creating-3D-Digital-Art.md",
     "docs/LV3/Projects/302-Creating-a-Digital-Game.md",
-    "docs/LV3/Projects/315-Character-Modelling.md",
-    "docs/LV3/Projects/344-Using-a-Game-Engine.md",
     "idk.md",
     "docs/LV3/Research/323-Creating-Audio-for-Digital-Media.md",
     "docs/LV3/Research/319-Creating-3D-Digital-Animation.md",

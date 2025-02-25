@@ -1,11 +1,10 @@
 # 315 - 3D Character Modelling
 ### Final Product
-![](normalcat.png)
+![](https://drive.google.com/thumbnail?id=1LSoj7URAfHDN8ohWVsmg0UrLn4KvDHm4&sz=s4000)
 ### Software and tools used
 
-|                                | -                                       |
-| ------------------------------ | --------------------------------------- |
 | **Modelling/sculpting:**       | Blender                                 |
+| ------------------------------ | --------------------------------------- |
 | **Final touches & Rendering:** | Nomad Sculpt                            |
 | **Reference:**                 | [Youtube](https://youtu.be/HEA-XUfawOI) |
 
@@ -34,54 +33,56 @@
 ## Practise
 ##### 15/09/23
 Modelling some basic apple trees in Blender to create a scene
-![](Appletrees.png)
+![](https://drive.google.com/thumbnail?id=1lmvqDpTk-IomasIpT4AC7yi6Gqzj6fBx&sz=s4000)
 ##### 18/09/23
 Making a 3D model of a funney sword :3
-![](sword1.png)![](sword2.png)
+![](https://drive.google.com/thumbnail?id=1Qf680f2sBImbKnRV4hAWHhcJYxeLtQCT&sz=s4000)![](https://drive.google.com/thumbnail?id=1rbKYT8vyC_2OUVzm9-a3vo5j3xjCHyCr&sz=s4000)
 ##### 22/09/23
 Modelling some FANCIER trees in Blender
-![](fancytrees1.png)![](fancytrees2.png)![](fancytrees3.png)
+![](https://drive.google.com/thumbnail?id=1w2-ZwoZ5eNK5S7ZWC1kf7wnFOKpMlbB_&sz=s4000)![](https://drive.google.com/thumbnail?id=1KoVw3hrC5IrT_6xPiGZkj4veND40Z9qB&sz=s4000)![](https://drive.google.com/thumbnail?id=1-N3fjlo-XeytH0AuZOtEUeJA2We9WRZ-&sz=s4000)
 ##### 31/10/23
-Testing out Maya for funsies
-![](maya1.png)![](maya3.png)
+Testing out Maya for funsies 
+![](https://drive.google.com/thumbnail?id=11uIoV_inAwxq80DX8ylwSipccCJePUqe&sz=s4000)![](https://drive.google.com/thumbnail?id=1wgVBT9DA6sxsd74IlhPXrDrmiqEutrRv&sz=s4000)
 ---
 ## Main Project
 
 ### Blockout
 Very basic first shapes
-![](scfirstblockout.png)
+![](https://drive.google.com/thumbnail?id=1N8PkXryzkfpxBAqynl3WSshnkf7IT9P2&sz=s4000)
 ---
 Slightly less basic initial shapes made symmetrical with the Mirror modifier. (also turning on smooth shading)
-![](Screenshot-2024-06-25-112331.png)
+![](https://drive.google.com/thumbnail?id=1B_elG3sTn4ko7HKREcZHP_j1KHZHBjNS&sz=s4000)
 ### Early Sculpting
 Joining the blockout shapes (head and body separately) and adjusting the shapes to prepare for remeshing.
-![](Screenshot-2024-06-25-131511.png)
+![](https://drive.google.com/thumbnail?id=1hKHbL1DzyJi4LYMo20rKjMPXVuIA9zIx&sz=s4000)
 ---
 Remeshing and making more adjustments with the Crease, Grab and Smooth tools.
-![](Screenshot-2024-06-28-120143.png)
+![](https://drive.google.com/thumbnail?id=1ze3FkW42DPiPpYUA0qJ6Q92nDdm98TQP&sz=s4000)
 ---
 Giving our boy the glorious gift of sight
-![](Screenshot-2024-06-28-125729.png)
-![](Screenshot-2024-06-28-130833.png)
----
+![](https://drive.google.com/thumbnail?id=1K-UYUaldmRokXMbQiS4wn8o0MA55hW6R&sz=s4000)
+![](https://drive.google.com/thumbnail?id=1zDCSzcqsgtks5aBeAWZjA-yWSypQ9qAL&sz=s4000)
+
 He is cheesed to meet you
-![](Screenshot-2024-06-28-132759.png)
+![](https://drive.google.com/thumbnail?id=1sbU-Ah9zKMxGdh7gbFQr2Tcm6DvyS3Pc&sz=s4000)
+
+![type:video](https://drive.google.com/file/d/1Gv4caI43rS5oEYXjit_WOQQ75BqHxr-g/preview)
 ---
 Adding a tail made of one very wide curve
-![](Screenshot-2024-07-02-103430.png)
+![](https://drive.google.com/thumbnail?id=1fbz6w7zg0cCljkxe_JmhaCeIsWmEfjAS&sz=s4000)
 ---
 Remeshing again, but square this time
-![](Screenshot-2024-07-02-110159.png)
+![](https://drive.google.com/thumbnail?id=1q2Ki4U45ZW3dUkhUn7U0goK4-ndk6-DM&sz=s4000)
 ---
 ### Sculpting
-![](Screenshot-2024-07-02-120541.png)
-![](Screenshot-2024-07-02-131041.png)
+![](https://drive.google.com/thumbnail?id=17uNvwxCAO54-MT1aJwynUpP917J60R2Q&sz=s4000)
+![](https://drive.google.com/thumbnail?id=1TLE7czm9zWBdy0nv_uS-ZIgHPS3_ojca&sz=s4000)
 ### Adding details
-![](Screenshot-2024-07-02-131317.png)
-![](Screenshot-2024-07-02-132243.png)
-![](Screenshot-2024-07-02-133141.png)
+![](https://drive.google.com/thumbnail?id=1EsWsgKa0CgIr4O0FiJJZPjA6M5fMgiuT&sz=s4000)
+![](https://drive.google.com/thumbnail?id=1YeIj7-2Rpz7nGNma3x0u-FBf1WnAQPOg&sz=s4000)
+![](https://drive.google.com/thumbnail?id=1ITr9LJH43mTnt6CcEW6amliCphRMr3cM&sz=s4000)
 ### Adding materials
-![](Screenshot-2024-07-02-134049.png)
-![](Screenshot-2024-07-02-141907.png)
-![](Screenshot-2024-07-02-141924.png)
-![](Screenshot-2024-07-02-143338.png)
+![](https://drive.google.com/thumbnail?id=1wKbc1qjEiyc7x56EoY6OD2glAbkPg-Lb&sz=s4000)
+![](https://drive.google.com/thumbnail?id=1MFGG6gs1tm4lywTORGrdjVDLrlx_K8YU&sz=s4000)
+![](https://drive.google.com/thumbnail?id=1eG2RjM4Ic4UYAnKE9i-gv-MOEqE-I9R3&sz=s4000)
+![](https://drive.google.com/thumbnail?id=1BYPFCvi55jzW1pM-KgpIoS0UY09aNefw&sz=s4000)

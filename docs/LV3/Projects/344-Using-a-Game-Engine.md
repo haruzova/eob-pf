@@ -7,7 +7,6 @@
 | ----------------------- | ----------------------------------------------------------------------------------------------------- |
 | **Sprites & tilemaps:** | Sproutlands                                                                                           |
 | **Fonts:**              | Sproutlands, ZX Palm                                                                                  |
-| **Music:**              | later                                                                                                 |
 | **Reference:**          | [Youtube](https://www.youtube.com/watch?v=it0lsREGdmc&lisYoutubet=PLWTXKdBN8RZe3ytf6qdR4g1JRy0j-93v9) |
 
 ## Self Evaluation
@@ -15,16 +14,16 @@
 > Creating a game mechanic for a farming game.
 
 ***Do you think you successfully did this?***
-> I don't know my head hurts
+> I think so? 
 
 ***What parts of your project do you like?***
-> Her beautiful smile
+> I like the particle effects nomnomnomnom
 
 ***What could you improve on, and what part would you do differently next time?***
-> I would make the best game in the world ever evre erveer evrer ever ever ever EVER
+> There are still some bugs, like that you can plant crops on top of each other (I attempted to fix it but haven't yet), NPCs started bumping into things again somehow, and that the player's inventory doesn't save correctly. Next time, or in the future, I would like to flesh out the other parts of the game more like adding music & SFX, letting the player place fences using harvested logs to place fences, and have the cows and chickens be able to produce eggs & milk. I wouldn't change how I did the existing parts though (besides bugfixing).
 
 ***What part of the work did you find the most difficult and why?***
-> I don't remember (truth)
+> I don't remember. I wasn't there.
 
 ## Devlog
 ### Test scenes & Tilemap

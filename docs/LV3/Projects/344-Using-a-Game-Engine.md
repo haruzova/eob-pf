@@ -29,7 +29,7 @@
 ## Devlog
 ### Test scenes & Tilemap
 ##### 18/11/24
-Starting work on a farming game with a tutorial. There was a project before this but the tutorial was a full major version behind making development super slow (also I didn't like how the mechanics worked) so I did this one instead. *(maybe add link to the old one idfk)*
+Starting work on a farming game with a tutorial. There was a project before this but the tutorial was a full major version behind making development super slow (also I didn't like how the mechanics worked) so I did this one instead.
 
 Created a game tilemap using the Sproutlands assets and made a test scene to... test it in, and started learning how to use terrains for things like paths and grass, so they can be dynamically added/"drawn" into the scene which will speed up and simplify level creation somewhat.
 
@@ -235,7 +235,9 @@ Door scene. Teal box is for detecting the player, pink is for wall collision, an
 ##### 02/12/24
 Added some small trees. Since they need to be chopped down and drop items, they're being added to the tileset using scene collections as well. Created a few new components; `hit_component` and `hurt_component` for the player and environment/object hitboxes respectively, `damage_component` for taking/inflicting damage and `collectable_component` for collectable items. The trees each have their own HP, and the player's actions will now move a hitbox in front of them which can deal damage to objects whose type matches the player's current tool, disappearing at 0 and dropping an item that can be picked up. There is no inventory system yet though, so they just kinda disappear.
 
-add log pic
+![](https://drive.google.com/thumbnail?id=1iHszOKQ-Id3-rpyENMZdtV2E3BgexZlq&sz=s4000)
+
+LOGCHAMP!!!!!!!! ![](https://drive.google.com/thumbnail?id=1iHszOKQ-Id3-rpyENMZdtV2E3BgexZlq&sz=s40)![](https://drive.google.com/thumbnail?id=1iHszOKQ-Id3-rpyENMZdtV2E3BgexZlq&sz=s40)![](https://drive.google.com/thumbnail?id=1iHszOKQ-Id3-rpyENMZdtV2E3BgexZlq&sz=s40)![](https://drive.google.com/thumbnail?id=1iHszOKQ-Id3-rpyENMZdtV2E3BgexZlq&sz=s40)![](https://drive.google.com/thumbnail?id=1iHszOKQ-Id3-rpyENMZdtV2E3BgexZlq&sz=s40)![](https://drive.google.com/thumbnail?id=1iHszOKQ-Id3-rpyENMZdtV2E3BgexZlq&sz=s40)
 
 The `hit_component` in the player scene is given its area by a small collision shape just for tools that is disabled by default, and each of the action states have been modified slightly to enable this hitbox and move it to the direction of the player. The component script gets the player's current tool, and how much damage they're supposed to deal, each as variables.
 
@@ -492,6 +494,7 @@ Chickens navigation, note how the shape automatically avoids fence tiles and the
 Tweaked the cows a little to make them a little less active than chickens, now moving on to the game UI. Added a toolbar that lets the player equip the different tools, and an inventory bar that displays all the items and their count. The UI elements are styled by a game theme, with different custom "types" for the various types of elements, so all the tool buttons can be edited at once or have specific overrides.
 
 Also added new collectibles like milk, eggs, wheat, tomatoes, and seeds using the same collectable component I made the rocks and logs from :)
+
 ![](https://drive.google.com/thumbnail?id=15XK9KSBh2L_a_eiiunr4ivHg5pClyyQq&sz=s4000)
 /// caption
 Themed inventory/tool bars

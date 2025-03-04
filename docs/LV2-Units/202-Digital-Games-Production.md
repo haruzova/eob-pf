@@ -61,7 +61,7 @@ I think that Dead Cells' target audience would be more aimed towards people inte
 ![type:video](https://drive.google.com/file/d/1u2HWeZ3WVzraFUIGqBZ3WD-NWmAlHYnE/preview)
 
 ### (II) - Writing a simple left-right player controller script in C# for Unity, and explaining how it works.
-```playerController
+``` csharp title="playerController script"
 
 public class playerController : MonoBehaviour
 {

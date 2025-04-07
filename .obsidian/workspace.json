@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/LV3/Projects/321-Creating-3D-Environments.md",
+                "file": "docs/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "321-Creating-3D-Environments"
+              "title": "index"
             }
           },
           {
@@ -141,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/LV3/Projects/321-Creating-3D-Environments.md",
+                "file": "docs/index.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 321-Creating-3D-Environments"
+              "title": "Outline of index"
             }
           },
           {
@@ -178,7 +178,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/LV3/Projects/321-Creating-3D-Environments.md",
+                "file": "docs/index.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -188,7 +188,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 321-Creating-3D-Environments"
+              "title": "Backlinks for index"
             }
           }
         ]
@@ -207,15 +207,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fcea39c3b7e98942",
+  "active": "3148c088edee7cd5",
   "lastOpenFiles": [
-    "docs/LV3/Research/316-Character-Rigging.md",
-    "docs/LV3/Research/315-Character-Modelling.md",
     "docs/LV3/Projects/321-Creating-3D-Environments.md",
-    "docs/LV3/Projects/344-Using-a-Game-Engine.md",
-    "docs/LV3/Research/323-Creating-Audio-for-Digital-Media.md",
+    "docs/LV3/Research/316-Character-Rigging.md",
     "docs/LV3/Research/319-Creating-3D-Digital-Animation.md",
+    "docs/LV3/Research/323-Creating-Audio-for-Digital-Media.md",
     "docs/index.md",
+    "docs/LV3/Research/315-Character-Modelling.md",
+    "docs/LV3/Projects/344-Using-a-Game-Engine.md",
     "docs/LV3/Projects/315-Character-Modelling.md",
     "docs/LV3/Projects/302-Creating-a-Digital-Game.md",
     "docs/LV2-Units/202-Digital-Games-Production.md",

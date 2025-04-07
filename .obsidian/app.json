@@ -26,5 +26,6 @@
     "editor:toggle-source"
   ],
   "useMarkdownLinks": true,
-  "promptDelete": false
+  "promptDelete": false,
+  "alwaysUpdateLinks": true
 }

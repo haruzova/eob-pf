@@ -29,7 +29,7 @@ Trying to 3D model without references can be difficult and lead to inconsistent 
 For a commercial project where you are provided with concept art to use as a reference, you should prioritise the creative vision of said concept art when referencing it. Unless told otherwise, it's best to use as much of the final design/s as possible in your work for accuracy and cohesion's sake. As for images found online, these will also be helpful, but moreso in the sense that you can use these as references to achieve better understanding of the structure and add details that may be missing in any concept art.
 ## Character Turnarounds
 ### (I) - What is a character turnaround & what applications do you imagine would be good for creating one?
-A character turnaround is the practice of drawing a character from multiple angles in order to provide a 360-degree view of their design. Most any drawing software is usable for creating a character turnaround, though applications that feature layers and extensive transform and symmetry capabilities will make it a lot easier. Some examples of ideal software would include *Clip Studio Paint*, *Paint Tool Sai*, *Adobe Photoshop*, or *Procreate.
+A character turnaround is the practice of drawing a character from multiple angles in order to provide a 360-degree view of their design. Most any drawing software is usable for creating a character turnaround, though applications that feature layers and extensive transform and symmetry capabilities will make it a lot easier. Some examples of ideal software would include *Clip Studio Paint*, *Paint Tool Sai*, *Adobe Photoshop*, *Krita*, or *Procreate*.
 ### (II) - Why is a character turnaround useful for 3D Character Modelling?
 Creating a character turnaround before modelling allows you to know what a character should look like in 3D space, having a relevant reference for everything rather than creating the model from scratch and having to design at the same time as modelling. This makes it much easier to get a consistent and accurate result, and helps ensure your design won't only look good from the front.*
 ## Software And Tools
@@ -37,34 +37,46 @@ Creating a character turnaround before modelling allows you to know what a chara
 #### <u>Blender</u>
 **Pros:** 
 1. Free and open source
+
 2. Versatile toolset
+
 3. Has a very large community, with a lot of information and resources.
 
 **Cons:**
 1. Intimidating UI that can take a while to understand
+
 2. Hardware intensive, and noticeably suffers on older hardware
+
 3. Not considered part of the industry standard
 #### <u>Maya</u>
 **Pros:** 
 1. Very well specialised for 3D rigging and animation, with advanced tools for both
+
 2. Considered industry standard and is used by a number of large animation studios
-3. Suitable for st
 
 **Cons:** 
 1. Prohibitively expensive, costing ~£250/m or ~£2000/y, or ~£350/y for animators making under £100,000/y and who are working on small enough projects
-2. Has no perpetual licenses available
+
+2. Has no perpetual license available
+
 3. Long render times
+
 4. Falls short when it comes to sculpting or texturing
 #### <u>Zbrush</u>
 **Pros:**
 1. Has a vast array of advanced sculpting features
+
 2. Widely considered the best available sculpting software
+
 3. Industry standard, and has a lot of support as a result
 
 **Cons:** 
-1. Fairly expensive, with the 2023 perpetual license costing ~£800 and 2024 subscription costing ~£320/y
+1. Expensive, with an outdated (2023) perpetual license costing ~£800 and 2024 subscription costing ~£320/y
+
 2. Steep learning curve
+
 3. Poorly suited for animation and rigging
+
 ## Poly Modelling, Sculpting & Re-topology
 ### (I) - Explain what poly modelling, sculpting, and re-topology are, providing possible advantages and disadvantages each may have in regards to character modelling. Identify software or tools that can be used for each.
 #### <u>Poly Modelling</u>

@@ -26,5 +26,5 @@
 ### **Devlog/Projects**
 - **[302 - Creating a Digital Game](Projects/302-Creating-a-Digital-Game.md)**
 - **[315 - Character Modelling](Projects/315-Character-Modelling.md)**
-- **[318 - Creating 3D Digital Art](Projects/318-Creating-3D-Digital-Art.md)**
+- **[318 - Creating 3D Digital Art](321-Creating-3D-Environments.md)**
 - **[344 - Using a Game Engine](Projects/344-Using-a-Game-Engine.md)**

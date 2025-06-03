@@ -4,35 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "89a30b7c432d7902",
+        "id": "7be0282f0a21c1e5",
         "type": "tabs",
         "children": [
           {
-            "id": "3148c088edee7cd5",
+            "id": "ea7dc855851b4df7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/index.md",
+                "file": "docs/LV3/Research/323-Creating-Audio-for-Digital-Media.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
-            }
-          },
-          {
-            "id": "24d3b39781b82b0b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/LV3/Projects/344-Using-a-Game-Engine.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "344-Using-a-Game-Engine"
+              "title": "323-Creating-Audio-for-Digital-Media"
             }
           }
         ]
@@ -92,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "52c41ff1a6fb0720",
@@ -141,13 +127,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/index.md",
+                "file": "docs/LV3/Research/323-Creating-Audio-for-Digital-Media.md",
                 "followCursor": false,
-                "showSearch": true,
+                "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of index"
+              "title": "Outline of 323-Creating-Audio-for-Digital-Media"
             }
           },
           {
@@ -178,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/index.md",
+                "file": "docs/LV3/Research/323-Creating-Audio-for-Digital-Media.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -188,7 +174,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for index"
+              "title": "Backlinks for 323-Creating-Audio-for-Digital-Media"
             }
           }
         ]
@@ -207,52 +193,52 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3148c088edee7cd5",
+  "active": "ea7dc855851b4df7",
   "lastOpenFiles": [
-    "docs/LV3/Projects/321-Creating-3D-Environments.md",
-    "docs/LV3/Research/316-Character-Rigging.md",
-    "docs/LV3/Research/319-Creating-3D-Digital-Animation.md",
+    "docs/LV3/Research/344-Using-A-Game-Engine-R.md",
     "docs/LV3/Research/323-Creating-Audio-for-Digital-Media.md",
-    "docs/index.md",
-    "docs/LV3/Research/315-Character-Modelling.md",
-    "docs/LV3/Projects/344-Using-a-Game-Engine.md",
-    "docs/LV3/Projects/315-Character-Modelling.md",
-    "docs/LV3/Projects/302-Creating-a-Digital-Game.md",
-    "docs/LV2-Units/202-Digital-Games-Production.md",
-    "docs/assets/Devlog/315/sword2.png",
-    "site/assets/javascripts/glightbox.min.js",
-    "site/assets/stylesheets/glightbox.min.css",
+    "site/stylesheets/extra.css",
+    "site/stylesheets",
+    "site/sitemap.xml.gz",
+    "site/sitemap.xml",
     "site/search/search_index.json",
     "site/search",
-    "site/LV3/Research/323-Creating-Audio-for-Digital-Media/index.html",
-    "site/LV3/Research/323-Creating-Audio-for-Digital-Media",
-    "site/LV3/Research/319-Creating-3D-Digital-Animation/index.html",
-    "site/LV3/Research/319-Creating-3D-Digital-Animation",
-    "site/LV3/Research/316-Character-Rigging/index.html",
-    "site/LV3/Research/316-Character-Rigging",
-    "site/assets/images/favicon.png",
-    "site/assets/misc/Untitled43_20220708203545.png",
+    "site/index.html",
+    "site/assets/stylesheets/palette.06af60db.min.css.map",
+    "site/assets/stylesheets/palette.06af60db.min.css",
+    "site/assets/stylesheets/main.6f8fc17f.min.css.map",
     "site/assets/misc/ultrakill-v1.gif",
     "site/assets/misc/star-rail-honkai.gif",
     "site/assets/misc/rainbow.gif",
     "site/assets/misc/limbus-company-project-moon.gif",
-    "site/assets/misc/ishyprofen.png",
     "site/assets/misc/kromer-sinclair.gif",
     "site/assets/misc/jiggyclam.gif",
+    "site/assets/misc/Untitled43_20220708203545.png",
+    "site/assets/misc/ishyprofen.png",
+    "site/assets/misc/Illustration368.png",
+    "site/assets/misc/Illustration354dle.gif",
     "idk.md",
+    "docs/index.md",
+    "docs/LV3/Research/319-Creating-3D-Digital-Animation.md",
+    "docs/LV3/Research/316-Character-Rigging.md",
+    "docs/LV3/Research/315-Character-Modelling.md",
+    "docs/LV3/Projects/344-Using-a-Game-Engine.md",
+    "docs/LV3/Projects/315-Character-Modelling.md",
+    "docs/LV3/Projects/321-Creating-3D-Environments.md",
+    "docs/LV3/Projects/302-Creating-a-Digital-Game.md",
+    "docs/LV2-Units/222-Careers-in-Creative-Digital-Media.md",
+    "docs/LV2-Units/217-Marketing-and-Promoting-Digital-Media-Products.md",
+    "docs/LV2-Units/213-Digital-Audio-Production.md",
+    "docs/LV2-Units/210-Creating-Digital-Art.md",
+    "docs/LV2-Units/209-Animation.md",
+    "docs/LV2-Units/207-Making-a-Website.md",
+    "docs/LV2-Units/202-Digital-Games-Production.md",
+    "docs/LV2-Units/205-Meeting-a-Digital-Media-Brief.md",
+    "docs/LV3/Projects/344-Using-a-Game-Engine-P.md",
     "docs/Projects/318-Creating-3D-Digital-Art.md",
     "docs/Projects/315-Character-Modelling.md",
     "docs/Projects/302-Creating-a-Digital-Game.md",
     "docs/LV3-Research/323-Creating-Audio-for-Digital-Media.md",
-    "docs/LV3-Research/319-Creating-3D-Digital-Animation.md",
-    "docs/LV3-Research/316-Character-Rigging.md",
-    "docs/LV3-Research/315-Character-Modelling.md",
-    "docs/LV2-Units/210-Creating-Digital-Art.md",
-    "docs/LV2-Units/207-Making-a-Website.md",
-    "docs/LV2-Units/209-Animation.md",
-    "docs/LV2-Units/217-Marketing-and-Promoting-Digital-Media-Products.md",
-    "docs/LV2-Units/222-Careers-in-Creative-Digital-Media.md",
-    "docs/LV2-Units/205-Meeting-a-Digital-Media-Brief.md",
-    "Screenshot_20230929-162642_Godot.md"
+    "docs/LV3-Research/319-Creating-3D-Digital-Animation.md"
   ]
 }

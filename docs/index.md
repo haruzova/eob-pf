@@ -22,6 +22,7 @@
 - **[316 - Character Rigging](LV3/Research/316-Character-Rigging.md)**
 - **[319 - Creating 3D Digital Animation](LV3/Research/319-Creating-3D-Digital-Animation.md)**
 - **[323 - Creating Audio for Digital Media](LV3/Research/323-Creating-Audio-for-Digital-Media.md)**
+- **[344 - Using a Game Engine](LV3/Research/344-Using-a-Game-Engine-R.md)**
 
 ### **Devlog/Projects**
 - **[302 - Creating a Digital Game](Projects/302-Creating-a-Digital-Game.md)**

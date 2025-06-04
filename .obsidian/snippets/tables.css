@@ -1,0 +1,49 @@
+/* Table as per Typora Solarized theme */
+table {
+  padding: 0;
+  word-break: initial;
+}
+
+table tr {
+  border-top: 1px solid #352856;
+  border-radius: 15px
+  margin: 0;
+  padding: 0;
+}
+
+table tr:nth-child(1n) {
+  background-color: #1A142C;
+  border-radius: 15px
+}
+
+table tr th {
+  font-weight: bold;
+  border: 1px solid #352856;
+  border-radius: 15px
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+
+table tr td {
+  border: 1px solid #352856;
+  border-radius: 15px
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+
+table tr:first-child{
+  background-color: #1A142C;
+}
+
+table tr td:first-child {
+  margin-top: 0;
+}
+
+table tr th:last-child,
+table tr td:last-child {
+  margin-bottom: 0;
+}
+
+

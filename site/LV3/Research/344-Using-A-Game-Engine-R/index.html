@@ -1,0 +1,1223 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://haruzova.github.io/eob-pf/LV3/Research/344-Using-A-Game-Engine-R/">
+      
+      
+        <link rel="prev" href="../323-Creating-Audio-for-Digital-Media/">
+      
+      
+      
+      <link rel="icon" href="../../../assets/misc/donspin.gif">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.46">
+    
+    
+      
+        <title>344 - Using A Game Engine - Portfolio Site</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="dark" data-md-color-primary="deep-purple" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#344-using-a-game-engine" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Portfolio Site" class="md-header__button md-logo" aria-label="Portfolio Site" data-md-component="logo">
+      
+  <img src="https://drive.google.com/thumbnail?id=1OaspU3pMMzDgaLhEGvdD4oiczAvKvFOv" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Portfolio Site
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              344 - Using A Game Engine
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="dark" data-md-color-primary="deep-purple" data-md-color-accent="purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="light" data-md-color-primary="deep-purple" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../LV2-Units/202-Digital-Games-Production/" class="md-tabs__link">
+          
+  
+  LV2 Units
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../Projects/302-Creating-a-Digital-Game/" class="md-tabs__link">
+          
+  
+  LV3
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Portfolio Site" class="md-nav__button md-logo" aria-label="Portfolio Site" data-md-component="logo">
+      
+  <img src="https://drive.google.com/thumbnail?id=1OaspU3pMMzDgaLhEGvdD4oiczAvKvFOv" alt="logo">
+
+    </a>
+    Portfolio Site
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    LV2 Units
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            LV2 Units
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../LV2-Units/202-Digital-Games-Production/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    202 - Digital Games Production
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../LV2-Units/205-Meeting-a-Digital-Media-Brief/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    205 - Meeting a Digital Media Brief
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../LV2-Units/207-Making-a-Website/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    207 - Making a Website
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../LV2-Units/209-Animation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    209 - Animation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../LV2-Units/210-Creating-Digital-Art/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    210 - Creating Digital Art
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../LV2-Units/213-Digital-Audio-Production/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    213 - Digital Audio Production
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../LV2-Units/217-Marketing-and-Promoting-Digital-Media-Products/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    217 - Marketing and Promoting Digital Media Products
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../LV2-Units/222-Careers-in-Creative-Digital-Media/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    222 - Careers in Creative Digital Media
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    LV3
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            LV3
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Projects
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Projects
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Projects/302-Creating-a-Digital-Game/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    302 - Creating a Digital Game
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Projects/315-Character-Modelling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    315 - 3D Character Modelling
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Projects/321-Creating-3D-Environments/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    321 - Creating 3D Environments
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Projects/344-Using-a-Game-Engine/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    344 - Using a Game Engine
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Research
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Research
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../315-Character-Modelling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    315 - Character Modelling
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../316-Character-Rigging/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    316 - Character Rigging
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../319-Creating-3D-Digital-Animation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    319 - Creating 3D Digital Animation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../323-Creating-Audio-for-Digital-Media/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    323 - Creating Audio for Digital Media
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    344 - Using A Game Engine
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    344 - Using A Game Engine
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#i-write-a-short-explanation-about-why-game-engines-are-important-for-making-games-ii-describe-the-main-features-of-game-engines" class="md-nav__link">
+    <span class="md-ellipsis">
+      (I) - Write a short explanation about why game engines are important for making games. (II) - Describe the main features of game engines.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i-explain-simply-how-a-game-engine-is-used-from-start-to-finish-when-creating-a-game" class="md-nav__link">
+    <span class="md-ellipsis">
+      (I) - Explain simply how a game engine is used from start to finish when creating a game.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i-describe-what-scripting-editors-do-in-game-engines-and-how-they-help-game-developers-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      (I) - Describe what scripting editors do in game engines and how they help game developers code.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i-write-about-how-to-create-a-game-environment-in-a-game-engine" class="md-nav__link">
+    <span class="md-ellipsis">
+      (I) - Write about how to create a game environment in a game engine.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i-explain-how-game-assets-are-added-and-used-in-a-game-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      (I) - Explain how game assets are added and used in a game project.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i-describe-the-tools-in-game-engines-that-help-make-animations" class="md-nav__link">
+    <span class="md-ellipsis">
+      (I) - Describe the tools in game engines that help make animations.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i-explain-why-lighting-and-visual-effects-matter-in-games" class="md-nav__link">
+    <span class="md-ellipsis">
+      (I) - Explain why lighting and visual effects matter in games.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i-describe-how-sound-effects-image-editing-and-graphics-editing-are-used-to-make-games" class="md-nav__link">
+    <span class="md-ellipsis">
+      (I) - Describe how sound effects, image editing, and graphics editing are used to make games.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i-write-about-the-steps-needed-to-export-a-game-from-a-game-engine" class="md-nav__link">
+    <span class="md-ellipsis">
+      (I) - Write about the steps needed to export a game from a game engine.
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#i-write-a-short-explanation-about-why-game-engines-are-important-for-making-games-ii-describe-the-main-features-of-game-engines" class="md-nav__link">
+    <span class="md-ellipsis">
+      (I) - Write a short explanation about why game engines are important for making games. (II) - Describe the main features of game engines.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i-explain-simply-how-a-game-engine-is-used-from-start-to-finish-when-creating-a-game" class="md-nav__link">
+    <span class="md-ellipsis">
+      (I) - Explain simply how a game engine is used from start to finish when creating a game.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i-describe-what-scripting-editors-do-in-game-engines-and-how-they-help-game-developers-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      (I) - Describe what scripting editors do in game engines and how they help game developers code.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i-write-about-how-to-create-a-game-environment-in-a-game-engine" class="md-nav__link">
+    <span class="md-ellipsis">
+      (I) - Write about how to create a game environment in a game engine.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i-explain-how-game-assets-are-added-and-used-in-a-game-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      (I) - Explain how game assets are added and used in a game project.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i-describe-the-tools-in-game-engines-that-help-make-animations" class="md-nav__link">
+    <span class="md-ellipsis">
+      (I) - Describe the tools in game engines that help make animations.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i-explain-why-lighting-and-visual-effects-matter-in-games" class="md-nav__link">
+    <span class="md-ellipsis">
+      (I) - Explain why lighting and visual effects matter in games.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i-describe-how-sound-effects-image-editing-and-graphics-editing-are-used-to-make-games" class="md-nav__link">
+    <span class="md-ellipsis">
+      (I) - Describe how sound effects, image editing, and graphics editing are used to make games.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i-write-about-the-steps-needed-to-export-a-game-from-a-game-engine" class="md-nav__link">
+    <span class="md-ellipsis">
+      (I) - Write about the steps needed to export a game from a game engine.
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<div><h1 id="344-using-a-game-engine">344 - Using A Game Engine</h1>
+<ul>
+<li><a href="./#audio-engineers">Audio Engineers</a></li>
+<li><a href="./#composers-foley-artists">Composers &amp; Foley Artists</a></li>
+<li><a href="./#microphones-audio-interfaces">Microphones &amp; Audio Interfaces</a></li>
+<li><a href="./#daws-digital-audio-workstation">DAWs (Digital Audio Workstation)</a></li>
+<li><a href="./#recording-editing">Recording &amp; Editing</a></li>
+<li><a href="./#mixing-post-production">Mixing &amp; Post-Production</a></li>
+<li><a href="./#sound-effects-music-voice">Sound Effects, Music &amp; Voice</a></li>
+<li><a href="./#game-engine-implementation">Game Engine Implementation</a></li>
+</ul>
+<hr>
+<h3 id="i-write-a-short-explanation-about-why-game-engines-are-important-for-making-games-ii-describe-the-main-features-of-game-engines">(I) - Write a short explanation about why game engines are important for making games. <br>(II) - Describe the main features of game engines.</h3>
+<p>Game engines are pieces of software designed to streamline the game development process, usually by handling low level functions like drawing objects, rendering visuals, opening windows, physics frameworks etc. A standard feature is the ability to manage assets and game objects, which can make creating complex game objects with different properties, components, scripts and physics a lot less painful. Game engines are extremely useful for making games because the main alternative is scripting everything <em>including</em> those low level functions, and for most developers, the benefit of having a GUI and tools to build their game outweighs the freedom of the alternative. </p>
+<p>For 2D games in particular, game engines are good for handling the layering of objects and sprites, parallax, and tilemaps and tilesets to build levels with while 3D game development benefits from the inclusion of animation tools, being able to build and preview levels by dragging and dropping objects, and simple model importing. Both types (and games in between or that feature both) make use of other common features, though in different ways, for example: tiles may be used for making platforms in 2D or for ground textures in 3D, and sprites are the typical way to create any characters in 2D while inclusion in 3D is usually reserved for objects that are supposed to appear "flat", or for particles which both types can use.</p>
+<hr>
+<h3 id="i-explain-simply-how-a-game-engine-is-used-from-start-to-finish-when-creating-a-game">(I) - Explain simply how a game engine is used from start to finish when creating a game.</h3>
+<p>Game engines are used for all or most steps of development, usually excluding asset creation which may be preferable to do in more specialised software depending on the asset being made. Below are some examples of how game engines can be used in various stages of game development.</p>
+<p><strong>Planning:</strong> Using a game engine, you can build small demo games to narrow down the desired concept for the game, or create simple tests to have an idea of the main gameplay loop or how different game mechanics might work/which could work together. If a certain technical feature is going to be the main focus, like a specific physics interaction, swapping between 2D and 3D, or directional audio are important, this is a good place to check how well the engine handles it before properly starting the project, as a different engine could make the dev process a lot smoother if need be. </p>
+<p><strong>Preproduction/production:</strong> Many game engines have some means of easily creating a blockout/greybox of the game world, by offering basic shapes, models or sprites to see what assets need to be created to what scale, and which layout will create a playable, well designed level. The tools available will also help in implementing features, minimising errors, creating shaders and managing scripts and scenes/game objects easily.</p>
+<p><strong>Testing, Launch:</strong> Running the game with break points for bugfixing or to test and alter features quickly is another thing game engines are used for; as well as being able to easily export different versions for  for testers to work with and for the official launch/any future updates or bugfixing.</p>
+<h3 id="i-describe-what-scripting-editors-do-in-game-engines-and-how-they-help-game-developers-code">(I) - Describe what scripting editors do in game engines and how they help game developers code.</h3>
+<p>Script editors are tools for creating code. They are generally text editors with some additional features to assist in writing code, such as syntax highlighting (displaying different parts of code in different styles, which helps humans parse large or complex scripts faster), autocomplete/term suggestions, and warnings or error messages to help avoid bugs and point out typos. Most game engines will include a built in code editor, with some including visual code editors, which provide a different way of scripting that could be more intuitive than using text in some cases.</p>
+<h3 id="i-write-about-how-to-create-a-game-environment-in-a-game-engine">(I) - Write about how to create a game environment in a game engine.</h3>
+<p>In order to create a game environment or world, the first step is to create the geometry of the world. This can be a flat plane, some basic shapes, or a 3D model with a particular shape if necessary. Then, you can place objects such as rocks, mountains, trees, buildings, or planes for things like water. Placing enemies and designing/adding pre-designed puzzles or secrets is also done by placing the relevant components in the scene. The game engine will generally have some tools to place, move, group and resize objects easily.</p>
+<h3 id="i-explain-how-game-assets-are-added-and-used-in-a-game-project">(I) - Explain how game assets are added and used in a game project.</h3>
+<p>Game assets (such as images for sprites or textures, 3D models, audio) must first be imported before being used. Usually this can be done by dragging and dropping the file either into the game project's folder or into the game engine window itself, and the engine will handle making the file a useable part of the project. It's then possible to add these assets anywhere in the game and set up how they look and act, like setting up the properties of a 3D model so it has an animation tree affected by the game, or turning a sheet of sprites into a tileset.</p>
+<h3 id="i-describe-the-tools-in-game-engines-that-help-make-animations">(I) - Describe the tools in game engines that help make animations.</h3>
+<p>Animation tools in game engines let developers create animations for characters or objects in their game. This usually takes the form of a UI where you can assign different states and properties of an object to keyframes, and let the game engine interpolate those keyframes and turn them into fluid changes/movements. Some game engines also include the ability to create animation trees, which let you create complex sets of animations that change depending on the circumstance with transitions and the like, which is useful for things like player or NPC animations.</p>
+<h3 id="i-explain-why-lighting-and-visual-effects-matter-in-games">(I) - Explain why lighting and visual effects matter in games.</h3>
+<p>Lighting and visual effects, or their absence, can vastly change the mood, aesthetic and style of a game. They can help ground the player in the environment, whether realistic or abstract, 2D or 3D, and the way they're implemented matters a lot. For instance, basic shadows under characters and objects may  a cartoony game like Paper Mario, while an extensive, real-time implementation of lighting and shadow helps make a realistic game look believable as it needs to be, and painted dramatic shadows would suit a retro horror title where emphasis and atmosphere is key. Adding flashy and striking effects for things like magic, gore and player upgrades can make a world of difference too, both for gameplay (indicators for when to parry etc) and style.</p>
+<h3 id="i-describe-how-sound-effects-image-editing-and-graphics-editing-are-used-to-make-games">(I) - Describe how sound effects, image editing, and graphics editing are used to make games.</h3>
+<p>Sound effects, like visual effects and lighting, help with communicating the atmosphere and style of a game, as well as serving an important gameplay and UX purpose. They're commonly used to reinforce visual information, such as UI buttons making click-y noises when the game registers them as pressed, or battle SFX signalling when you've been hit or hit an enemy. They can add weight to important or decisive events and actions (entering a boss stage, taking heavy damage) and contribute to the overall feel of a game based on what kind of route the sound design takes, and as a result, you can often hear the difference between two games of different genre, even without seeing gameplay.</p>
+<p>Image/graphics editing is used to create or alter certain assets (namely sprites, textures, or animations), and can be useful for making small tweaks to "reuse" the same asset with some differences, as well as for creating backgrounds with separable layers for parallax.</p>
+<h3 id="i-write-about-the-steps-needed-to-export-a-game-from-a-game-engine">(I) - Write about the steps needed to export a game from a game engine.</h3>
+<p>Once a game is either complete or ready for user testing, it can be exported via the game engine. Using Godot as an example, you first navigate to the Project menu and click Export. At first, no options will be there, so depending on which platform(s) you need to export to, install the relevant presets (Android for Android, Linux for Linux, Web for web games etc.). The engine will tell you any other requirements such as installing the correct SDKs for the platform or downloading an export template, and the user can then select various settings such as encryption, exporting without graphics for use on dedicated servers, or choosing which resources not to export such as placeholder assets. Then, as long as everything is working and set up correctly, all that remains is choosing the export path and clicking export!</p></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "mkdocs-video", "header.autohide", "content.tooltips", "content.code.copy", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

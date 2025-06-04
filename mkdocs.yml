@@ -37,6 +37,7 @@ theme:
 
 plugins:
   - search
+  - autorefs
   - mkdocs-video
   - ezlinks:
       wikilinks: true

@@ -1,0 +1,6 @@
+img {
+  border-radius: 15px;
+  border: 2px solid;
+  border-color: linear gradient(to right, #1C6EA4 0%, #2388CB 50%, #144E75 100%);
+  box-shadow: #BDB2FF 0px 15px 20px -18px;
+}

@@ -1,0 +1,114 @@
+/*FONTS*/
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Fira+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+  --default-font: "Fira Sans", "Inter", sans-serif; /*Note and Settings Text*/
+  --font-monospace: "Fira Code", "Source Code Pro", monospace; /*Code block text*/
+}
+
+body {
+  --font-monospace-theme: "Fira Code", "Source Code Pro", monospace; /*Code block text*/
+}
+
+.nav-folder-title-content {
+  font-weight: 700;
+}
+
+
+/*HEADINGS*/
+h1,
+.cm-header-1,
+body.doc-title-h1 .inline-title,
+body:not([class*="doc-title"]) .inline-title {
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient( 40deg, #AD98FF 40%, #BDB2FF 60%);
+}
+
+h2,
+.cm-header-2,
+body.doc-title-h2 .inline-title,
+body:not([class*="doc-title"]) .inline-title {
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient( 40deg, #AD98FF, #FDFFB6, #AD98FF);
+}
+
+
+/*FUCKIMG ABOUT*/
+span.bold {
+  font-size: 16px;
+  font-weight: 900;
+}
+
+span.boldfit {
+  font-size: 14px;
+  font-weight: 900;
+}
+
+span.big {
+  font-size: 25px;
+  font-weight: 900;
+}
+
+span.mid {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+span.monochrome {
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient( 40deg, #645C82, #C1C9D5, #FCFFB4);
+}
+
+span.pinkgrad {
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient( 40deg, #FEAAEC, #DD91FE, #AE95FE);
+}
+
+span.purplegrad {
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient( 40deg, #AD98FF 40%, #FDFFB6 60%);
+}
+
+span.rainbowgrad {
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: -webkit-linear-gradient(
+    40deg, #FF9FBD, #FFADAD, #FFD6A5, #FDFFB6, #CAFFBF, #9BF6FF, #A0C4FF, #BDB2FF, #EEC6FF, #FFBEF0);
+}
+
+span.redgrad {
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: -webkit-linear-gradient(
+    40deg, #962533, #DA372A);
+}
+
+span.yellowpinkgrad {
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: -webkit-linear-gradient(
+    40deg, yellow, #FE54AC);
+}
+
+span.blurplegrad {
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: -webkit-linear-gradient(40deg, #532FE2, #BBB5FF);
+
+}
+

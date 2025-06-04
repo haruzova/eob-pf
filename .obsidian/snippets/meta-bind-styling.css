@@ -1,0 +1,159 @@
+.input-w-full > * {
+  width: 10%;
+  height:10%;
+}
+
+/* Toggle Input */
+.mb-input-wrapper.nightmare .checkbox-container {
+	vertical-align: text-center;
+  color: #FFFFFF;
+}
+
+.mb-input-wrapper .checkbox-container {
+	vertical-align: text-center;
+}
+
+/*PROGRESS BAR*/
+.mb-progress-bar-input {
+	width: 90%;
+  height: 25px;
+	border-radius: 50px;
+  left: 5%;
+  background: linear-gradient(40deg, #00000060, #00000020);
+}
+
+.mb-progress-bar-value {
+	position: absolute;
+	top: 50%;
+	left: -3.5%;
+	transform: translate(-50%, -50%);
+  opacity: 100%;
+}
+
+.mb-progress-bar-label-left {
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	left: var(--size-4-2);
+  opacity: 0%;
+}
+
+.mb-progress-bar-label-right {
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	right: -5.5%;
+  opacity: 100%;
+}
+
+
+
+/*RAINBOW COLUMN*/
+.mb-input-type-progressBar.half .mb-progress-bar-input {
+	width: 80%;
+}
+.mb-input-type-progressBar.half .mb-progress-bar-label-right {
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	right: -10%;
+  opacity: 100%;
+}
+.mb-input-type-progressBar.half .mb-progress-bar-progress {
+    background: -webkit-linear-gradient(
+    40deg, #FF9FBD, #FFADAD, #FFD6A5, #FDFFB6, #CAFFBF, #9BF6FF, #A0C4FF, #BDB2FF, #EEC6FF, #FFBEF0);
+    border-radius: 50px;
+}
+
+/*RAINBOW COLUMN*/
+.mb-input-type-progressBar.halfsky .mb-progress-bar-input {
+	width: 80%;
+}
+.mb-input-type-progressBar.halfsky .mb-progress-bar-label-right {
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	right: -10%;
+  opacity: 100%;
+}
+.mb-input-type-progressBar.halfsky .mb-progress-bar-progress {
+    background: linear-gradient(40deg, #6AE1FF, #FFEFA9, #FFFFFF);
+    border-radius: 50px;
+}
+
+
+/*"MONOCHROME"*/
+.mb-input-type-progressBar.monochrome .mb-progress-bar-progress {
+    background: -webkit-linear-gradient(40deg, #645C82, #C1C9D5, #FCFFB4);
+    border-radius: 50px;
+}
+
+/*PINKPURPLY*/
+.mb-input-type-progressBar.pinkpurple .mb-progress-bar-progress {
+    background: -webkit-linear-gradient(40deg, #FEAAEC, #DD91FE, #AE95FE);
+    border-radius: 50px;
+}
+
+
+/*YELLOW-PURPLE*/
+.mb-input-type-progressBar.yellowpurple .mb-progress-bar-progress {
+    background: -webkit-linear-gradient(
+    40deg, #AD98FF, #96C2FF, #FDFFB6);
+    border-radius: 50px;
+}
+
+/*YELLOW-PINK*/
+.mb-input-type-progressBar.yellowpink .mb-progress-bar-progress {
+    background: -webkit-linear-gradient(
+    40deg, yellow, #FE54AC);
+    border-radius: 50px;
+}
+
+/*RAINBOW*/
+.mb-input-type-progressBar.rainbow .mb-progress-bar-progress {
+    background: -webkit-linear-gradient(
+    40deg, #FF9FBD, #FFADAD, #FFD6A5, #FDFFB6, #CAFFBF, #9BF6FF, #A0C4FF, #BDB2FF, #EEC6FF, #FFBEF0);
+    border-radius: 50px;
+}
+
+/*SKY*/
+.mb-input-type-progressBar.sky .mb-progress-bar-progress {
+    background: linear-gradient(40deg, #6AE1FF, #FFEFA9, #FFFFFF);
+    border-radius: 50px;
+}
+
+/*SKY BETA*/
+.mb-input-type-progressBar.skybeta .mb-progress-bar-progress {
+    background: linear-gradient(40deg, #6BFFD3, #FBF692, #FDFFEB);
+    border-radius: 50px;
+}
+
+/*DEEPSPACE*/
+.mb-input-type-progressBar.deepspace .mb-progress-bar-progress {
+    background: linear-gradient(40deg, #1D066E, #532FE2, #BBB5FF);
+    border-radius: 50px;
+}
+
+/*LIMBUS*/
+.mb-input-type-progressBar.limbus .mb-progress-bar-progress {
+    background: linear-gradient(40deg, #1D066E,#A52219,#F0D0AF);
+    border-radius: 50px;
+}
+
+/*REVERSE*/
+.mb-input-type-progressBar.reverse .mb-progress-bar-progress {
+    background: linear-gradient(40deg, #44566E, #ECAF78, #E9D5BE);
+    border-radius: 50px;
+}
+
+/*BLUAKU*/
+.mb-input-type-progressBar.bluaku .mb-progress-bar-progress {
+    background: linear-gradient(40deg, #2964D9, #5FFFFF, #E9FFFF);
+    border-radius: 50px;
+}
+
+/*HONKAI*/
+.mb-input-type-progressBar.honkai .mb-progress-bar-progress {
+    background: linear-gradient(40deg, #253BCB, #3F4FFF, #B6E3FF);
+    border-radius: 50px;
+}

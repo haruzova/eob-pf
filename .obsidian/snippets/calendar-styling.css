@@ -1,0 +1,30 @@
+/*
+author: sailKite
+source: https://discord.com/channels/686053708261228577/702656734631821413/1168178314318458980
+*/
+
+.container#calendar-container .calendar {
+  & > thead > tr:first-of-type {
+    & > th:nth-child(1) {
+      color: #FF9FBD;
+    }
+    & > th:nth-child(2) {
+      color: #FFD6A5;
+    }
+    & > th:nth-child(3) {
+      color: #FDFFB6;
+    }
+    & > th:nth-child(4) {
+      color: #CAFFBF;
+    }
+    & > th:nth-child(5) {
+      color: #9BF6FF;
+    }
+    & > th:nth-child(6) {
+      color: #A0C4FF;
+    }
+    & > th:nth-child(7) {
+      color: #BDB2FF;
+    }
+  }
+}

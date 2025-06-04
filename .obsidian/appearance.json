@@ -1,3 +1,9 @@
 {
-  "accentColor": ""
+  "accentColor": "",
+  "cssTheme": "AnuPpuccin",
+  "enabledCssSnippets": [
+    "shinylines"
+  ],
+  "interfaceFontFamily": "Inter",
+  "baseFontSizeAction": true
 }

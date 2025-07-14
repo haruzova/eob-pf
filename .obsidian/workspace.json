@@ -4,17 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "20a48228c370d8e6",
+        "id": "80b9ceef043fc641",
         "type": "tabs",
         "children": [
           {
-            "id": "2da2cb8895daa195",
+            "id": "1e4c9e006cd4a94a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "docs/LV3/Projects/319-Creating-3D-Digital-Animation.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "319-Creating-3D-Digital-Animation"
+            }
+          },
+          {
+            "id": "050a68ef505c2aab",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -91,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/LV3/Research/315-Character-Modelling.md",
+                "file": "docs/LV3/Projects/420-Blaze-It.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -101,7 +115,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 315-Character-Modelling"
+              "title": "Backlinks for 420-Blaze-It"
             }
           },
           {
@@ -123,12 +137,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "docs/LV3/Projects/319-Creating-3D-Digital-Animation.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of 319-Creating-3D-Digital-Animation"
             }
           },
           {
@@ -137,12 +152,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/LV3/Projects/315-Character-Modelling.md",
+                "file": "docs/LV3/Projects/420-Blaze-It.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 315-Character-Modelling"
+              "title": "Outgoing links from 420-Blaze-It"
             }
           }
         ],
@@ -159,6 +174,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "docs/LV3/Projects/319-Creating-3D-Digital-Animation.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -168,14 +184,14 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for 319-Creating-3D-Digital-Animation"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 350.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -188,42 +204,45 @@
       "iconic:Open rulebook": false
     }
   },
-  "active": "2da2cb8895daa195",
+  "active": "1e4c9e006cd4a94a",
   "lastOpenFiles": [
-    "docs/LV3/Research/344-Using-A-Game-Engine.md",
-    "docs/LV3/Research/323-Creating-Audio-for-Digital-Media.md",
-    "docs/LV3/Research/319-Creating-3D-Digital-Animation.md",
-    "docs/index.md",
-    "list of things.md",
+    "site/404.html",
+    "site/assets/Devlog/420/2025-07-08 11-37-16.png",
+    "site/assets/Devlog/420/2025-07-08 11-35-53.png",
+    "site/assets/Devlog/420/2025-07-07 12-59-13.png",
+    "site/assets/Devlog/420/2025-07-07 12-54-52.png",
+    "site/assets/Devlog/420/2025-07-07 12-54-38.png",
+    "site/assets/Devlog/420/2025-07-07 12-54-33.png",
+    "site/assets/Devlog/420/2025-07-07 12-54-09.png",
+    "site/assets/Devlog/420/2025-07-07 11-32-49.png",
+    "site/assets/Devlog/420/2025-07-01 13-54-22.png",
+    "site/assets/Devlog/420/2025-07-01 13-54-15.png",
     "site/assets/javascripts/glightbox.min.js",
     "site/assets/stylesheets/glightbox.min.css",
     "site/search/search_index.json",
     "site/search",
-    "site/LV3/Research/344-Using-A-Game-Engine-R/index.html",
-    "site/LV3/Research/344-Using-A-Game-Engine-R",
+    "site/LV3/Research/344-Using-A-Game-Engine/index.html",
+    "site/LV3/Research/344-Using-A-Game-Engine",
     "site/LV3/Research/323-Creating-Audio-for-Digital-Media/index.html",
     "site/LV3/Research/323-Creating-Audio-for-Digital-Media",
     "site/LV3/Research/319-Creating-3D-Digital-Animation/index.html",
     "site/LV3/Research/319-Creating-3D-Digital-Animation",
-    "site/assets/images/favicon.png",
-    "site/assets/misc/ultrakill-v1.gif",
-    "site/assets/misc/star-rail-honkai.gif",
-    "site/assets/misc/rainbow.gif",
-    "site/assets/misc/limbus-company-project-moon.gif",
-    "site/assets/misc/kromer-sinclair.gif",
-    "site/assets/misc/jiggyclam.gif",
-    "site/assets/misc/ishyprofen.png",
-    "site/assets/misc/heathcliff-limbus.gif",
-    "site/assets/misc/donspin.gif",
+    "docs/LV3/Projects/420-Blaze-It.md",
+    "docs/LV3/Projects/420-Blaze-It 1.md",
+    "docs/LV3/Projects/321-Creating-3D-Environments.md",
+    "docs/LV3/Projects/315-Character-Modelling.md",
+    "docs/LV3/Projects/344-Using-a-Game-Engine.md",
+    "docs/LV3/Projects/302-Creating-a-Digital-Game.md",
+    "docs/LV3/Research/344-Using-A-Game-Engine.md",
+    "idk.md",
+    "docs/index.md",
+    "docs/LV3/Research/323-Creating-Audio-for-Digital-Media.md",
+    "docs/LV3/Research/319-Creating-3D-Digital-Animation.md",
+    "list of things.md",
     "docs/LV3/Research/344-Using-A-Game-Engine-R.md",
     "Projects/344-Using-a-Game-Engine-R.md",
-    "idk.md",
     "docs/LV3/Research/316-Character-Rigging.md",
     "docs/LV3/Research/315-Character-Modelling.md",
-    "docs/LV3/Projects/344-Using-a-Game-Engine.md",
-    "docs/LV3/Projects/315-Character-Modelling.md",
-    "docs/LV3/Projects/321-Creating-3D-Environments.md",
-    "docs/LV3/Projects/302-Creating-a-Digital-Game.md",
     "docs/LV2-Units/222-Careers-in-Creative-Digital-Media.md",
     "docs/LV2-Units/217-Marketing-and-Promoting-Digital-Media-Products.md",
     "docs/LV2-Units/213-Digital-Audio-Production.md",
@@ -232,9 +251,6 @@
     "docs/LV2-Units/207-Making-a-Website.md",
     "docs/LV2-Units/202-Digital-Games-Production.md",
     "docs/LV2-Units/205-Meeting-a-Digital-Media-Brief.md",
-    "docs/LV3/Projects/344-Using-a-Game-Engine-P.md",
-    "docs/Projects/318-Creating-3D-Digital-Art.md",
-    "docs/Projects/315-Character-Modelling.md",
-    "docs/Projects/302-Creating-a-Digital-Game.md"
+    "docs/LV3/Projects/344-Using-a-Game-Engine-P.md"
   ]
 }

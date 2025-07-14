@@ -4,5 +4,6 @@
   "anuppuccin-theme-settings@@ctp-custom-mauve@@dark": "#433FE2",
   "anuppuccin-theme-settings@@ctp-custom-yellow@@dark": "#D8F79E",
   "anuppuccin-theme-settings@@ctp-custom-maroon@@dark": "#F1B694",
-  "anuppuccin-theme-settings@@ctp-custom-peach@@dark": "#FDEE94"
+  "anuppuccin-theme-settings@@ctp-custom-peach@@dark": "#FDEE94",
+  "anuppuccin-theme-settings@@anuppuccin-theme-accents": "ctp-accent-lavender"
 }

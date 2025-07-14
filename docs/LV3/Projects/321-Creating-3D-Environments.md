@@ -52,7 +52,6 @@ I really wanted to do some background elements so the tower wasn't all lonely an
 ### More, as in:
 ![]( https://drive.google.com/thumbnail?id=1On3goozfJAMf6HWetK1s4xLZlwkmK9Ve&sz=s4000)
 ![]( https://drive.google.com/thumbnail?id=1y5Ue5CXJqglJqEHG2pNPPTIIdCwovqHF&sz=s4000)
-![](docs/assets/Devlog/321/Screenshot_2024-07-19_142925.png)
 Little rocky/rubble-y area
 ![]( https://drive.google.com/thumbnail?id=1Au_ZSE6m8HQJ23X4MRR6pvXSqFTDfcEh&sz=s4000)
 ![]( https://drive.google.com/thumbnail?id=1whI95eZsr27nNg7_boJ1rkW8TTgQn8Cs&sz=s4000)

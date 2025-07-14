@@ -67,12 +67,17 @@ He is cheesed to meet you
 ![](https://drive.google.com/thumbnail?id=1sbU-Ah9zKMxGdh7gbFQr2Tcm6DvyS3Pc&sz=s4000)
 
 ![type:video](https://drive.google.com/file/d/1Gv4caI43rS5oEYXjit_WOQQ75BqHxr-g/preview)
+
 ---
 Adding a tail made of one very wide curve
+
 ![](https://drive.google.com/thumbnail?id=1fbz6w7zg0cCljkxe_JmhaCeIsWmEfjAS&sz=s4000)
+
 ---
 Remeshing again, but square this time
+
 ![](https://drive.google.com/thumbnail?id=1q2Ki4U45ZW3dUkhUn7U0goK4-ndk6-DM&sz=s4000)
+
 ---
 ### Sculpting
 ![](https://drive.google.com/thumbnail?id=17uNvwxCAO54-MT1aJwynUpP917J60R2Q&sz=s4000)

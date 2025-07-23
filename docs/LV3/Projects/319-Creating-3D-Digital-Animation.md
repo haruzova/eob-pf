@@ -1,6 +1,6 @@
 # 319 - Creating 3D Digital Animation
 ## Final Product
-![type:video](https://drive.google.com/file/d/1baZ04YKl-XR5UvZTJ34uCIczk-GzcmZb/preview)
+![type:video](https://drive.google.com/file/d/1toLxn2JN2lnHAdNB8dVxmB_U3plXyTHy/preview)
 
 ## Software & assets used
 
@@ -20,11 +20,10 @@
 > I like the ghost and how he wiggly (go white boy go!)
 
 ***What could you improve on, and what part would you do differently next time?***
-> The lighting isn't that visually interesting and looks flat on some parts, and I would probably work on that first. I might also give the heart a more interesting appearance like how the ghost is a little transparent, either make it look more item-y by using a voxel approach for the model or make it have a gummy kind of texture
-> The objects aren't very well organised because I totally forgot to do that, which could be improved.
+> The lighting isn't that visually interesting and looks flat on some parts, and I would probably work on that first. I might also give the heart a more interesting appearance like how the ghost is a little transparent, either make it look more item-y by using a voxel approach for the model or make it have a gummy kind of texture. The objects aren't very well organised because I totally forgot to do that, which could be improved.
 
 ***What part of the work did you find the most difficult and why?***
-> I struggled somewhat with animating since I've never done it before, and I kept making mistakes like moving the keyframes 
+> I struggled somewhat with animating since I've never done it before, and I kept making mistakes like moving the keyframes by accident and forgetting to make things loop or editing the wrong axis.
 
 ## Devlog
 ### Modelling
@@ -111,77 +110,94 @@ Making a ladder. It gets its base structure from a plane (I didn't show it but t
 ![](https://drive.google.com/thumbnail?id=1Tzbj3aN2E6vnjOJr_pFQXHk7UEs8Nk1a&sz=s300)
 
 ##### 23/06/25
-Making little rounded cylinders to dot around the dirt blocks as a simple little detail
+Making little rounded cylinders to dot around the dirt blocks as a simple little detail.
 
 ![](https://drive.google.com/thumbnail?id=17AjtI-3SPTwjJgASys0lUSX54Pli-9fd&sz=s300)
 ![](https://drive.google.com/thumbnail?id=1kttijVVN639IuPAP3ZuIbLheVP7MUMOB&sz=s300)
-![](https://drive.google.com/thumbnail?id=1IS_Nbg0CAqKk8Xbo2KDVac05mFQ3T3Gb&sz=s300)
 
 ### Animation
 #### 24/06/25
 Beginning to add animations to each element, starting with a simple "bouncing" animation for the mushroom which consists of scaling down and up on a loop.
 
-![](https://drive.google.com/thumbnail?id=1l1H8FsCLg2pv8twXQ0Tf97ItuNPbmur8&sz=s300)
-
 I also decided to add my own blinking animation which works similarly by scaling the eyes to be shorter and wider, then returning.
 
-![](https://drive.google.com/thumbnail?id=1vKwTumH7uwGSOlbAECV-X8jCW85iWjlY&sz=s300)
-![](https://drive.google.com/thumbnail?id=1Dw9YFi4lESmuukX9Nouv0_roA_4xmQuB&sz=s300)
+![](https://drive.google.com/thumbnail?id=1vKwTumH7uwGSOlbAECV-X8jCW85iWjlY&sz=s350)
+![](https://drive.google.com/thumbnail?id=1Dw9YFi4lESmuukX9Nouv0_roA_4xmQuB&sz=s350)
 
 
-![mushroom animations](https://drive.google.com/thumbnail?id=1xguuK85VelZz3ILhTgAM62rrSXjTGHH8&sz=s300)
+![mushroom animations](https://drive.google.com/thumbnail?id=1xguuK85VelZz3ILhTgAM62rrSXjTGHH8&sz=s500)
+/// caption
+Final mushroom animation
+///
 
 
 
 With the mushroom done, next is the heart which is also very simple; just making a straight animation to rotate it 720 degrees. Ending the animation with the heart's rotation on a multiple of 360 is important so that it can loop.
 
-![](https://drive.google.com/thumbnail?id=1OddUD6gJC5bu_qF9UedPf5ogg-XNWDsc&sz=s300)
+![](https://drive.google.com/thumbnail?id=12syHrPT03AwV_XgvflU-7wYmeuWG59Z8&sz=s1000)
 
-![heart animation](https://drive.google.com/thumbnail?id=1eUH6XMiBULo2-oUwRuxt0UYR7_9nQW_H&sz=s300)
+
+![heart animation](https://drive.google.com/thumbnail?id=1eUH6XMiBULo2-oUwRuxt0UYR7_9nQW_H&sz=s500)
+/// caption
+Heart animation
+///
 
 
 Next up is the ghost. I use a noise modifier for the ghost's vertical position so it floats a little bit unevenly, tweaking the scale and strength so it's more subtle.
 
-![](https://drive.google.com/thumbnail?id=1hHOPDl6rpJI1LPuiWp-ZTi7_27HiPpuJ&sz=s300)
+![](https://drive.google.com/thumbnail?id=1hHOPDl6rpJI1LPuiWp-ZTi7_27HiPpuJ&sz=s1000)
 
 
 I also unparented the ghost's eyes from its body in order to add some more ghostly effects, like making the body rotate so the skirt looks animated and wavy, and adding the same noise animation to its eyes but with some small tweaks so they move with the ghost, but a little out of sync and floaty.
 
-![ghost animation](https://drive.google.com/thumbnail?id=1YXT5w3QyrtFhbBzy31_H_4tRyAcUEGvA&sz=s300)
+Update: I forgot to make the animation for the ghost loop in the first render so I did that, using Restrict Frame Range and some blend in/out frames for the start and end.
 
+![](https://drive.google.com/thumbnail?id=1tK4szgIIo9aX26w_6bUwl_J4sYZALFXI&sz=s1000)
 
-Update: I forgot to make the animation for the ghost loop in the first render so I did that xd
-
-![](https://drive.google.com/thumbnail?id=1tK4szgIIo9aX26w_6bUwl_J4sYZALFXI&sz=s300)
+![ghost animation](https://drive.google.com/thumbnail?id=1YXT5w3QyrtFhbBzy31_H_4tRyAcUEGvA&sz=s500)
+/// caption
+Final ghost animation
+///
 
 ### Shading, Rendering
 #### 30/06/25
 Setting up the camera position and adding a plane and some little shapes to give a bit of background interest
 
-![](https://drive.google.com/thumbnail?id=1aa6rRFfEkwpqz2FXyg1rDzYYWAeMCUTx&sz=s300)
+![](https://drive.google.com/thumbnail?id=1aa6rRFfEkwpqz2FXyg1rDzYYWAeMCUTx&sz=s1000)
 
-Adding some light sources and materials
+Adding some light sources and simple flat colour materials. The blocks have two materials, one for the grass layer and one for the dirt layer. Certain objects like grass and the mushroom stem have a higher roughness so they're less reflective, while the heart and eyes are lower so they appear shiny. It'll be easier to see later once everything is added.
 
-![](https://drive.google.com/thumbnail?id=1C65qUQhPuqNhqdoisUqPswtUECRocVdW&sz=s300)
-![](https://drive.google.com/thumbnail?id=1X85gLbEXB_D13vYBRZHqXxcIKG17kbsi&sz=s300)
+![](https://drive.google.com/thumbnail?id=1C65qUQhPuqNhqdoisUqPswtUECRocVdW&sz=s350)
+![](https://drive.google.com/thumbnail?id=1X85gLbEXB_D13vYBRZHqXxcIKG17kbsi&sz=s350)
 
 I wanted to make the ghost appear partially transparent, so used shader nodes to modify its alpha value based on the vertical position, creating a gradient effect.
 
-![](https://drive.google.com/thumbnail?id=1rzMGcMJZqsX_mZ2cMNoZJHQr2eKuv0_B&sz=s300)
-![](https://drive.google.com/thumbnail?id=1DcAbe0CBKXL9lB7rLYjUcM4LFv0ijkCW&sz=s300)
+![](https://drive.google.com/thumbnail?id=1LsivyOnULbFatKMfkplEsqI0K86ZBbqm&sz=s1000)
+
+
+![](https://drive.google.com/thumbnail?id=1DcAbe0CBKXL9lB7rLYjUcM4LFv0ijkCW&sz=s1000)
+/// caption
+Ghost transparency in action
+///
 
 
 The ladder model had some parts that were sticking out so I fixed it by scaling down the rungs slightly to be thinner, as well as giving it a metallic material for its texture.
 
-![](https://drive.google.com/thumbnail?id=1UFkmMGy5He_wJjx_MJNX-aNSXXN1A9V6&sz=s300)
-![](https://drive.google.com/thumbnail?id=1Jsp4X5MFPuytbnU6zBL9hTZYPmdQ2xoM&sz=s300)
-![](https://drive.google.com/thumbnail?id=1swXJv0rjV3HqhbDV0Mxy9GKKDa50rHdZ&sz=s300)
+
+![](https://drive.google.com/thumbnail?id=1Jsp4X5MFPuytbnU6zBL9hTZYPmdQ2xoM&sz=s350)
+![](https://drive.google.com/thumbnail?id=1swXJv0rjV3HqhbDV0Mxy9GKKDa50rHdZ&sz=s350)
+
+
+![](https://drive.google.com/thumbnail?id=1UFkmMGy5He_wJjx_MJNX-aNSXXN1A9V6&sz=s500)
+/// caption
+Metallic texture for the ladder
+///
 
 ### Rendering 
 #### 01/07/25
 Adjusting some lighting and render settings before finishing up
 
-![](https://drive.google.com/thumbnail?id=1QULdlXIsigYtDwUflDjESTrfkAQJGaoz&sz=s300)
-![](https://drive.google.com/thumbnail?id=13WPAKCld3dys1bKdLJj8g6ewA-Uz8Sxq&sz=s300)
+![](https://drive.google.com/thumbnail?id=1QULdlXIsigYtDwUflDjESTrfkAQJGaoz&sz=s1000)
+![](https://drive.google.com/thumbnail?id=13WPAKCld3dys1bKdLJj8g6ewA-Uz8Sxq&sz=s1000)
 
 The first render I messed up by having it export as 120 frames instead of a video, then after the second one I realised I'd forgotten to make the ghost's animations loop, but it worked out in the end :3

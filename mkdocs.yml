@@ -4,7 +4,7 @@ site_url: https://haruzova.github.io/eob-pf/
 theme: 
 
   favicon: assets/misc/donspin.gif
-  logo: https://drive.google.com/thumbnail?id=1OaspU3pMMzDgaLhEGvdD4oiczAvKvFOv
+  logo: assets/misc/donspin.gif
   
   name: material
 

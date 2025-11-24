@@ -166,6 +166,7 @@ func _on_next_transitions() -> void:
  
 ### Houses & Destructible Objects
 ##### 25/11/24
+
 Back to tilemap stuff. Creating multiple different houses, each as their own scene and using a house-specific tileset, before adding them to the main game tileset using scene collections so they can be instantiated and deleted as if they were one tile. 
 ![](https://drive.google.com/thumbnail?id=1a1CbH7GK-NY303pN0hntPtlluQ9Xgi6f&sz=s4000) 
 ![](https://drive.google.com/thumbnail?id=1nQr2RCerztyuMW__LrD0VR4OHaP2A6AO&sz=s4000)

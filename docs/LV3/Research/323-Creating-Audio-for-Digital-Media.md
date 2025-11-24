@@ -83,6 +83,7 @@ Music Arrangement is part of music creation that happens after composition, wher
 #### <u>AVID Pro Tools</u>
 
 **Pros:**
+
 1. Advanced features and automation
 2. Excellent workflow
 3. The industry standard for commercial productions working with live/recorded audio, being built from the ground up for such use cases
@@ -95,7 +96,7 @@ Music Arrangement is part of music creation that happens after composition, wher
 
 ----
 ## Sound Effects, Music & Voice
-### (I) - Find 5 examples of good sound effects used in video games on youtube, add the link, say where it is from and explain why you feel this is a good sound effect.
+### (I) - Find 5 examples of good sound effects used in video games on YouTube, add the link, say where it is from and explain why you feel this is a good sound effect.
 #### <u>Pikmin - Captured/Dying SFX</u>
 The saddest example I have of good game audio implementation is in Pikmin. Whenever a Pikmin is snatched up or knocked down by an enemy, they'll immediately cry out; this is because they are aware of their mortality and fear it, but more importantly, it's a high pitched, sharp and urgent sound that signals to the player that it's their last chance to save that Pikmin, without any need for a tutorial. It's both instinctually attention-grabbing and adorable enough to make you feel obliged to help them, even if it's less strategic at times, a theme which itself becomes a part of the story, and certainly helps the player sympathise with Olimar. Doubly so if you fail to save some and have to hear their sad little ghostly sighs as they float away...
 (https://youtu.be/Avjo5OGyS2Q?t=1h44m7s) 

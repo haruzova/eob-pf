@@ -37,12 +37,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/LV3/Research/323-Creating-Audio-for-Digital-Media.md",
+                "file": "docs/LV2-Units/222-Careers-in-Creative-Digital-Media.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "323-Creating-Audio-for-Digital-Media"
+              "title": "222-Careers-in-Creative-Digital-Media"
             }
           },
           {
@@ -166,13 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/LV3/Research/323-Creating-Audio-for-Digital-Media.md",
+                "file": "docs/LV2-Units/222-Careers-in-Creative-Digital-Media.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 323-Creating-Audio-for-Digital-Media"
+              "title": "Outline of 222-Careers-in-Creative-Digital-Media"
             }
           },
           {
@@ -203,7 +203,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/LV3/Research/323-Creating-Audio-for-Digital-Media.md",
+                "file": "docs/LV2-Units/222-Careers-in-Creative-Digital-Media.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -213,7 +213,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 323-Creating-Audio-for-Digital-Media"
+              "title": "Backlinks for 222-Careers-in-Creative-Digital-Media"
             }
           }
         ]
@@ -236,9 +236,9 @@
   },
   "active": "879bb0be63ea64ff",
   "lastOpenFiles": [
-    "docs/LV3/Research/300-General-Research.md",
-    "docs/LV3/Research/323-Creating-Audio-for-Digital-Media.md",
     "docs/LV2-Units/205-Meeting-a-Digital-Media-Brief.md",
+    "docs/LV3/Research/323-Creating-Audio-for-Digital-Media.md",
+    "docs/LV3/Research/300-General-Research.md",
     "list of things.md",
     "docs/index.md",
     "docs/LV3/Research/344-Using-A-Game-Engine.md",

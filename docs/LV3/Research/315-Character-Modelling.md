@@ -1,4 +1,4 @@
-# <u>**315 - Character Modelling**</u>
+# 315 - Character Modelling
 ## Navigation
 - [3D Character Artists](#3d-character-artists)
 - [References](#references)

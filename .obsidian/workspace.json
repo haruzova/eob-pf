@@ -37,12 +37,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/LV2-Units/222-Careers-in-Creative-Digital-Media.md",
+                "file": "docs/LV3/Projects/315-Character-Modelling.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "222-Careers-in-Creative-Digital-Media"
+              "title": "315-Character-Modelling"
+            }
+          },
+          {
+            "id": "c8f606d9ca77c9e2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/LV3/Research/303-Creating-and-Publishing-Digital-Content.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "303-Creating-and-Publishing-Digital-Content"
             }
           },
           {
@@ -51,16 +65,36 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/LV3/Research/300-General-Research.md",
+                "file": "docs/LV3/Research/315-Character-Modelling.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "300-General-Research"
+              "title": "315-Character-Modelling"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
+      },
+      {
+        "id": "49c46fca28437796",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0b1da1c77e0a5512",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/LV3/Research/302-Creating-a-Digital-Game.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "302-Creating-a-Digital-Game"
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -92,7 +126,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "block",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -166,13 +200,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/LV2-Units/222-Careers-in-Creative-Digital-Media.md",
+                "file": "docs/LV3/Research/302-Creating-a-Digital-Game.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 222-Careers-in-Creative-Digital-Media"
+              "title": "Outline of 302-Creating-a-Digital-Game"
             }
           },
           {
@@ -203,7 +237,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/LV2-Units/222-Careers-in-Creative-Digital-Media.md",
+                "file": "docs/LV3/Research/302-Creating-a-Digital-Game.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -213,7 +247,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 222-Careers-in-Creative-Digital-Media"
+              "title": "Backlinks for 302-Creating-a-Digital-Game"
             }
           }
         ]
@@ -234,20 +268,29 @@
       "iconic:Open rulebook": false
     }
   },
-  "active": "879bb0be63ea64ff",
+  "active": "0b1da1c77e0a5512",
   "lastOpenFiles": [
-    "docs/LV2-Units/205-Meeting-a-Digital-Media-Brief.md",
-    "docs/LV3/Research/323-Creating-Audio-for-Digital-Media.md",
-    "docs/LV3/Research/300-General-Research.md",
-    "list of things.md",
-    "docs/index.md",
-    "docs/LV3/Research/344-Using-A-Game-Engine.md",
-    "docs/LV3/Projects/344-Using-a-Game-Engine.md",
-    "idk.md",
-    "slug.png",
-    "donquixautism.png",
+    "docs/LV3/Projects/302-Creating-a-Digital-Game.md",
+    "docs/LV3/Research/302-Creating-a-Digital-Game.md",
+    "docs/LV3/Research/303-Creating-and-Publishing-Digital-Content.md",
+    "docs/LV3/Projects/315-Character-Modelling.md",
     "docs/LV3/Research/315-Character-Modelling.md",
+    "docs/LV3/Research/300-General-Research.md",
+    "docs/LV3/Research/344-Using-A-Game-Engine.md",
+    "docs/LV2-Units/202-Digital-Games-Production.md",
+    "LV2-Units/Research/315-Character-Modelling.md",
+    "docs/assets/Devlog/420/Screenshot (79).png.~tmp",
+    "docs/assets/Devlog/420/Screenshot (79).png",
+    "20260127_140108.jpg",
+    "LV2-Units/Research",
+    "LV2-Units",
+    "docs/LV2-Units/205-Meeting-a-Digital-Media-Brief.md",
     "docs/LV3/Research/319-Creating-3D-Digital-Animation.md",
+    "docs/LV3/Research/316-Character-Rigging.md",
+    "docs/LV3/Research/323-Creating-Audio-for-Digital-Media.md",
+    "docs/LV3/Projects/344-Using-a-Game-Engine.md",
+    "docs/LV3/Projects/319-Creating-3D-Digital-Animation.md",
+    "docs/LV2-Units/222-Careers-in-Creative-Digital-Media.md",
     "site/assets/javascripts/glightbox.min.js",
     "site/assets/stylesheets/glightbox.min.css",
     "site/search/search_index.json",
@@ -255,9 +298,6 @@
     "site/LV3/Research/344-Using-A-Game-Engine/index.html",
     "site/LV3/Research/344-Using-A-Game-Engine",
     "site/LV3/Research/323-Creating-Audio-for-Digital-Media/index.html",
-    "site/LV3/Research/323-Creating-Audio-for-Digital-Media",
-    "site/LV3/Research/319-Creating-3D-Digital-Animation/index.html",
-    "site/LV3/Research/319-Creating-3D-Digital-Animation",
     "site/assets/images/favicon.png",
     "site/assets/misc/ultrakill-v1.gif",
     "site/assets/misc/star-rail-honkai.gif",
@@ -266,21 +306,15 @@
     "site/assets/misc/kromer-sinclair.gif",
     "site/assets/misc/jiggyclam.gif",
     "site/assets/misc/ishyprofen.png",
+    "list of things.md",
+    "docs/index.md",
+    "idk.md",
     "docs/LV3/Research/303-General-Research.md",
     "docs/LV3/Projects/321-Creating-3D-Environments.md",
-    "docs/LV3/Projects/319-Creating-3D-Digital-Animation.md",
-    "docs/LV3/Projects/315-Character-Modelling.md",
-    "docs/LV3/Projects/302-Creating-a-Digital-Game.md",
-    "docs/LV3/Research/316-Character-Rigging.md",
     "docs/LV3/Projects/420-Blaze-It.md",
     "docs/LV3/Projects/420-Blaze-It 1.md",
     "docs/LV3/Research/344-Using-A-Game-Engine-R.md",
     "Projects/344-Using-a-Game-Engine-R.md",
-    "docs/LV2-Units/222-Careers-in-Creative-Digital-Media.md",
-    "docs/LV2-Units/217-Marketing-and-Promoting-Digital-Media-Products.md",
-    "docs/LV2-Units/213-Digital-Audio-Production.md",
-    "docs/LV2-Units/210-Creating-Digital-Art.md",
-    "docs/LV2-Units/209-Animation.md",
-    "docs/LV2-Units/207-Making-a-Website.md"
+    "docs/LV2-Units/217-Marketing-and-Promoting-Digital-Media-Products.md"
   ]
 }

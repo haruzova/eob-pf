@@ -1,4 +1,4 @@
-# <u>**300 - General Research**</u>
+# 300 - General Research
 
 ## 02/09/2025
 

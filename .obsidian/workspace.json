@@ -51,7 +51,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/LV3/Research/303-Creating-and-Publishing-Digital-Content.md",
+                "file": "303-Creating-and-Publishing-Digital-Content.md",
                 "mode": "source",
                 "source": false
               },
@@ -86,12 +86,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/LV3/Research/302-Creating-a-Digital-Game.md",
+                "file": "docs/LV3/Research/300-General-Research.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "302-Creating-a-Digital-Game"
+              "title": "300-General-Research"
             }
           }
         ]
@@ -200,13 +200,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/LV3/Research/302-Creating-a-Digital-Game.md",
+                "file": "docs/LV3/Research/300-General-Research.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 302-Creating-a-Digital-Game"
+              "title": "Outline of 300-General-Research"
             }
           },
           {
@@ -237,7 +237,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/LV3/Research/302-Creating-a-Digital-Game.md",
+                "file": "docs/LV3/Research/300-General-Research.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -247,7 +247,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 302-Creating-a-Digital-Game"
+              "title": "Backlinks for 300-General-Research"
             }
           }
         ]
@@ -270,11 +270,11 @@
   },
   "active": "0b1da1c77e0a5512",
   "lastOpenFiles": [
-    "docs/LV3/Projects/302-Creating-a-Digital-Game.md",
     "docs/LV3/Research/302-Creating-a-Digital-Game.md",
-    "docs/LV3/Research/303-Creating-and-Publishing-Digital-Content.md",
-    "docs/LV3/Projects/315-Character-Modelling.md",
     "docs/LV3/Research/315-Character-Modelling.md",
+    "docs/LV3/Projects/302-Creating-a-Digital-Game.md",
+    "303-Creating-and-Publishing-Digital-Content.md",
+    "docs/LV3/Projects/315-Character-Modelling.md",
     "docs/LV3/Research/300-General-Research.md",
     "docs/LV3/Research/344-Using-A-Game-Engine.md",
     "docs/LV2-Units/202-Digital-Games-Production.md",

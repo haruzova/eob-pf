@@ -14,6 +14,7 @@
 
 ## Level 3
 ### **Research**
+- **[302 - Creating a Digital Game](LV3/Research/302-Creating-a-Digital-Game.md)**
 - **[315 - Character Modelling](LV3/Research/315-Character-Modelling.md)**
 - **[316 - Character Rigging](LV3/Research/316-Character-Rigging.md)**
 - **[319 - Creating 3D Digital Animation](LV3/Research/319-Creating-3D-Digital-Animation.md)**
@@ -22,7 +23,7 @@
 
 ### **Devlog/Projects**
 - **[300 - General Research](300-General-Research.md)**
-- **[302 - Creating a Digital Game](docs/LV3/Projects/302-Creating-a-Digital-Game.md)**
+- **[302 - Creating a Digital Game](LV3/Projects/302-Creating-a-Digital-Game.md)**
 - **[315 - Character Modelling](315-Character-Modelling.md)**
 - **[319 - Creating 3D Digital Animation](Projects/319-Creating-3D-Digital-Animation.md)**
 - **[321 - Creating 3D Environments](321-Creating-3D-Environments.md)**

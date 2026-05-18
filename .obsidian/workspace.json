@@ -74,7 +74,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       },
       {
         "id": "49c46fca28437796",
@@ -168,7 +168,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/LV3/Projects/420-Blaze-It.md",
+                "file": "docs/LV3/Research/315-Character-Modelling.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -178,7 +178,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 420-Blaze-It"
+              "title": "Backlinks for 315-Character-Modelling"
             }
           },
           {
@@ -200,13 +200,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/LV3/Research/300-General-Research.md",
+                "file": "docs/LV3/Research/315-Character-Modelling.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 300-General-Research"
+              "title": "Outline of 315-Character-Modelling"
             }
           },
           {
@@ -237,7 +237,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/LV3/Research/300-General-Research.md",
+                "file": "docs/LV3/Research/315-Character-Modelling.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -247,7 +247,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 300-General-Research"
+              "title": "Backlinks for 315-Character-Modelling"
             }
           }
         ]
@@ -268,8 +268,29 @@
       "iconic:Open rulebook": false
     }
   },
-  "active": "0b1da1c77e0a5512",
+  "active": "94bc2c9d2f95edc8",
   "lastOpenFiles": [
+    "site/assets/javascripts/glightbox.min.js",
+    "site/assets/stylesheets/glightbox.min.css",
+    "site/search/search_index.json",
+    "site/search",
+    "site/LV3/Research/344-Using-A-Game-Engine/index.html",
+    "site/LV3/Research/344-Using-A-Game-Engine",
+    "site/LV3/Research/323-Creating-Audio-for-Digital-Media/index.html",
+    "site/LV3/Research/323-Creating-Audio-for-Digital-Media",
+    "site/LV3/Research/319-Creating-3D-Digital-Animation/index.html",
+    "site/LV3/Research/319-Creating-3D-Digital-Animation",
+    "site/LV3/Research/316-Character-Rigging/index.html",
+    "site/assets/images/favicon.png",
+    "site/assets/misc/Untitled43_20220708203545.png",
+    "site/assets/misc/ultrakill-v1.gif",
+    "site/assets/misc/star-rail-honkai.gif",
+    "site/assets/misc/rainbow.gif",
+    "site/assets/misc/limbus-company-project-moon.gif",
+    "site/assets/misc/kromer-sinclair.gif",
+    "site/assets/misc/jiggyclam.gif",
+    "site/assets/misc/ishyprofen.png",
+    "site/assets/misc/Illustration368.png",
     "docs/LV3/Research/302-Creating-a-Digital-Game.md",
     "docs/LV3/Research/315-Character-Modelling.md",
     "docs/LV3/Projects/302-Creating-a-Digital-Game.md",
@@ -279,11 +300,6 @@
     "docs/LV3/Research/344-Using-A-Game-Engine.md",
     "docs/LV2-Units/202-Digital-Games-Production.md",
     "LV2-Units/Research/315-Character-Modelling.md",
-    "docs/assets/Devlog/420/Screenshot (79).png.~tmp",
-    "docs/assets/Devlog/420/Screenshot (79).png",
-    "20260127_140108.jpg",
-    "LV2-Units/Research",
-    "LV2-Units",
     "docs/LV2-Units/205-Meeting-a-Digital-Media-Brief.md",
     "docs/LV3/Research/319-Creating-3D-Digital-Animation.md",
     "docs/LV3/Research/316-Character-Rigging.md",
@@ -291,21 +307,6 @@
     "docs/LV3/Projects/344-Using-a-Game-Engine.md",
     "docs/LV3/Projects/319-Creating-3D-Digital-Animation.md",
     "docs/LV2-Units/222-Careers-in-Creative-Digital-Media.md",
-    "site/assets/javascripts/glightbox.min.js",
-    "site/assets/stylesheets/glightbox.min.css",
-    "site/search/search_index.json",
-    "site/search",
-    "site/LV3/Research/344-Using-A-Game-Engine/index.html",
-    "site/LV3/Research/344-Using-A-Game-Engine",
-    "site/LV3/Research/323-Creating-Audio-for-Digital-Media/index.html",
-    "site/assets/images/favicon.png",
-    "site/assets/misc/ultrakill-v1.gif",
-    "site/assets/misc/star-rail-honkai.gif",
-    "site/assets/misc/rainbow.gif",
-    "site/assets/misc/limbus-company-project-moon.gif",
-    "site/assets/misc/kromer-sinclair.gif",
-    "site/assets/misc/jiggyclam.gif",
-    "site/assets/misc/ishyprofen.png",
     "list of things.md",
     "docs/index.md",
     "idk.md",
@@ -314,7 +315,6 @@
     "docs/LV3/Projects/420-Blaze-It.md",
     "docs/LV3/Projects/420-Blaze-It 1.md",
     "docs/LV3/Research/344-Using-A-Game-Engine-R.md",
-    "Projects/344-Using-a-Game-Engine-R.md",
-    "docs/LV2-Units/217-Marketing-and-Promoting-Digital-Media-Products.md"
+    "Projects/344-Using-a-Game-Engine-R.md"
   ]
 }

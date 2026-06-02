@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1e4c9e006cd4a94a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/LV3/Research/315-Character-Modelling.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "315-Character-Modelling"
-            }
-          },
-          {
             "id": "050a68ef505c2aab",
             "type": "leaf",
             "state": {
@@ -37,34 +23,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/LV3/Projects/315-Character-Modelling.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "315-Character-Modelling"
-            }
-          },
-          {
-            "id": "c8f606d9ca77c9e2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "303-Creating-and-Publishing-Digital-Content.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "303-Creating-and-Publishing-Digital-Content"
-            }
-          },
-          {
-            "id": "94bc2c9d2f95edc8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "docs/LV3/Research/315-Character-Modelling.md",
                 "mode": "source",
                 "source": false
@@ -72,29 +30,23 @@
               "icon": "lucide-file",
               "title": "315-Character-Modelling"
             }
-          }
-        ],
-        "currentTab": 4
-      },
-      {
-        "id": "49c46fca28437796",
-        "type": "tabs",
-        "children": [
+          },
           {
-            "id": "0b1da1c77e0a5512",
+            "id": "1e4c9e006cd4a94a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/LV3/Research/300-General-Research.md",
+                "file": "docs/LV3/Research/303-Creating-and-Publishing-Digital-Content.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "300-General-Research"
+              "title": "303-Creating-and-Publishing-Digital-Content"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -126,7 +78,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "block",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -200,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/LV3/Research/315-Character-Modelling.md",
+                "file": "docs/LV3/Research/303-Creating-and-Publishing-Digital-Content.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 315-Character-Modelling"
+              "title": "Outline of 303-Creating-and-Publishing-Digital-Content"
             }
           },
           {
@@ -237,7 +189,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/LV3/Research/315-Character-Modelling.md",
+                "file": "docs/LV3/Research/303-Creating-and-Publishing-Digital-Content.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -247,7 +199,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 315-Character-Modelling"
+              "title": "Backlinks for 303-Creating-and-Publishing-Digital-Content"
             }
           }
         ]
@@ -268,19 +220,25 @@
       "iconic:Open rulebook": false
     }
   },
-  "active": "94bc2c9d2f95edc8",
+  "active": "1e4c9e006cd4a94a",
   "lastOpenFiles": [
+    "docs/LV2-Units/205-Meeting-a-Digital-Media-Brief.md",
+    "docs/LV3/Research/303-Creating-and-Publishing-Digital-Content.md",
+    "docs/LV3/Research/315-Character-Modelling.md",
     "site/assets/javascripts/glightbox.min.js",
     "site/assets/stylesheets/glightbox.min.css",
     "site/search/search_index.json",
     "site/search",
     "site/LV3/Research/344-Using-A-Game-Engine/index.html",
-    "site/LV3/Research/344-Using-A-Game-Engine",
     "site/LV3/Research/323-Creating-Audio-for-Digital-Media/index.html",
-    "site/LV3/Research/323-Creating-Audio-for-Digital-Media",
     "site/LV3/Research/319-Creating-3D-Digital-Animation/index.html",
-    "site/LV3/Research/319-Creating-3D-Digital-Animation",
     "site/LV3/Research/316-Character-Rigging/index.html",
+    "site/LV3/Research/315-Character-Modelling/index.html",
+    "site/LV3/Research/303-Creating-and-Publishing-Digital-Content/index.html",
+    "docs/LV3/Research/300-General-Research.md",
+    "docs/index.md",
+    "docs/LV2-Units/202-Digital-Games-Production.md",
+    "docs/LV3/Projects/315-Character-Modelling.md",
     "site/assets/images/favicon.png",
     "site/assets/misc/Untitled43_20220708203545.png",
     "site/assets/misc/ultrakill-v1.gif",
@@ -292,15 +250,9 @@
     "site/assets/misc/ishyprofen.png",
     "site/assets/misc/Illustration368.png",
     "docs/LV3/Research/302-Creating-a-Digital-Game.md",
-    "docs/LV3/Research/315-Character-Modelling.md",
     "docs/LV3/Projects/302-Creating-a-Digital-Game.md",
-    "303-Creating-and-Publishing-Digital-Content.md",
-    "docs/LV3/Projects/315-Character-Modelling.md",
-    "docs/LV3/Research/300-General-Research.md",
     "docs/LV3/Research/344-Using-A-Game-Engine.md",
-    "docs/LV2-Units/202-Digital-Games-Production.md",
     "LV2-Units/Research/315-Character-Modelling.md",
-    "docs/LV2-Units/205-Meeting-a-Digital-Media-Brief.md",
     "docs/LV3/Research/319-Creating-3D-Digital-Animation.md",
     "docs/LV3/Research/316-Character-Rigging.md",
     "docs/LV3/Research/323-Creating-Audio-for-Digital-Media.md",
@@ -308,7 +260,6 @@
     "docs/LV3/Projects/319-Creating-3D-Digital-Animation.md",
     "docs/LV2-Units/222-Careers-in-Creative-Digital-Media.md",
     "list of things.md",
-    "docs/index.md",
     "idk.md",
     "docs/LV3/Research/303-General-Research.md",
     "docs/LV3/Projects/321-Creating-3D-Environments.md",

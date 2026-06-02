@@ -27,5 +27,6 @@
   ],
   "useMarkdownLinks": true,
   "promptDelete": false,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "showLineNumber": true
 }

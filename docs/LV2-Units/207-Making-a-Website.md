@@ -1,4 +1,4 @@
-# **207 - Making a Website**
+# 207 - Making a Website
 ## Navigation
 - [Key Concepts](#key-concepts)
 - [Creating a Website](#creating-a-website)

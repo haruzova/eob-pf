@@ -31,8 +31,8 @@
               "type": "markdown",
               "state": {
                 "file": "docs/LV3/Projects/312-Designing-UI-for-Games.md",
-                "mode": "preview",
-                "source": true
+                "mode": "source",
+                "source": false
               },
               "pinned": true,
               "icon": "lucide-file",
@@ -45,12 +45,22 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/LV3/Projects/344-Using-a-Game-Engine.md",
+                "file": "docs/LV3/Projects/317-Creating-Concept-Art.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "344-Using-a-Game-Engine"
+              "title": "317-Creating-Concept-Art"
+            }
+          },
+          {
+            "id": "d86869d3b4d8d5e6",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ],
@@ -188,6 +198,7 @@
   },
   "active": "9a1ad0e22d0e2803",
   "lastOpenFiles": [
+    "docs/LV3/Projects/317-Creating-Concept-Art.md",
     "docs/LV3/Projects/344-Using-a-Game-Engine.md",
     "docs/LV3/Projects/312-Designing-UI-for-Games.md",
     "docs/LV3/Projects/302-Creating-a-Digital-Game.md",

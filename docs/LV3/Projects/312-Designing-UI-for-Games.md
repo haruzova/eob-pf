@@ -1,6 +1,7 @@
 # 312 - Designing UI for Games
 ### Final Product
-![type:video](https://drive.google.com/file/d/199mIUALFtldU87H-SbGBhyG4ghTByWn4/preview)aaa
+![type:video](https://drive.google.com/file/d/1A1CjTvqaTwOsCdgos2US9uKTlbCdeR1s/preview)
+
 ![BGMENU](https://drive.google.com/thumbnail?id=1PfZasbLxVJb3ETCZFXnrXB8jmztkmKAq&sz=s2000)
 ![BGSETTINGS](https://drive.google.com/thumbnail?id=10s3R-czVEG-Gky_Vc1B1WMfEsW7VyMBu&sz=s2000)
 
